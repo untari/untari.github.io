@@ -10,7 +10,7 @@ li {
     color: white;
 }
 ul a {
-  color: white;
+  color: black;
   padding: 0 10px;
   text-decoration: none;
  }
@@ -24,15 +24,16 @@ img {
   height: 300px;
   width: 300px;
 }
-body{
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-   background: grey;
-   cursor: pointer;
-   animation: mymove 5s infinite;
-   animation-iteration-count: 1
-   }
-@keyframes mymove {
+
+body {
+    background-color: black;
+}
+
+.whiteBg {
+    background-color: white;
+    animation: change-color 2s;
+}
+@keyframes change-color {
       from {background-color: black;}
       to {background-color: transparent;}
 }
