@@ -26,7 +26,7 @@ class Home extends Component {
       render() {
         return(
             <div className="centered">
-                <a href="#" onClick={() => this.colorBackground()}><img src={Bulb2} alt="on" /></a>
+                <a href="#" onClick={() => this.colorBackground()}><img src={Bulb2} height="300" width="300" alt="on" /></a>
             </div>
         );
         }

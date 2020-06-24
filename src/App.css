@@ -1,18 +1,22 @@
+
 ul {
    float: right;
    background-color: none;
-   height: 20px;
    padding-left: 150px;
+   border: none;
+   background-color: none;
+   width: 100%;
 }
 li {
-    display:inline;
-    float: left;
+    display: inline;
+    float: right;
     color: white;
 }
 ul a {
   color: black;
   padding: 0 10px;
   text-decoration: none;
+  float: right;
  }
 .centered{
   position:fixed;
@@ -20,10 +24,7 @@ ul a {
   top: 30%;
 
 }
-img {
-  height: 300px;
-  width: 300px;
-}
+
 
 body {
     background-color: black;
