@@ -29,6 +29,7 @@ class Home extends Component {
                 <a href="#" onClick={() => this.colorBackground()}><img src={Bulb2} height="300" width="300" alt="on" /></a>
             </div>
         );
-        }
+      }
+
 }
 export default Home;
