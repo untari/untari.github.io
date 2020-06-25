@@ -4,6 +4,7 @@ import { Navbar, NavbarBrand } from 'reactstrap';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import Blog from './Blog';
 import Logo from './smile.png';
 
 class Main extends Component {
@@ -18,12 +19,14 @@ class Main extends Component {
                           <li><Link to="/">Home</Link></li>
                           <li><Link to="/about">About</Link></li>
                           <li><Link to="/contact">Contact</Link></li>
+                          <li><Link to="/blog">Blog</Link></li>
                         </ul>
                    </Navbar>
                     <hr />
                     <Route exact path="/" component={Home} />
                     <Route path="/about" component={About} />
                     <Route path="/contact" component={Contact} />
+                    <Route path="/blog" component={Blog} />
                 </div>
             );
     }

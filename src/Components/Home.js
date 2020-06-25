@@ -3,6 +3,7 @@ import Bulb2 from './bulb2.svg';
 
 const docBody = document.querySelector ('body');
 
+
 class Home extends Component {
         constructor(props) {
             super(props);
@@ -15,7 +16,6 @@ class Home extends Component {
             componentDidUpdate(preProps, prevState) {
                 const { bgColored } = this.state;
                 const className = 'whiteBg';
-                
                 if(prevState.bgColored !== bgColored){
                     bgColored ?
                         docBody.classList.add(className) :
@@ -23,10 +23,11 @@ class Home extends Component {
                 }
                     
       }
+   
       render() {
         return(
             <div className="centered">
-                <a href="#" onClick={() => this.colorBackground()}><img src={Bulb2} height="300" width="300" alt="on" /></a>
+                <a href="#" onClick={() => this.colorBackground()}><img src={Bulb2} height="100" width="100" alt="on" className="img-responsive"  /></a>
             </div>
         );
       }

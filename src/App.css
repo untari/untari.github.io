@@ -9,32 +9,68 @@ ul {
 }
 li {
     display: inline;
+    color: black;
     float: right;
-    color: white;
 }
-ul a {
+   
+   ul a {
   color: black;
   padding: 0 10px;
   text-decoration: none;
-
  }
+   
+
+
+
 .centered{
-  position:fixed;
-  left: 40%;
-  top: 30%;
+  position: fixed;
+  left: 48%;
+  top: 39%;
 
 }
 
+.text-center {
+    float: right;
+    
+}
+.text-center a {
+  padding: 20px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+  
+}
 
 body {
-    background-color: black;
+    background-color: black;    
 }
 
 .whiteBg {
-    background-color: white;
-    animation: change-color 2s;
+    background-image: url("./Components/logo.svg");
+    
+    /* Full height */
+    height: 800px;
+    width: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change-color 7s;
 }
 @keyframes change-color {
       from {background-color: black;}
       to {background-color: transparent;}
+}
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
 }

@@ -1,20 +1,21 @@
-import React, { Component } from 'react';
-import Tari from './tari.jpg';
+import React from 'react';
+import {  Card, CardImg, CardText, CardBody,  CardTitle } from 'reactstrap';
+import Tari from './tari.svg';
 
-class About extends Component {
-  render() {
-    return (
-       <div className="container">
-         <div>
-           <img className="card-img-top" src={Tari} alt="card img" width="20%" height="20%" />
-           <div className="card-body">
-              <h2 className="card-title">Untari</h2>
-              <p className="card-text">I am a frontend software developer looking for challenging projects
-                that make an impact and allow me to keep learning and improving my skills.</p>
-           </div>
-         </div>
-       </div>
+const About = () => {
+    return(
+        <div>
+            <Card>
+                <CardImg top width="20%" src={Tari} alt="Card image cap" />
+                <CardBody>
+                <CardTitle>Untari</CardTitle>
+                <CardText>I am a frontend software developer looking <br/>
+                   for challenging projects that make an<br />
+                    impact and allow me
+                    to keep learning and improving my skills.</CardText>
+                </CardBody>
+            </Card>
+        </div>
     );
-  }
 }
 export default About;
