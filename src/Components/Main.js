@@ -8,27 +8,27 @@ import Blog from './Blog';
 import Logo from './smile.png';
 
 class Main extends Component {
-       render() {
-            return(
-                <div>
-                   <Navbar>
-                        <NavbarBrand>
-                         <img src={Logo} alt="logo" heigth="40" width="40" /><span>untari.com</span>
-                        </NavbarBrand>
-                        <ul>
-                          <li><Link to="/">Home</Link></li>
-                          <li><Link to="/about">About</Link></li>
-                          <li><Link to="/contact">Contact</Link></li>
-                          <li><Link to="/blog">Blog</Link></li>
-                        </ul>
-                   </Navbar>
-                    <hr />
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/blog" component={Blog} />
-                </div>
-            );
+    render() {
+        return(
+            <div>
+               <Navbar>
+                    <NavbarBrand>
+                     <img src={Logo} alt="logo" heigth="40" width="40" /><span>untari.com</span>
+                    </NavbarBrand>
+                    <ul>
+                      <li><Link to="/">Home</Link></li>
+                      <li><Link to="/about">About</Link></li>
+                      <li><Link to="/contact">Contact</Link></li>
+                      <li><Link to="/blog">Blog</Link></li>
+                    </ul>
+               </Navbar>
+                <hr />
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/blog" component={Blog} />
+            </div>
+        );
     }
 }
 export default Main;

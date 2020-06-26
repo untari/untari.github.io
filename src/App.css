@@ -8,30 +8,22 @@ ul {
    width: 100%;
 }
 li {
+    float: right;
     display: inline;
     color: black;
-    float: right;
 }
-   
-   ul a {
+ul a {
   color: black;
   padding: 0 10px;
   text-decoration: none;
  }
-   
-
-
-
 .centered{
   position: fixed;
   left: 48%;
   top: 39%;
-
 }
-
 .text-center {
     float: right;
-    
 }
 .text-center a {
   padding: 20px;
@@ -44,25 +36,18 @@ li {
 .fa-linkedin {
   background: #007bb5;
   color: white;
-  
 }
-
 body {
     background-color: black;    
 }
-
-.whiteBg {
-    background-image: url("./Components/logo.svg");
-    
-    /* Full height */
-    height: 800px;
-    width: 100%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
+.imageBg {
+    background: url('Components/logo.svg');
+    position: fixed;
     background-repeat: no-repeat;
-    background-size: cover;
-    animation: change-color 7s;
+    background-size: 300px 300px;
+    background-position: right 49% bottom 155%;
+    width: 100%;
+    background-color: #c7ebea;
 }
 @keyframes change-color {
       from {background-color: black;}
@@ -72,5 +57,11 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
-
 }
+.center {
+  position: fixed;
+  left: 58%;
+  top: 39%;
+}
+
+
