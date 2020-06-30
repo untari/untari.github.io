@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label,  Input } from 'reactstrap';
-import Footer from './Footer';
 
 class  Contact extends Component {
     render() {
@@ -8,21 +7,20 @@ class  Contact extends Component {
             <div className="container">
               <h1> Drop message here!</h1>
                  <Form>
-                    <FormGroup>
+                    <FormGroup className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         <Label>Name</Label>
                         <Input type="name" name="name" id="name"  />
                     </FormGroup>
-                    <FormGroup>
+                    <FormGroup className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                        <Label>Email</Label>
                        <Input type="email" name="email" id="email"  />
                     </FormGroup>
-                    <FormGroup>
+                    <FormGroup className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                        <Label>Text Area</Label>
                        <Input type="textarea" name="text" id="text" />
                     </FormGroup>
                     <Button>Send</Button>
                  </Form>
-            <Footer />
            </div>
       );
    }

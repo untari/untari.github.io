@@ -28,15 +28,11 @@ class Home extends Component {
 
     render() {
         return(
-           <>
               <div className="centered">
                 <a href="#" onClick={() => this.colorBackground()}>
-                  <img src={Bulb2} height="90" width="90" alt="on" className="img-responsive"  />
+                  <img src={Bulb2} height="17%" width="17%" alt="on"   />
                 </a>
-
               </div>
-
-           </>
         );
     }
 
