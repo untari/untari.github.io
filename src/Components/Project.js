@@ -3,7 +3,7 @@ import { Container, Link, Button } from 'react-floating-action-button'
 
 const Project = () => {
     return(
-       <div>
+       <div className="container">
           <Container>
             <Link href="#"
                 tooltip="React"

@@ -21,7 +21,7 @@ class Resume extends PureComponent {
                 <div>
                    <button onClick={this.jsPdGenerator}  className="button">D</button>
                 </div>
-                <img src={pdf} alt="resume" height="400" widht="400" />
+                <img src={pdf} alt="resume" height="400" widht="400"  />
             </div>
         );
     }

@@ -1,22 +1,4 @@
 
-ul {
-   float: right;
-   background-color: none;
-   padding-left: 150px;
-   border: none;
-   background-color: none;
-   width: 100%;
-}
-li {
-    float: right;
-    display: inline;
-    color: black;
-}
-ul a {
-  color: black;
-  padding: 0 10px;
-  text-decoration: none;
- }
 .centered{
   position: fixed;
   left: 48%;
@@ -42,16 +24,32 @@ ul a {
           from {background-color: black;}
           to {background-color: transparent;}
     }
+    ul {
+        float: right;
+        background-color: none;
+        padding-left: 1100px;
+        border: none;
+        display: flex;
+        width: 100%;
+    }
+    li {
+        float: right;
+        display: inline;
+        color: black;
+    }
+    ul a {
+        float: right;
+        color: black;
+        padding: 0 10px;
+        text-decoration: none;
+    }
 
     .center {
       position: fixed;
       left: 58%;
       top: 49%;
     }
-    .footer {
 
-
-     }
     .resume {
        float: right;
        bottom: 40%;

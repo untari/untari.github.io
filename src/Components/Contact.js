@@ -4,8 +4,8 @@ import { Button, Form, FormGroup, Label,  Input } from 'reactstrap';
 class  Contact extends Component {
     render() {
         return (
-            <div className="container">
-              <h1> Drop message here!</h1>
+            <div>
+                 <p>Drop me message here!</p>
                  <Form>
                     <FormGroup className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
                         <Label>Name</Label>

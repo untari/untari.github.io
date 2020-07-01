@@ -13,7 +13,7 @@ import Logo from './smile.png';
 class Main extends Component {
     render() {
         return(
-            <div>
+          <div>
                <Navbar>
                     <NavbarBrand>
                      <img src={Logo} alt="logo" heigth="40" width="40" /><span>untari.com</span>
@@ -25,14 +25,16 @@ class Main extends Component {
                       <li><Link to="/blog">Blog</Link></li>
                     </ul>
                </Navbar>
-               <div className="resume">
-                  <Link to="/resume"><img src="https://www.flaticon.com/premium-icon/icons/svg/2066/2066364.svg" alt="CV" heigth="5%" width="5%" className="img-responsive" /></Link>
-               </div>
-               <div className="project">
-                  <Link to="/project"><img src="https://www.flaticon.com/premium-icon/icons/svg/2786/2786993.svg" alt="project" heigth="12%" width="12%" className="img-responsive" /></Link>
-               </div>
-               <div className="certificate">
-                  <Link to="/certification"><img src="https://image.flaticon.com/icons/svg/2912/2912761.svg" alt="certificate" heigth="20%" width="13%" className="img-responsive" /></Link>
+               <div>
+                  <div className="resume">
+                    <Link to="/resume"><img src="https://www.flaticon.com/premium-icon/icons/svg/2066/2066364.svg" alt="CV" heigth="5%" width="5%"  /></Link>
+                  </div>
+                  <div className="project">
+                      <Link to="/project"><img src="https://www.flaticon.com/premium-icon/icons/svg/2786/2786993.svg" alt="project" heigth="10%" width="10%" /></Link>
+                  </div>
+                  <div className="certificate">
+                      <Link to="/certification"><img src="https://image.flaticon.com/icons/svg/2912/2912761.svg" alt="certificate" heigth="10%" width="10%" /></Link>
+                  </div>
                </div>
                <hr />
                 <Route exact path="/" component={Home} />
@@ -42,7 +44,8 @@ class Main extends Component {
                 <Route path="/resume" component={Resume} />
                 <Route path="/project" component={Project} />
                 <Route path="/certification" component={Certification} />
-            </div>
+
+          </div>
         );
     }
 }
