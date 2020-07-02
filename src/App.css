@@ -1,90 +1,35 @@
-
+body {
+        background-color: black;
+}
+.imageBg {
+    background: url('Components/logo.svg');
+    position: fixed;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-size: 32%;
+    background-position: right 49% bottom 155%;
+    width: 100%;
+    height: auto;
+    background-color: #c7ebea;
+}
+.card {
+      position: fixed;
+      width: 20rem;
+      background-color: #c7ebea;
+      border: none;
+}
 .centered{
   position: fixed;
   left: 48%;
   top: 39%;
 }
-@media only screen and (min-width: 1200px) {
-    body {
-        background-color: black;
-    }
-    .imageBg {
-        background: url('Components/logo.svg');
-        position: fixed;
-        vertical-align: middle;
-        background-repeat: no-repeat;
-        background-size: 32%;
-        background-position: right 49% bottom 155%;
-        width: 100%;
-        height: auto;
-        background-color: #c7ebea;
-    }
-
-    @keyframes change-color {
-          from {background-color: black;}
-          to {background-color: transparent;}
-    }
-    ul {
-        float: right;
-        background-color: none;
-        padding-left: 1100px;
-        border: none;
-        display: flex;
-        width: 100%;
-    }
-    li {
-        float: right;
-        display: inline;
-        color: black;
-    }
-    ul a {
-        float: right;
-        color: black;
-        padding: 0 10px;
-        text-decoration: none;
-    }
-
-    .center {
-      position: fixed;
-      left: 58%;
-      top: 49%;
-    }
-
-    .resume {
-       float: right;
-       bottom: 40%;
-       border: none;
-       background-color: none;
-       width: 100%;
-       text-align:center;
-    }
-    .resume a {
-     color: black;
-     text-decoration:none;
-    }
-    .button {
-        margin-left: 33%;
-        position: fixed;
-    }
-    .card {
-      position: fixed;
-      width: 20rem;
-      background-color: #c7ebea;
-      border: none;
-    }
-    .project {
-       float: right;
-       border: none;
-       background-color: none;
-       display:block;
-       text-align:center;
-       margin-right: 21%;
-    }
-    .certificate {
-       float: right;
-       margin-right: 17%;
-       border: none;
-       display:block;
-       text-align:center;
-    }
+.button {
+    margin-left: 33%;
+    position: fixed;
+}
+.resume {
+    float: right;
+    margin-right: 14%;
+    border: none;
+    background-color: none;
 }

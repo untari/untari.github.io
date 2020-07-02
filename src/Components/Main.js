@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link } from "react-router-dom";
-import { Navbar, NavbarBrand } from 'reactstrap';
+import { Nav, Navbar, NavbarBrand,  NavItem,  } from 'reactstrap';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -11,42 +11,52 @@ import Certification from './Certification';
 import Logo from './smile.png';
 
 class Main extends Component {
-    render() {
+   render() {
         return(
-          <div>
-               <Navbar>
-                    <NavbarBrand>
-                     <img src={Logo} alt="logo" heigth="40" width="40" /><span>untari.com</span>
-                    </NavbarBrand>
-                    <ul>
-                      <li><Link to="/">Home</Link></li>
-                      <li><Link to="/about">About</Link></li>
-                      <li><Link to="/contact">Contact</Link></li>
-                      <li><Link to="/blog">Blog</Link></li>
-                    </ul>
+           <div>
+               <Navbar dark expand="lg">
+                    <div  className="container-fluid">
+                        <NavbarBrand className="mr-auto">
+                           <img src={Logo} alt="logo" heigth="40" width="40" /><span className="text-dark">untari.com</span>
+                        </NavbarBrand>
+                         <Nav className="navbar navbar-expand-sm" >
+                             <NavItem>
+                                 <Link className="nav-link text-dark" to="/home">
+                                        <span className="fa fa-home fa-lg"></span>Home
+                                 </Link>
+                             </NavItem>
+                             <NavItem>
+                                   <Link className="nav-link text-dark" to="/about">
+                                           <span className="fa fa-info fa-lg"></span>About me
+                                   </Link>
+                             </NavItem>
+                             <NavItem>
+                                   <Link className="nav-link text-dark" to="/blog">
+                                       <span className="fa fa-list fa-lg"></span>Blog
+                                   </Link>
+                             </NavItem>
+                              <NavItem>
+                                   <Link className="nav-link text-dark" to="/contact">
+                                        <span className="fa fa-card  fa-lg"></span>Contact
+                                   </Link>
+                              </NavItem>
+                         </Nav>
+                    </div>
                </Navbar>
-               <div>
-                  <div className="resume">
-                    <Link to="/resume"><img src="https://www.flaticon.com/premium-icon/icons/svg/2066/2066364.svg" alt="CV" heigth="5%" width="5%"  /></Link>
-                  </div>
-                  <div className="project">
-                      <Link to="/project"><img src="https://www.flaticon.com/premium-icon/icons/svg/2786/2786993.svg" alt="project" heigth="10%" width="10%" /></Link>
-                  </div>
-                  <div className="certificate">
-                      <Link to="/certification"><img src="https://image.flaticon.com/icons/svg/2912/2912761.svg" alt="certificate" heigth="10%" width="10%" /></Link>
-                  </div>
-               </div>
+
                <hr />
-                <Route exact path="/" component={Home} />
+                <Route path="/home" component={Home} />
+                <Route exact path="/" component={Home}  />
                 <Route path="/about" component={About} />
                 <Route path="/contact" component={Contact} />
                 <Route path="/blog" component={Blog} />
                 <Route path="/resume" component={Resume} />
                 <Route path="/project" component={Project} />
                 <Route path="/certification" component={Certification} />
+           </div>
 
-          </div>
+
         );
-    }
+   }
 }
 export default Main;
