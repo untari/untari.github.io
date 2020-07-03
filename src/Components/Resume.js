@@ -1,6 +1,4 @@
 import React, { PureComponent } from 'react';
-import {  Breadcrumb, BreadcrumbItem } from 'reactstrap';
-import { Link } from 'react-router-dom';
 import pdf from './screen.png';
 import jsPDF from 'jspdf';
 
@@ -19,12 +17,14 @@ class Resume extends PureComponent {
     }
     render() {
         return(
-          <div>
-              <div>
-                <div>
+          <div className="container">
+              <div className="row">
+                 <div>
                    <button onClick={this.jsPdGenerator}  className="button">D</button>
+                 </div>
+                 <div>
+                    <p>click D button for download the resume</p>
                 </div>
-                <img src={pdf} alt="resume" height="400" widht="400"  />
               </div>
           </div>
         );

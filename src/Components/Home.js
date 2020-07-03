@@ -35,9 +35,6 @@ class Home extends Component {
                   <img src={Bulb2} height="17%" width="17%" alt="on"   />
                 </a>
               </div>
-              <div className="resume">
-                    <Link to="/resume"><img src="https://www.flaticon.com/premium-icon/icons/svg/2066/2066364.svg" alt="CV" heigth="11%" width="11%"  /></Link>
-              </div>
           </div>
         );
     }
