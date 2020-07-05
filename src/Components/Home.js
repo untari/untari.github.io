@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Bulb2 from './bulb2.svg';
 import Profile from './resume.png';
 import certificate from './certificate.png';
+import Js from './Js.png';
 
 const docBody = document.querySelector ('body');
 
@@ -42,6 +43,9 @@ class Home extends Component {
               </div>
               <div className="text-left">
                 <Link to="certification"><img src={certificate} alt="certification" className="certification" height="50" widht="50" /></Link>
+              </div>
+              <div className="text-right">
+                <Link to="project"><img src={Js} alt="projects"  height="50" widht="50" /></Link>
               </div>
           </div>
         );
