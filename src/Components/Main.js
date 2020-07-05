@@ -9,6 +9,7 @@ import Project from './Project';
 import Certification from './Certification';
 import Logo from './smile.png';
 
+
 class Main extends Component {
     render() {
         return(
@@ -30,6 +31,8 @@ class Main extends Component {
                     </div>
                 </div>
              </nav>
+
+
 
              <Route path="/home" component={Home} />
              <Route exact path="/" component={Home}  />

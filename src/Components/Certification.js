@@ -4,7 +4,7 @@ import React from 'react';
 const Certification = () => {
     return(
        <div className="container">
-          <h1>Certification1</h1>
+          <h1>Certifications</h1>
        </div>
     );
   }

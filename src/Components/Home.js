@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Bulb2 from './bulb2.svg';
+import Profile from './resume.png';
+import certificate from './certificate.png';
 
 const docBody = document.querySelector ('body');
 
@@ -34,6 +36,12 @@ class Home extends Component {
                 <a href="#" onClick={() => this.colorBackground()}>
                   <img src={Bulb2} height="10%" width="10%" alt="on"   />
                 </a>
+              </div>
+              <div className="text-center">
+                <Link to="resume"><img src={Profile} alt="resume" height="50" widht="50" /></Link>
+              </div>
+              <div className="text-left">
+                <Link to="certification"><img src={certificate} alt="certification" height="50" widht="50" /></Link>
               </div>
           </div>
         );
