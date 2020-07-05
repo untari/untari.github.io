@@ -38,8 +38,8 @@ img {
     text-align: center;
 }
 .button {
-    left: 36%;
-    position: fixed;
+  float: right;
+  margin-right: 62%;
 }
 .resume {
   height: 35vw;
@@ -47,5 +47,5 @@ img {
 }
 .text-left {
  float: left;
- margin-left: 40%;
+ margin-left: 30vw;
 }

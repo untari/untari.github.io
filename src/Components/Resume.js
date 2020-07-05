@@ -19,8 +19,10 @@ class Resume extends PureComponent {
     render() {
         return(
           <div className="container">
-              <div className="row">
-                   <button onClick={this.jsPdGenerator}  className="button">D</button>
+              <div clssName="container-fluid">
+                   <button onClick={this.jsPdGenerator} className="button">D</button>
+              </div>
+              <div className="container">
                    <img src={pdf} alt="resume" alt="resume" height="40" widht="40" className="resume"/>
               </div>
           </div>

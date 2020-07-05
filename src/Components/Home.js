@@ -41,7 +41,7 @@ class Home extends Component {
                 <Link to="resume"><img src={Profile} alt="resume" height="50" widht="50" /></Link>
               </div>
               <div className="text-left">
-                <Link to="certification"><img src={certificate} alt="certification" height="50" widht="50" /></Link>
+                <Link to="certification"><img src={certificate} alt="certification" className="certification" height="50" widht="50" /></Link>
               </div>
           </div>
         );
