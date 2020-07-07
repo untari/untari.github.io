@@ -1,6 +1,6 @@
 import React from 'react';
 import {  Card, CardImg, CardText, CardBody,  CardTitle } from 'reactstrap';
-import Tari from './tari.svg';
+import Tari from './tari.png';
 
 const About = () => {
     return(
@@ -8,7 +8,7 @@ const About = () => {
               <div className="row">
                  <div className="col-md-6 col-lg-4 col-xl-3">
                     <Card className="card">
-                        <CardImg top src={Tari} alt="Card image cap" height="10%" width="10%" />
+                        <CardImg top src={Tari} alt="Card image cap" height="50%" width="10%" />
                         <CardBody>
                         <CardTitle>Untari</CardTitle>
                         <CardText>I am a frontend software developer looking for challenging projects that make an
