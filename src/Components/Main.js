@@ -59,9 +59,9 @@ class Main extends Component {
 
                  <div className="container">
                     <div className="bottom-right">
-                        <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"><i className="fa fa-linkedin text-primary fa-3x"></i></a>
-                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari" ><i className="fa fa-github text-success fa-3x"></i></a>
-                        <a className="btn btn-social-icon" href="sastraembun0306@gmail.com"><i className="fa fa-envelope-o text-danger fa-3x"></i></a>
+                        <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"><i className="fa fa-linkedin  fa-3x"></i></a>
+                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari" ><i className="fa fa-github  fa-3x"></i></a>
+                        <a className="btn btn-social-icon" href="sastraembun0306@gmail.com"><i className="fa fa-envelope-o fa-3x"></i></a>
                     </div>
                  </div>
           </div>
