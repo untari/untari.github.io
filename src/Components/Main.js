@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import $ from 'jquery';
 import Home from './Home';
 import About from './About';
@@ -8,11 +8,10 @@ import Blog from './Blog';
 import Resume from './Resume';
 import Project from './Project';
 import Certification from './Certification';
-import Logo from './smile.png';
+import Logo from './logo.svg';
 import Bulb2 from './bulb2.svg';
-import Profile from './resume.png';
-import certificate from './certificate.png';
-import Js from './Js.png';
+
+
 
 $(function(){
   //Am hiding the overlay after 2 sec
@@ -32,7 +31,7 @@ class Main extends Component {
                  </div>
                  <nav className="navbar navbar-expand-md navbar-light sticky-top">
                     <a href="#" className="navbar-brand">
-                        <img src={Logo} alt="logo" heigth="40" width="40" /><span className="text-dark">untari.com</span>
+                        <img src={Logo} alt="logo" heigth="50" width="50" /><span className="text-dark">untari.com</span>
                     </a>
                     <button type="button" className="navbar-toggler pull-left" data-toggle="collapse" data-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
@@ -47,6 +46,8 @@ class Main extends Component {
                         </div>
                     </div>
                  </nav>
+
+
                  <Route path="/home" component={Home} />
                  <Route exact path="/" component={Home}  />
                  <Route path="/about" component={About} />
@@ -59,9 +60,9 @@ class Main extends Component {
 
                  <div className="container">
                     <div className="bottom-right">
-                        <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"><i className="fa fa-linkedin  fa-3x"></i></a>
-                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari" ><i className="fa fa-github  fa-3x"></i></a>
-                        <a className="btn btn-social-icon" href="sastraembun0306@gmail.com"><i className="fa fa-envelope-o fa-3x"></i></a>
+                        <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"  tooltip="LinkedIn"><i className="fa fa-linkedin  fa-3x"></i></a>
+                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari"  tooltip="Github"><i className="fa fa-github  fa-3x"></i></a>
+                        <a className="btn btn-social-icon" href="#"  tooltip="Email" ><i className="fa fa-envelope-o fa-3x"></i></a>
                     </div>
                  </div>
           </div>

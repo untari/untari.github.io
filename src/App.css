@@ -1,5 +1,5 @@
 body {
-    background: url('Components/logo.svg');
+    background: url('Components/bG.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -41,35 +41,61 @@ img {
   height: 35vw;
   width: 30vw;
 }
+.text-center {
+ float: center;
+
+}
 .text-left {
  float: left;
- margin-left: 30%;
- margin-top: 20vh;
-
+ margin-left: 27vw;
 }
 .text-right {
   float: right;
-  margin-right: 30%;
-  margin-top: 20vh;
-
+  margin-right: 35vw;
 }
-.text-center{
-  margin-top: 2vh;
-  margin-left: 45vw;
+.project {
+  width: 40%;
+  height: auto;
   position: fixed;
+  top: 39%;
+}
+.certification {
+  width: 40%;
+  height: auto;
+  position: fixed;
+  top: 40vh;
+}
+.cv {
+  width: 40%;
+  height: auto;
+  position: fixed;
+  top: 35vh;
+}
+@media only screen and (min-device-width: 400px)  {
+   .project {
+      width: 40%;
+      height: auto;
+      position: fixed;
+      top: 25vh;
+   }
+   .certification {
+      width: 40%;
+      height: auto;
+      position: fixed;
+      top: 20vh;
+   }
+   .cv {
+      width: 40%;
+      height: auto;
+      position: fixed;
+      top: 10vh;
+   }
+
 }
 .bottom-right{
   position: fixed;
   bottom: 8px;
   right: 10px;
-}
-.images{
-    margin: 0 auto;
-    height: auto;
-    max-width: 100%;
-    border: none;
-    display: block;
-    padding: 5px 0
 }
 #overlay {
   background-color: rgba(0,0,0,0.5);
