@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import $ from 'jquery';
 import Home from './Home';
 import About from './About';
@@ -10,6 +10,9 @@ import Project from './Project';
 import Certification from './Certification';
 import Logo from './smile.png';
 import Bulb2 from './bulb2.svg';
+import Profile from './resume.png';
+import certificate from './certificate.png';
+import Js from './Js.png';
 
 $(function(){
   //Am hiding the overlay after 2 sec
@@ -22,7 +25,7 @@ class Main extends Component {
           <div>
                  <div id="overlay">
                      <div className="centered">
-                        <a href="#" >
+                        <a href="#">
                           <img src={Bulb2} height="17%" width="17%" alt="on"   />
                         </a>
                      </div>
@@ -44,9 +47,6 @@ class Main extends Component {
                         </div>
                     </div>
                  </nav>
-
-
-
                  <Route path="/home" component={Home} />
                  <Route exact path="/" component={Home}  />
                  <Route path="/about" component={About} />
@@ -61,7 +61,7 @@ class Main extends Component {
                     <div className="bottom-right">
                         <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"><i className="fa fa-linkedin text-primary fa-3x"></i></a>
                         <a className="btn btn-social-icon btn-github" href="https://github.com/untari" ><i className="fa fa-github text-success fa-3x"></i></a>
-                        <a className="btn btn-social-icon" href="#"><i className="fa fa-envelope-o text-danger fa-3x"></i></a>
+                        <a className="btn btn-social-icon" href="sastraembun0306@gmail.com"><i className="fa fa-envelope-o text-danger fa-3x"></i></a>
                     </div>
                  </div>
           </div>

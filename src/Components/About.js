@@ -5,8 +5,6 @@ import Tari from './tari.png';
 const About = () => {
     return(
         <div className="container">
-              <div className="row">
-                 <div className="col-md-6 col-lg-4 col-xl-3">
                     <Card className="card">
                         <CardImg top src={Tari} alt="Card image cap" height="50%" width="10%" />
                         <CardBody>
@@ -15,8 +13,6 @@ const About = () => {
                             impact and allow me to keep learning and improving my skills.</CardText>
                         </CardBody>
                     </Card>
-                 </div>
-              </div>
         </div>
     );
 }

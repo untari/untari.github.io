@@ -4,7 +4,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
-    background-size: 35%;
+    background-size: 45%;
     width: 100vw;
     height: 100vh;
     background-color: #c7ebea;
@@ -43,24 +43,34 @@ img {
 }
 .text-left {
  float: left;
- margin-left: 30vw;
+ margin-left: 25%;
+ margin-top: 20vh;
+
 }
 .text-right {
   float: right;
-  margin-right: 35vw;
+  margin-right: 25%;
+  margin-top: 20vh;
+
 }
-
-
-.container {
-  position: relative;
+.text-center{
+  margin-top: 2vh;
+  margin-left: 45vw;
+  position: fixed;
 }
-
 .bottom-right{
   position: fixed;
   bottom: 8px;
   right: 10px;
 }
-
+.images{
+    margin: 0 auto;
+    height: auto;
+    max-width: 100%;
+    border: none;
+    display: block;
+    padding: 5px 0
+}
 #overlay {
   background-color: rgba(0,0,0,0.5);
   position:fixed;

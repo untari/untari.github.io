@@ -12,18 +12,17 @@ class Home extends Component {
 
     render() {
         return(
-          <div>
-
-              <div className="text-center">
-                <Link to="resume"><img src={Profile} alt="resume" height="50" widht="50" /></Link>
+              <div className="images">
+                  <div className="text-center">
+                    <Link to="resume"><img src={Profile} alt="resume" height="50" widht="50" /></Link>
+                  </div>
+                  <div className="text-left">
+                    <Link to="certification"><img src={certificate} alt="certification" className="certification" height="50" widht="50" /></Link>
+                  </div>
+                  <div className="text-right">
+                    <Link to="project"><img src={Js} alt="projects"  height="50" widht="50" /></Link>
+                  </div>
               </div>
-              <div className="text-left">
-                <Link to="certification"><img src={certificate} alt="certification" className="certification" height="50" widht="50" /></Link>
-              </div>
-              <div className="text-right">
-                <Link to="project"><img src={Js} alt="projects"  height="50" widht="50" /></Link>
-              </div>
-          </div>
         );
     }
 }
