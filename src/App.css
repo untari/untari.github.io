@@ -12,6 +12,12 @@ body {
 
 .nav-item{
     text-align: right;
+    font-style: oblique;
+    color: #362b2a;
+}
+.brand-text {
+ color: #575050;
+ font-style: oblique;
 }
 .card {
       position: fixed;
@@ -41,57 +47,105 @@ img {
   height: 35vw;
   width: 30vw;
 }
-.text-center {
- float: center;
-
+.center {
+  float: left;
+  margin-left: 58%;
 }
 .text-left {
  float: left;
- margin-left: 27vw;
+ margin-left: 35vw;
 }
 .text-right {
   float: right;
-  margin-right: 35vw;
+  margin-right: 39vw;
 }
 .project {
-  width: 40%;
+  width: 5%;
   height: auto;
   position: fixed;
-  top: 39%;
+  top: 29%;
 }
 .certification {
-  width: 40%;
+  width: 5%;
   height: auto;
   position: fixed;
-  top: 40vh;
+  top: 25vh;
 }
 .cv {
   width: 40%;
   height: auto;
   position: fixed;
-  top: 35vh;
+  top: 21vh;
 }
-@media only screen and (min-device-width: 400px)  {
+.line1 {
+    width: 8%;
+    height: auto;
+    position: fixed;
+    top: 30vh;
+    left: 39%;
+}
+
+.line2 {
+    width: 7%;
+    height: auto;
+    position: fixed;
+    top: 28%;
+    left: 53%;
+}
+
+.line3 {
+    width: 8%;
+    height: auto;
+    position: fixed;
+    top: 33vh;
+    right: 39%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
    .project {
-      width: 40%;
+      width: 5%;
       height: auto;
       position: fixed;
-      top: 25vh;
+      top: 45vh;
    }
    .certification {
-      width: 40%;
+      width: 5%;
       height: auto;
       position: fixed;
-      top: 20vh;
+      top: 43vh;
    }
    .cv {
       width: 40%;
       height: auto;
       position: fixed;
-      top: 10vh;
+      top: 41vh;
    }
 
+   .line1 {
+    width: 8%;
+    height: auto;
+    position: fixed;
+    top: 44vh;
+    left: 39%;
+    }
+
+    .line2 {
+        width: 10%;
+        height: auto;
+        position: fixed;
+        top: 45vh;
+        left: 54%;
+    }
+
+    .line3 {
+        width: 9%;
+        height: auto;
+        position: fixed;
+        top: 43vh;
+        right: 38%;
+    }
 }
+
 .bottom-right{
   position: fixed;
   bottom: 8px;

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Route } from "react-router-dom";
+import { Route } from 'react-router-dom';
+import { NavbarBrand } from 'reactstrap';
 import $ from 'jquery';
 import Home from './Home';
 import About from './About';
@@ -8,7 +9,6 @@ import Blog from './Blog';
 import Resume from './Resume';
 import Project from './Project';
 import Certification from './Certification';
-import Logo from './logo.svg';
 import Bulb2 from './bulb2.svg';
 
 
@@ -30,9 +30,7 @@ class Main extends Component {
                      </div>
                  </div>
                  <nav className="navbar navbar-expand-md navbar-light sticky-top">
-                    <a href="#" className="navbar-brand">
-                        <img src={Logo} alt="logo" heigth="50" width="50" /><span className="text-dark">untari.com</span>
-                    </a>
+                    <NavbarBrand><span className="brand-text">Untari.com</span></NavbarBrand>
                     <button type="button" className="navbar-toggler pull-left" data-toggle="collapse" data-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
                     </button>

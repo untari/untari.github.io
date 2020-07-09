@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-
 import pdf from './screen.png';
 import jsPDF from 'jspdf';
 
@@ -23,7 +22,7 @@ class Resume extends PureComponent {
                    <button onClick={this.jsPdGenerator} className="button">D</button>
               </div>
               <div className="container">
-                   <img src={pdf} alt="resume" height="40" widht="40" className="resume"/>
+                   <img src={pdf} alt="resume" height="40" width="40" className="resume"/>
               </div>
           </div>
         );
