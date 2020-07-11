@@ -83,6 +83,7 @@ img {
     position: fixed;
     top: 30vh;
     left: 39%;
+    
 }
 
 .line2 {
@@ -101,7 +102,7 @@ img {
     right: 39%;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
    .project {
       width: 5%;
       height: auto;
