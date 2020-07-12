@@ -10,6 +10,7 @@ import Resume from './Resume';
 import Project from './Project';
 import Certification from './Certification';
 import Bulb2 from './bulb2.svg';
+import logo from './logo.svg';
 
 
 
@@ -30,7 +31,7 @@ class Main extends Component {
                      </div>
                  </div>
                  <nav className="navbar navbar-expand-md navbar-light sticky-top">
-                    <NavbarBrand><span className="brand-text">Untari.com</span></NavbarBrand>
+                    <NavbarBrand href="/home"><img src={logo} alt="logo" height="50" width="50" /><span className="brand-text">Untari.com</span></NavbarBrand>
                     <button type="button" className="navbar-toggler pull-left" data-toggle="collapse" data-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
                     </button>
