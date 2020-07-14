@@ -10,13 +10,15 @@ class ContactForm extends Component {
     message: '',
   }
   handleSubmit(e) {
-    e.preventDefault()
+    e.preventDefault();
+    alert("Congrats, you submitted your message!");
     const { name, email, subject, message } = this.state
     let templateParams = {
       from_name: this.state.name + " (" + this.state.email + ")",
       to_name: 'sastraembun0306@gmail.com',
       subject: subject,
       message_html: message,
+
     }
     emailjs.send(
       'gmail',
@@ -41,7 +43,7 @@ class ContactForm extends Component {
     return (
       <>
         <div>
-          <h1 className="p-heading1">Get in Touch</h1>
+          <h1 className="p-heading1 text-secondary">Get in Touch</h1>
           <Form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup controlId="formBasicEmail" className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
               <Label className="text-muted">Email address</Label>

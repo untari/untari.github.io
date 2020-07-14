@@ -31,7 +31,7 @@ class Main extends Component {
                      </div>
                  </div>
                  <nav className="navbar navbar-expand-md navbar-light sticky-top">
-                    <NavbarBrand href="/home"><img src={logo} alt="logo" height="50" width="50" /><span className="brand-text">Untari.com</span></NavbarBrand>
+                    <NavbarBrand><a href="/home"><img  src={logo} alt="logo" height="50" width="50"  /><span className="brand-text text-dark">Untari.com</span></a></NavbarBrand>
                     <button type="button" className="navbar-toggler pull-left" data-toggle="collapse" data-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
                     </button>

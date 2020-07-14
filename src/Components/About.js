@@ -6,7 +6,7 @@ const About = () => {
     return(
         <div className="container">
                     <Card className="card">
-                        <CardImg top src={Tari} alt="Card image cap" height="50%" width="10%" />
+                        <CardImg top src={Tari} alt="Card image cap" className="rounded-circle" height="50%" width="10%" />
                         <CardBody>
                         <CardTitle>Untari</CardTitle>
                         <CardText>I am a frontend software developer looking for challenging projects that make an

@@ -13,8 +13,8 @@ const Project = () => {
                 icon="fas fa-user-plus"
                 className="fab-item btn btn-link btn-lg text-white" />
             <Button
-                tooltip="JavaScript"
-                icon="fas fa-plus"
+                tooltip="Menu"
+                icon="add"
                 rotate={true}
                 onClick={() => <img src="https://www.flaticon.com/premium-icon/icons/svg/2786/2786993.svg" alt="project" heigth="5%" width="4.5%" className="project" /> } />
           </Container>
