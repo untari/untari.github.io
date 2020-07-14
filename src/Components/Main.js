@@ -37,11 +37,11 @@ class Main extends Component {
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarCollapse">
-                        <div className="navbar-nav ml-auto ">
-                            <a href="#home" className="nav-item nav-link active">Home</a>
-                            <a href="#about" className="nav-item nav-link active">About me</a>
-                            <a href="#blog" className="nav-item nav-link active">Blog</a>
-                            <a href="#contact" className="nav-item nav-link active">Contact</a>
+                        <div className="navbar-nav ml-auto active ">
+                            <a href="#home" className="nav-item text-dark nav-link mx-3 ">Home</a>
+                            <a href="#about" className="nav-item text-dark nav-link mx-3 ">About me</a>
+                            <a href="#blog" className="nav-item text-dark nav-link mx-3 ">Blog</a>
+                            <a href="#contact" className="nav-item text-dark nav-link mx-3 ">Contact</a>
                         </div>
                     </div>
                  </nav>
@@ -59,9 +59,8 @@ class Main extends Component {
 
                  <div className="container">
                     <div className="bottom-right">
-                        <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"  tooltip="LinkedIn"><i className="fa fa-linkedin  fa-3x"></i></a>
-                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari"  tooltip="Github"><i className="fa fa-github  fa-3x"></i></a>
-                        <a className="btn btn-social-icon" href="#"  tooltip="Email" ><i className="fa fa-envelope-o fa-3x"></i></a>
+                        <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"  tooltip="LinkedIn"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
+                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari"  tooltip="Github"><i class="fa fa-github-alt fa-2x"></i></a>
                     </div>
                  </div>
           </div>

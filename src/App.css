@@ -12,12 +12,10 @@ body {
 
 .nav-item{
     text-align: right;
-    font-family: "Times New Roman", Times, serif;
-    color: #362b2a;
 }
 .brand-text {
- color: #575050;
- font-family: Apple Chancery, cursive;
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 20px;
 }
 .card {
       position: fixed;
@@ -162,11 +160,11 @@ img {
   height:100%;
 }
 .fa {
- color: #60ccaa;
+ color: #454241;
 }
-.fa-github {
-  color: #4d5454;
+.fa-github{
+   color: #383535;
 }
 .fa-linkedin {
- color: #5189e8;
+ color: #383535;
 }

@@ -87,7 +87,7 @@ class ContactForm extends Component {
               />
             </FormGroup>
             <Button variant="primary" type="submit">
-              Submit
+              Send
             </Button>
           </Form>
         </div>
