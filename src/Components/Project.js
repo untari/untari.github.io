@@ -1,24 +1,36 @@
-import React from 'react';
-import { Container, Link, Button } from 'react-floating-action-button'
+import React, { Component } from 'react';
+import { Container, Button, Link } from 'react-floating-action-button';
 
-const Project = () => {
-    return(
-       <div className="container">
-          <Container>
-            <Link href="#"
-                tooltip="React"
-                icon="far fa-sticky-note" />
-            <Link href="#"
-                tooltip="Bootstrap"
-                icon="fas fa-user-plus"
-                className="fab-item btn btn-link btn-lg text-white" />
-            <Button
-                tooltip="Menu"
-                icon="add"
-                rotate={true}
-                onClick={() => <img src="https://www.flaticon.com/premium-icon/icons/svg/2786/2786993.svg" alt="project" heigth="5%" width="4.5%" className="project" /> } />
-          </Container>
-       </div>
-    );
+
+class Project extends Component {
+	  constructor() {
+    super();
+    this.state = {
+      name: 'React'
+    };
   }
+
+  render() {
+    return (
+        <div>
+            <Container>
+                <Link href="#"
+                    tooltip="CSS3"
+                    icon="fa fa-css3" />
+                <Link href="#"
+                    tooltip="HTML"
+                    icon="fa fa-html5" />
+
+                <Button
+
+                    icon="fa fa-paw"
+                    rotate={true}
+                    onClick={() => alert('FAB Rocks!')} />
+            </Container>
+        </div>
+      );
+	}
+}
 export default Project;
+
+
