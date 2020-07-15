@@ -9,21 +9,23 @@ body {
     height: 100vh;
     background-color: #c7ebea;
 }
-
+/*navbar*/
 .nav-item{
     text-align: right;
 }
+/*navbar brand*/
 .brand-text {
   font-family: 'Flavors', cursive;
   font-size: 20px;
 }
+/*about me card*/
 .card {
       position: fixed;
       width: 20rem;
       background-color: #c7ebea;
       border: none;
 }
-
+/*bubl light*/
 .centered{
     position: fixed;
     width: 100vw;
@@ -32,12 +34,14 @@ body {
     left:42%;
     overflow:visible;
 }
+/*resume image*/
 img {
     max-width: 100%;
     margin: -2px;
     overflow: hidden;
     text-align: center;
 }
+/*download button*/
 .button {
   float: right;
   margin-right: 62%;
@@ -46,6 +50,7 @@ img {
   height: 35vw;
   width: 30vw;
 }
+/*div element center*/
 .center {
   float: left;
   margin-left: 58%;
@@ -76,6 +81,7 @@ img {
   position: fixed;
   top: 21vh;
 }
+/*line at the center*/
 .line1 {
     width: 8%;
     height: auto;
@@ -100,8 +106,8 @@ img {
     top: 33vh;
     right: 39%;
 }
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/*responsive smaller screen*/
+@media screen and  (max-device-width : 480px) {
    .project {
       width: 5%;
       height: auto;
@@ -144,8 +150,25 @@ img {
         top: 43vh;
         right: 38%;
     }
+    .text-center {
+      width: 7%;
+      margin-top: 10vh;
+      margin-left: 45%;
+    }
+    .text-left {
+      width: 10%;
+      margin-top: 2vh;
+      margin-left: 30%;
+    }
+    .text-right {
+      width: 7%;
+      margin-top: 5vh;
+      margin-right: 30%;
+    }
+
 }
 
+/*social media icons*/
 .bottom-right{
   position: fixed;
   bottom: 8px;
@@ -168,3 +191,5 @@ img {
 .fa-linkedin {
  color: #383535;
 }
+
+

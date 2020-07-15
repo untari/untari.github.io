@@ -7,8 +7,6 @@ import Line1 from './line1.svg';
 import Line2 from './line3.svg';
 import Line3 from './line3-1.svg';
 
-
-
 class Home extends Component {
 
     render() {
@@ -26,6 +24,7 @@ class Home extends Component {
                 <Link to="project"><img src={projects} alt="projects" className="project" /></Link>
                 <img src={Line3} alt="line3" className="line3"/>
               </div>
+
           </div>
         );
     }

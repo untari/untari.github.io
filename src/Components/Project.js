@@ -3,7 +3,7 @@ import { Container, Button, Link } from 'react-floating-action-button';
 
 
 class Project extends Component {
-	  constructor() {
+  constructor() {
     super();
     this.state = {
       name: 'React'
