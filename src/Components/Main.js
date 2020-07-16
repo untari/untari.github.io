@@ -30,15 +30,15 @@ class Main extends Component {
                      </div>
                  </div>*/}
                  <nav className="navbar navbar-expand-md navbar-light sticky-top">
-                    <NavbarBrand><Link to="home"><img src={logo} alt="logo" height="50" width="50"  /><span className="brand-text text-dark">Untari.com</span></Link></NavbarBrand>
+                    <NavbarBrand className="navbrand"><Link to="home"><img src={logo} alt="logo" height="50" width="50"  /><span className="brand-text text-dark">Untari.com</span></Link></NavbarBrand>
                     <button type="button" className="navbar-toggler pull-left" data-toggle="collapse" data-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarCollapse">
-                        <div className="navbar-nav ml-auto active ">
+                        <div className="navbar-nav ml-auto  ">
                             <a href="#home" className="nav-item text-dark nav-link mx-3 ">Home</a>
-                            <a href="#about" className="nav-item text-dark nav-link mx-3 ">About me</a>
+                            <a href="#about" className="nav-item active text-dark nav-link mx-3 ">About me</a>
                             <a href="#blog" className="nav-item text-dark nav-link mx-3 ">Blog</a>
                             <a href="#contact" className="nav-item text-dark nav-link mx-3 ">Contact</a>
                         </div>
