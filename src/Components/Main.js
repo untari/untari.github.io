@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import { NavbarBrand } from 'reactstrap';
 import $ from 'jquery';
 import Home from './Home';
@@ -13,25 +13,24 @@ import Bulb2 from './bulb2.svg';
 import logo from './logo.svg';
 
 
-
-$(function(){
+{/*$(function(){   //dirty solution, not recommended)//
   //Am hiding the overlay after 2 sec
   $("#overlay").delay(3000).hide(200);
-})
+})*/}
 
 class Main extends Component {
     render() {
         return(
           <div>
-                 <div id="overlay">
+                 {/*<div id="overlay">  //dirty solution, not recommended)//
                      <div className="centered">
                         <a href="#">
                           <img src={Bulb2} height="17%" width="17%" alt="on"   />
                         </a>
                      </div>
-                 </div>
+                 </div>*/}
                  <nav className="navbar navbar-expand-md navbar-light sticky-top">
-                    <NavbarBrand><a href="/home"><img  src={logo} alt="logo" height="50" width="50"  /><span className="brand-text text-dark">Untari.com</span></a></NavbarBrand>
+                    <NavbarBrand><Link to="home"><img src={logo} alt="logo" height="50" width="50"  /><span className="brand-text text-dark">Untari.com</span></Link></NavbarBrand>
                     <button type="button" className="navbar-toggler pull-left" data-toggle="collapse" data-target="#navbarCollapse">
                         <span className="navbar-toggler-icon"></span>
                     </button>

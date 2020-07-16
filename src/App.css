@@ -15,8 +15,8 @@ body {
 }
 /*navbar brand*/
 .brand-text {
-  font-family: 'Flavors', cursive;
   font-size: 20px;
+  text-decoration: none;
 }
 /*about me card*/
 .card {
@@ -150,10 +150,13 @@ img {
         top: 43vh;
         right: 38%;
     }
-    .text-center {
+    .text-center:hover + .hide {
       width: 7%;
       margin-top: 10vh;
       margin-left: 45%;
+    }
+    .hide {
+      display: none;
     }
     .text-left {
       width: 10%;
@@ -174,14 +177,15 @@ img {
   bottom: 8px;
   right: 10px;
 }
-#overlay {
+/*
+#overlay {  //dirty solution, not recommended)//
   background-color: rgba(0,0,0,0.5);
   position:fixed;
   left:0;
   top: 0;
   width:100%;
   height:100%;
-}
+} */
 .fa {
  color: #454241;
 }
@@ -191,5 +195,4 @@ img {
 .fa-linkedin {
  color: #383535;
 }
-
 
