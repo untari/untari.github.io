@@ -11,7 +11,7 @@ class Home extends Component {
 
     render() {
         return(
-             <div>
+             <div >
               <div className="center">
                 <Link to="resume"><img src={Cv} alt="resume" className="cv" /></Link>
                 <img src={Line1} alt="line1" className="line1"/>

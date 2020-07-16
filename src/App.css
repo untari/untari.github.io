@@ -1,4 +1,8 @@
-body {
+html, body {
+  height: 100%;
+  margin: 0;
+}
+#home {
     background: url('Components/bG.jpg');
     background-position: center center;
     background-repeat: no-repeat;
@@ -31,6 +35,27 @@ body {
       width: 20rem;
       background-color: #c7ebea;
       border: none;
+}
+#about {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #c7ebea;
+}
+#blog {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #c7ebea;
+}
+#contact {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #c7ebea;
 }
 /*bubl light*/
 .centered{

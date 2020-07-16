@@ -42,7 +42,7 @@ class ContactForm extends Component {
  render() {
     return (
       <>
-        <div>
+        <div id="contact">
           <h1 className="p-heading1 text-secondary">Get in Touch</h1>
           <Form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup controlId="formBasicEmail" className="col-lg-3 col-md-3 col-sm-3 col-xs-3">

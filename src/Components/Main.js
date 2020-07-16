@@ -21,7 +21,7 @@ import logo from './logo.svg';
 class Main extends Component {
     render() {
         return(
-          <div>
+          <div id="home">
                  {/*<div id="overlay">  //dirty solution, not recommended)//
                      <div className="centered">
                         <a href="#">
@@ -37,10 +37,10 @@ class Main extends Component {
 
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <div className="navbar-nav ml-auto  ">
-                            <a href="#home" className="nav-item text-dark nav-link mx-3 ">Home</a>
-                            <a href="#about" className="nav-item active text-dark nav-link mx-3 ">About me</a>
-                            <a href="#blog" className="nav-item text-dark nav-link mx-3 ">Blog</a>
-                            <a href="#contact" className="nav-item text-dark nav-link mx-3 ">Contact</a>
+                            <Link to="/home" className="nav-item text-dark nav-link mx-3 ">Home</Link>
+                            <Link to="/about" className="nav-item  text-dark nav-link mx-3 ">About me</Link>
+                            <Link to="/blog" className="nav-item text-dark nav-link mx-3 ">Blog</Link>
+                            <Link to="/contact" className="nav-item text-dark nav-link mx-3 ">Contact</Link>
                         </div>
                     </div>
                  </nav>
