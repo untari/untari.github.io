@@ -20,7 +20,8 @@ html, body {
 
 .navbar-nav .nav-link:focus,
 .navbar-nav .nav-link:hover {
-    color:  #911326 !important;
+    color:  #e6eaf2 !important;
+    background-color: #313338;
 }
 /*navbar brand*/
 .brand-text {

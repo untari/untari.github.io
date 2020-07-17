@@ -29,14 +29,16 @@ class Main extends Component {
                         </a>
                      </div>
                  </div>*/}
-                 <nav className="navbar navbar-expand-md navbar-light sticky-top">
-                    <NavbarBrand className="navbrand"><Link to="home"><img src={logo} alt="logo" height="50" width="50"  /><span className="brand-text text-dark">Untari.com</span></Link></NavbarBrand>
-                    <button type="button" className="navbar-toggler pull-left" data-toggle="collapse" data-target="#navbarCollapse">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+                 <nav class="navbar navbar-expand-lg navbar-dark indigo">
+                      <NavbarBrand href="/home"><img src={logo} alt="logo" height="50" width="50" /><span className="brand-text">Untari.com</span></NavbarBrand>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
 
                     <div className="collapse navbar-collapse" id="navbarCollapse">
-                        <div className="navbar-nav ml-auto  ">
+                        <div className="navbar-nav ml-auto active ">
                             <Link to="/home" className="nav-item text-dark nav-link mx-3 ">Home</Link>
                             <Link to="/about" className="nav-item  text-dark nav-link mx-3 ">About me</Link>
                             <Link to="/blog" className="nav-item text-dark nav-link mx-3 ">Blog</Link>
