@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com';
-import { Button, FormFeedback, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button,  Form, FormGroup, Label, Input } from 'reactstrap';
 
 class ContactForm extends Component {
   state = {
@@ -12,7 +12,7 @@ class ContactForm extends Component {
   handleSubmit(e) {
     e.preventDefault();
     alert("Congrats, you submitted your message!");
-    const { name, email, subject, message } = this.state
+    const {  subject, message } = this.state
     let templateParams = {
       from_name: this.state.name + " (" + this.state.email + ")",
       to_name: 'sastraembun0306@gmail.com',

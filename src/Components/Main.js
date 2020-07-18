@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import { NavbarBrand } from 'reactstrap';
-import $ from 'jquery';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
@@ -9,40 +8,40 @@ import Blog from './Blog';
 import Resume from './Resume';
 import Project from './Project';
 import Certification from './Certification';
-import Bulb2 from './bulb2.svg';
 import logo from './logo.svg';
 
 
-{/*$(function(){   //dirty solution, not recommended)//
+
+/*$(function(){   //dirty solution, not recommended)//
   //Am hiding the overlay after 2 sec
   $("#overlay").delay(3000).hide(200);
-})*/}
+})*/
 
 class Main extends Component {
     render() {
         return(
           <div id="home">
-                 {/*<div id="overlay">  //dirty solution, not recommended)//
+                {/*<div id="overlay">  //dirty solution, not recommended)//
                      <div className="centered">
                         <a href="#">
                           <img src={Bulb2} height="17%" width="17%" alt="on"   />
                         </a>
                      </div>
                  </div>*/}
-                 <nav class="navbar navbar-expand-lg navbar-dark indigo">
-                      <NavbarBrand href="/home"><img src={logo} alt="logo" height="50" width="50" /><span className="brand-text">Untari.com</span></NavbarBrand>
-                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                 <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
+                      <NavbarBrand> <Link to="/home"><img src={logo} alt="logo" /></Link></NavbarBrand>
+                      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span className="navbar-toggler-icon"></span>
                       </button>
 
 
                     <div className="collapse navbar-collapse" id="navbarCollapse">
-                        <div className="navbar-nav ml-auto active ">
-                            <Link to="/home" className="nav-item text-dark nav-link mx-3 ">Home</Link>
-                            <Link to="/about" className="nav-item  text-dark nav-link mx-3 ">About me</Link>
-                            <Link to="/blog" className="nav-item text-dark nav-link mx-3 ">Blog</Link>
-                            <Link to="/contact" className="nav-item text-dark nav-link mx-3 ">Contact</Link>
+                        <div className="navbar-nav ml-auto ">
+                            <Link to="/home" className="nav-item text-dark nav-link mx-3 active" id="nav2">Home</Link>
+                            <Link to="/about" className="nav-item  text-dark nav-link mx-3 " id="nav2">About me</Link>
+                            <Link to="/blog" className="nav-item text-dark nav-link mx-3" id="nav2" >Blog</Link>
+                            <Link to="/contact" className="nav-item text-dark nav-link mx-3 " id="nav2">Contact</Link>
                         </div>
                     </div>
                  </nav>
