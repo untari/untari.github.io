@@ -9,8 +9,8 @@ class App extends Component {
          return (
           <HashRouter basename='/'>
                <div>
-                  <Main />
-               </div>
+                   <Main />
+                 </div>
           </HashRouter>
         );
      }

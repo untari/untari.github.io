@@ -18,16 +18,22 @@ html, body {
     text-align: right;
 }
 
-.navbar-nav .nav-link:focus,
+
+.navbar-nav  .nav-link:focus,
 .navbar-nav .nav-link:hover {
     color:  #e6eaf2 !important;
     background-color: #0b9c8f;
 }
-/*navbar brand*/
 
-#nav2:hover {
+
+#nav2:hover{
   background-color: #36b0b3;
 }
+ .active {
+    background-color: #0b9c8f;
+} 
+
+/*navbar brand*/
 
 
 /*about me card*/
@@ -97,14 +103,14 @@ img {
 }
 .text-left {
  float: left;
- margin-left: 35vw;
+ margin-left: 25vw;
 }
 .text-right {
   float: right;
-  margin-right: 39vw;
+  margin-right: 29vw;
 }
 .project {
-  width: 5%;
+  width: 6%;
   height: auto;
   position: fixed;
   top: 29%;
@@ -140,11 +146,11 @@ img {
 }
 
 .line3 {
-    width: 8%;
+    width: 9%;
     height: auto;
     position: fixed;
-    top: 33vh;
-    right: 39%;
+    top: 36vh;
+    right: 38%;
 }
 /*responsive smaller screen*/
 @media screen and  (max-device-width : 480px) {
@@ -235,4 +241,6 @@ img {
 .fa-linkedin {
  color: #383535;
 }
-/*modal for menu in the middle*/
+#centerMenu {
+    
+}

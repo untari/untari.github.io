@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Redirect, Route, Link } from 'react-router-dom';
 import { NavbarBrand } from 'reactstrap';
 import Home from './Home';
 import About from './About';
@@ -29,7 +29,7 @@ class Main extends Component {
                      </div>
                  </div>*/}
                  <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
-                      <NavbarBrand> <Link to="/home"><img src={logo} alt="logo" /></Link></NavbarBrand>
+                      <NavbarBrand id="navbarBrand"> <Link to="/home"><img src={logo} alt="logo" /></Link></NavbarBrand>
                       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@ class Main extends Component {
 
                     <div className="collapse navbar-collapse" id="navbarCollapse">
                         <div className="navbar-nav ml-auto ">
-                            <Link to="/home" className="nav-item text-dark nav-link mx-3 active" id="nav2">Home</Link>
+                            <Link to="/home" className="nav-item  text-dark nav-link active mx-3 " id="nav2" >Home</Link>
                             <Link to="/about" className="nav-item  text-dark nav-link mx-3 " id="nav2">About me</Link>
                             <Link to="/blog" className="nav-item text-dark nav-link mx-3" id="nav2" >Blog</Link>
                             <Link to="/contact" className="nav-item text-dark nav-link mx-3 " id="nav2">Contact</Link>
@@ -46,15 +46,19 @@ class Main extends Component {
                     </div>
                  </nav>
 
-
-                 <Route path="/home" component={Home} />
-                 <Route exact path="/" component={Home}  />
-                 <Route path="/about" component={About} />
-                 <Route path="/contact" component={Contact} />
-                 <Route path="/blog" component={Blog} />
-                 <Route path="/resume" component={Resume} />
-                 <Route path="/project" component={Project} />
-                 <Route path="/certification" component={Certification} />
+                <div>
+                    <Home />
+                </div>
+                 
+                 
+                 <Route exact path="/home" component={Home}  />
+                 <Redirect to="/home" />
+                 <Route  path="/about" component={About} />
+                 <Route  path="/contact" component={Contact} />
+                 <Route  path="/blog" component={Blog} />
+                 <Route  path="/resume" component={Resume} />
+                 <Route  path="/project" component={Project} />
+                 <Route  path="/certification" component={Certification} />
 
 
                  <div className="container">
@@ -68,4 +72,3 @@ class Main extends Component {
     }
 }
 export default Main;
-
