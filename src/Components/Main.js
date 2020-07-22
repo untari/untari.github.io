@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect, Route, Link } from 'react-router-dom';
+import { Redirect, Router, Route, Link, NavLink } from 'react-router-dom';
 import { NavbarBrand } from 'reactstrap';
 import Home from './Home';
 import About from './About';
@@ -11,12 +11,18 @@ import Certification from './Certification';
 import logo from './logo.svg';
 
 
-
 /*$(function(){   //dirty solution, not recommended)//
   //Am hiding the overlay after 2 sec
   $("#overlay").delay(3000).hide(200);
 })*/
-
+const style = {
+  borderRadius: 3,
+  border: 0,
+  color: 'black',
+  height: 48,
+  padding: '0 30px',
+  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .30)',
+};
 class Main extends Component {
     render() {
         return(
@@ -28,31 +34,32 @@ class Main extends Component {
                         </a>
                      </div>
                  </div>*/}
-                 <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
-                      <NavbarBrand id="navbarBrand"> <Link to="/home"><img src={logo} alt="logo" /></Link></NavbarBrand>
-                      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                      </button>
+
+                    <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
+                        <NavbarBrand id="navbarBrand"> <Link to="/home"><img src={logo} alt="logo" /></Link></NavbarBrand>
+                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
 
 
-                    <div className="collapse navbar-collapse" id="navbarCollapse">
-                        <div className="navbar-nav ml-auto ">
-                            <Link to="/home" className="nav-item  text-dark nav-link active mx-3 " id="nav2" >Home</Link>
-                            <Link to="/about" className="nav-item  text-dark nav-link mx-3 " id="nav2">About me</Link>
-                            <Link to="/blog" className="nav-item text-dark nav-link mx-3" id="nav2" >Blog</Link>
-                            <Link to="/contact" className="nav-item text-dark nav-link mx-3 " id="nav2">Contact</Link>
+                        <div className="collapse navbar-collapse" id="navbarCollapse">
+                            <div className="navbar-nav ml-auto">
+                            <ul>
+                                <li><NavLink to="/home"  style={style} activeClassName="active" id="nav2">Home</NavLink></li>
+                                <li><NavLink to="/about"   style={style} activeClassName="active "  id="nav2" >About me</NavLink></li>
+                                <li><NavLink  to="/blog"  style={style} activeClassName="active "  id="nav2" >Blog</NavLink ></li>
+                                <li><NavLink  to="/contact"   style={style} activeClassName="active "  id="nav2" >Contact</NavLink ></li>
+                              </ul>
+                            </div>
                         </div>
-                    </div>
-                 </nav>
+                    </nav>
 
-                <div>
-                    <Home />
-                </div>
-                 
+           
+
                  
                  <Route exact path="/home" component={Home}  />
-                 <Redirect to="/home" />
+                 <Redirect to="/home" component={Home} />
                  <Route  path="/about" component={About} />
                  <Route  path="/contact" component={Contact} />
                  <Route  path="/blog" component={Blog} />
