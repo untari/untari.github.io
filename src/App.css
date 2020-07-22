@@ -14,6 +14,9 @@ html, body {
     background-color: #c7ebea;
 }
 /*navbar*/
+.navbar-nav {
+    float: right;
+}
 
 .active {
     color: #e6eaf2 !important;
@@ -22,13 +25,11 @@ html, body {
     font-weight: bold;
  
 }
-ul li {
-    padding: 15px 15px;
-    display: inline;
-}
+
 
 #nav2:hover {
     background-color: #36b0b3;
+    color: #f7f0f0 !important;
     text-decoration: none;
 }
 
@@ -76,18 +77,13 @@ ul li {
 }
 
 #cv {
-    
-    left: 58%;
-    width: 100%;
-    height: 100%;
+  
 }
 #certs {
-    top: 20%;
-    left: 10%;
+    width: 25%;
 }
 #project {
-    top: 10%;
-    left: 20%;
+    width: 29%;
 }
 @media screen and (max-width: 991px)  and (max-width: 767px)  and (max-width: 479px){
       

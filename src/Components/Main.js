@@ -20,8 +20,8 @@ const style = {
   border: 0,
   color: 'black',
   height: 48,
-  padding: '0 30px',
-  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .30)',
+  padding: '5px 10px',
+  marginRight: '10px',
 };
 class Main extends Component {
     render() {
@@ -45,12 +45,12 @@ class Main extends Component {
 
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav ml-auto">
-                            <ul>
-                                <li><NavLink to="/home"  style={style} activeClassName="active" id="nav2">Home</NavLink></li>
-                                <li><NavLink to="/about"   style={style} activeClassName="active "  id="nav2" >About me</NavLink></li>
-                                <li><NavLink  to="/blog"  style={style} activeClassName="active "  id="nav2" >Blog</NavLink ></li>
-                                <li><NavLink  to="/contact"   style={style} activeClassName="active "  id="nav2" >Contact</NavLink ></li>
-                              </ul>
+                        
+                                      <NavLink to="/home"  style={style} activeClassName="active" id="nav2">Home</NavLink>
+                                      <NavLink to="/about"   style={style} activeClassName="active "  id="nav2" >About me</NavLink>
+                                      <NavLink to="/blog"   style={style} activeClassName="active "  id="nav2" >Blog</NavLink>
+                                     <NavLink  to="/contact"   style={style} activeClassName="active "  id="nav2" >Contact</NavLink >
+                          
                             </div>
                         </div>
                     </nav>
