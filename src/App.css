@@ -12,6 +12,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-color: #c7ebea;
+  
 }
 /*navbar*/
 .navbar-nav {
@@ -43,7 +44,7 @@ html, body {
       width: 18rem;
       background-color: #c7ebea;
       border: none;
-      left: 20%;
+      left: 40%;
       font-weight: bold;
 }
 #about {
@@ -70,25 +71,82 @@ html, body {
     width: 100%;
     height: 100vh;
     background-color: #c7ebea;
-    left: 10%;
+    left: 30%;
 }
-.row {
+/*middle menu*/
+.container {
+    margin: 0 auto;
+    max-width: 500px;
     position: fixed;
 }
 
-#cv {
-  
+#main-content {
+    background: none;
+    padding: 7px;
+    width: 100%;
+    min-height: 400px;
+    
 }
 #certs {
-    width: 25%;
+    width: 20%;
+    float: right;
+    right: -90%;
+    margin-top: 20%;
 }
 #project {
-    width: 29%;
+   width: 25%;
+   float: right;
+   left: 30%;
+   margin-top: 20%;
 }
-@media screen and (max-width: 991px)  and (max-width: 767px)  and (max-width: 479px){
-      
+#cv {
+   float: right;
+   right: -80%;
+}
+.img-item {
+    padding: 15px 15px;
+    width: 50%;
+    margin: 10px 0;
+    position: relative;
+}
 
+.images {
+    width: 100%;
+    position: relative;
+    z-index: 50;
 }
+
+
+@media screen and (max-width: 767px) {
+    .img-item {
+        padding: 7px;
+        width: 100%;
+    }
+    #certs {
+        float: left;
+        right: -70%;
+        width: 20%;
+         height: auto;
+         
+         top: 8vh;       
+   
+    }
+    #project {
+        float: right;
+        left: -65%; 
+        width: 25%;
+        top: 9vh;
+        height: auto;
+    }
+    #cv {
+        width: 100%;
+        float: left;
+        right: -14%;
+         height: auto;
+         top: -8vh;    
+    }
+}
+
 /*bubl light
 .centered{
     position: fixed;

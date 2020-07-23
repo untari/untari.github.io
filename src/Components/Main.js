@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Redirect, Router, Route, Link, NavLink } from 'react-router-dom';
+import { Redirect,  Route, Link, NavLink } from 'react-router-dom';
 import { NavbarBrand } from 'reactstrap';
 import Home from './Home';
 import About from './About';
@@ -19,8 +19,8 @@ const style = {
   borderRadius: 3,
   border: 0,
   color: 'black',
-  height: 48,
-  padding: '5px 10px',
+  height: 40,
+  padding: '2px 9px',
   marginRight: '10px',
 };
 class Main extends Component {
@@ -36,7 +36,7 @@ class Main extends Component {
                  </div>*/}
 
                     <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
-                        <NavbarBrand id="navbarBrand"> <Link to="/home"><img src={logo} alt="logo" /></Link></NavbarBrand>
+                        <NavbarBrand id="navbarBrand" className="img-responsive"> <Link to="/home"><img src={logo} alt="logo" /></Link></NavbarBrand>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -55,7 +55,9 @@ class Main extends Component {
                         </div>
                     </nav>
 
-           
+                    <div>
+                         <Home />
+                    </div>
 
                  
                  <Route exact path="/home" component={Home}  />
