@@ -40,11 +40,11 @@ html, body {
 
 /*about me card*/
 .card {
-      position: fixed;
+      float: right;
       width: 18rem;
       background-color: #c7ebea;
       border: none;
-      left: 40%;
+      right: 40%;
       font-weight: bold;
 }
 #about {
@@ -144,6 +144,22 @@ html, body {
         right: -14%;
          height: auto;
          top: -8vh;    
+    }
+    .card {
+        float: right;
+        width: 14rem;
+        background-color: #c7ebea;
+        border: none;
+        right: 13%;
+        font-weight: bold;
+    }
+    #contact {
+        margin: 0;
+        position: fixed;
+        width: 80%;
+        height: 100vh;
+        background-color: #c7ebea;
+        left: 10%;
     }
 }
 
