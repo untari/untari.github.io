@@ -1,6 +1,9 @@
+
 html, body {
   height: 100%;
+  width: 100%;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 #home {
     background: url('Components/bG.jpg');
@@ -12,7 +15,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     background-color: #c7ebea;
-  
+     
 }
 /*navbar*/
 .navbar-nav {
@@ -36,7 +39,10 @@ html, body {
 
 
 /*navbar brand*/
-
+#navbarBrand {
+    width: 14%;
+    height: auto;
+}
 
 /*about me card*/
 .card {
@@ -88,21 +94,37 @@ html, body {
     
 }
 #certs {
-    width: 20%;
+    width: 7%;
     float: right;
-    right: -90%;
-    margin-top: 20%;
+    right: 35%;
+    margin-top: 6%;
+    position: fixed;
+    animation: mymove 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes mymove {
+ 
 }
 #project {
-   width: 25%;
+   width: 8%;
    float: right;
    left: 30%;
-   margin-top: 20%;
+   margin-top: 5%;
+   position: fixed;
+   animation-name: example;
+ 
 }
 #cv {
    float: right;
-   right: -80%;
+   right: -5%;
+   height: 100%;
+   width: 100%;
+   margin-top: 1%;
+   position: fixed;
+   animation-name: example;
+   
 }
+
 .img-item {
     padding: 15px 15px;
     width: 50%;
@@ -117,40 +139,45 @@ html, body {
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 867px) {
     .img-item {
         padding: 7px;
         width: 100%;
     }
+    #navbarBrand {
+        width: 20%;
+        height: auto;
+    }
     #certs {
         float: left;
-        right: -70%;
-        width: 20%;
-         height: auto;
-         
-         top: 8vh;       
+        right: 25%;
+        width: 15%;
+        position: fixed;
+        top: 37%;
    
     }
     #project {
         float: right;
-        left: -65%; 
-        width: 25%;
-        top: 9vh;
+        left: 20%; 
+        width: 18%;
+        top: 38vh;
         height: auto;
+        position: fixed;
     }
     #cv {
         width: 100%;
         float: left;
-        right: -14%;
+        right: -30%;
          height: auto;
-         top: -8vh;    
+         top: 35vh;    
+         position: fixed;
     }
     .card {
         float: right;
         width: 14rem;
         background-color: #c7ebea;
         border: none;
-        right: 13%;
+        right: 24%;
         font-weight: bold;
     }
     #contact {
@@ -160,6 +187,14 @@ html, body {
         height: 100vh;
         background-color: #c7ebea;
         left: 10%;
+    }
+    #blog {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: #c7ebea;
+        left: 7%;
     }
 }
 
