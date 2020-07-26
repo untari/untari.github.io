@@ -1,31 +1,39 @@
-import React, { PureComponent } from 'react';
-import pdf from './screen.png';
-import jsPDF from 'jspdf';
+import React from 'react';
 
-class Resume extends PureComponent {
-    constructor(props) {
-        super(props)
-        this.state = {
-            
-        }
-    }
-    jsPdGenerator = () => {
-         var doc = new jsPDF('p', 'pt', 'letter');
-         doc.setFontSize(40)
-         doc.text(35, 25, 'resume')
-         doc.save("Resume.pdf");
-    }
-    render() {
-        return(
-          <div className="container">
-              <div clssName="container-fluid">
-                   <button onClick={this.jsPdGenerator} className="button">D</button>
-              </div>
-              <div className="container">
-                   <img src={pdf} alt="resume" height="40" width="40" className="resume"/>
-              </div>
-          </div>
-        );
-    }
+
+class Resume extends React.Component {
+	
+	constructor(props) {
+		super(props);
+	}
+	
+	downloadEmployeeData = () => {
+		fetch('http://localhost:8080/employees/download')
+			.then(response => {
+				response.blob().then(blob => {
+					let url = window.URL.createObjectURL(blob);
+					let a = document.createElement('a');
+					a.href = url;
+					a.download = 'employees.json';
+					a.click();
+				});
+				//window.location.href = response.url;
+		});
+	}
+	
+	render() {
+		return (
+			<div id="container">
+				<h1>Download File using React App</h1>
+				<h3>Download  Data using Button</h3>
+				<button onClick={this.downloadEmployeeData}>Download</button>
+				<p/>
+				<h3>Download Data using Link</h3>
+				<a href="#" onClick={this.downloadEmployeeData}>Download</a>
+			</div>
+		)
+	}
+
 }
+
 export default Resume;

@@ -8,14 +8,15 @@ function About() {
 
     return (
       <div id="about">
-        <Card className="card">
-            <CardImg top src={Tari} alt="Card image cap" className="rounded-circle" height="50%" width="10%" />
-            <CardBody>
-            <CardTitle>Untari</CardTitle>
-            <CardText className="text-dark">I am a frontend software developer looking for challenging projects that make an
-                impact and allow me to keep learning and improving my skills.</CardText>
-            </CardBody>
-        </Card>
+            <card type="nav-tabs" class="text-center">
+                <div slot="header" class="card-header-primary">
+                   <img src={Tari} className="rounded-circle" alt="cardImg" width="100" height="100"/>
+                </div>
+                <h4 class="card-title">Untari</h4>
+                <p class="card-text">I am a frontend software developer looking for <br />challenging projects that make an
+                impact and allow me to keep learning and improving my skills.</p>                
+          </card>
+
       </div>
     );
 }

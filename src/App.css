@@ -27,7 +27,7 @@ html, body {
     text-decoration: none;
     background-color: #0b9c8f;
     font-weight: bold;
- 
+    line-height: 2em;
 }
 
 
@@ -39,19 +39,19 @@ html, body {
 
 
 /*navbar brand*/
-#navbarBrand {
-    width: 14%;
+#logo {
+    width: 20vw;
     height: auto;
+    margin-left: -15%;
 }
-
 /*about me card*/
 .card {
-      float: right;
-      width: 18rem;
       background-color: #c7ebea;
       border: none;
-      right: 40%;
-      font-weight: bold;
+    
+}
+.btn-link {
+    text-decoration: none;
 }
 #about {
     margin: 0;
@@ -64,12 +64,11 @@ html, body {
    float: right;
 }
 #blog {
-    margin: 0;
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #c7ebea;
-    left: 30%;
+
 }
 #contact {
     margin: 0;
@@ -81,8 +80,7 @@ html, body {
 }
 /*middle menu*/
 .container {
-    margin: 0 auto;
-    max-width: 500px;
+    max-width: 100%;
     position: fixed;
 }
 
@@ -96,33 +94,25 @@ html, body {
 #certs {
     width: 7%;
     float: right;
-    right: 35%;
+    right: 60%;
     margin-top: 6%;
     position: fixed;
-    animation: mymove 5s infinite;
-    animation-timing-function: linear;
 }
-@keyframes mymove {
- 
-}
+
 #project {
    width: 8%;
    float: right;
-   left: 30%;
-   margin-top: 5%;
-   position: fixed;
-   animation-name: example;
- 
+   left: 47%;
+   margin-top: -1%;
+   position: fixed; 
 }
 #cv {
+  width: 50%;
    float: right;
-   right: -5%;
-   height: 100%;
-   width: 100%;
-   margin-top: 1%;
-   position: fixed;
-   animation-name: example;
-   
+   left: 64%;
+   margin-top: 6%;
+   position: fixed; 
+
 }
 
 .img-item {
@@ -138,38 +128,39 @@ html, body {
     z-index: 50;
 }
 
-
 @media screen and (max-width: 867px) {
     .img-item {
         padding: 7px;
         width: 100%;
     }
-    #navbarBrand {
-        width: 20%;
+    #logo {
+        width: 45vw;
         height: auto;
+        margin-left: -15%;
     }
+
     #certs {
         float: left;
-        right: 25%;
+        right: 65%;
         width: 15%;
         position: fixed;
-        top: 37%;
+        top: 33%;
    
     }
     #project {
         float: right;
-        left: 20%; 
+        left: 40%; 
         width: 18%;
-        top: 38vh;
+        top: 25vh;
         height: auto;
         position: fixed;
     }
     #cv {
         width: 100%;
         float: left;
-        right: -30%;
-         height: auto;
-         top: 35vh;    
+        right: -50%;
+         height: 30%;
+         top: 36vh;    
          position: fixed;
     }
     .card {
@@ -209,147 +200,11 @@ html, body {
 }*/
 /*resume image*/
 img {
-    max-width: 100%;
     margin: -2px;
     overflow: hidden;
     text-align: center;
 }
-/*download button*/
-.button {
-  float: right;
-  margin-right: 62%;
-}
-.resume {
-  height: 35vw;
-  width: 30vw;
-}
-/*div element center*/
-/*.center {
-  float: left;
-  margin-left: 58%;
-}
-.text-left {
- float: left;
- margin-left: 25vw;
-}
-.text-right {
-  float: right;
-  margin-right: 29vw;
-}
-.project {
-  width: 6%;
-  height: auto;
-  position: fixed;
-  top: 29%;
-}
-.certification {
-  width: 5%;
-  height: auto;
-  position: fixed;
-  top: 25vh;
-}
-.cv {
-  width: 40%;
-  height: auto;
-  position: fixed;
-  top: 21vh;
-}
-ine at the center
-.line1 {
-    width: 8%;
-    height: auto;
-    position: fixed;
-    top: 30vh;
-    left: 39%;
-    
-}
-
-.line2 {
-    width: 7%;
-    height: auto;
-    position: fixed;
-    top: 28%;
-    left: 53%;
-}
-
-.line3 {
-    width: 9%;
-    height: auto;
-    position: fixed;
-    top: 36vh;
-    right: 38%;
-}*/
-/*responsive smaller screen*/
-/*@media screen and  (max-device-width : 1289px) and (min-device-width : 327px){
-   .project {
-      width: 6%;
-      height: auto;
-      position: fixed;
-      top: 48vh;
-   }
-   .certification {
-      width: 5%;
-      height: auto;
-      position: fixed;
-      top: 47vh;
-   }
-   .cv {
-      width: 40%;
-      height: auto;
-      position: fixed;
-      top: 46vh;
-      right: -3%;
-   }
-
-   .line1 {
-    width: 9%;
-    height: auto;
-    position: fixed;
-    top: 47vh;
-    left: 38%;
-    }
-
-    .line2 {
-        width: 10%;
-        height: auto;
-        position: fixed;
-        top: 48%;
-        left: 54%;
-     
-    }
-
-    .line3 {
-        width: 13%;
-        height: auto;
-        position: fixed;
-        top: 47vh;
-        right: 35%;
-    }
-    .text-center:hover + .hide {
-      width: 7%;
-      margin-top: 10vh;
-      margin-left: 45%;
-    }
-    .hide {
-      display: none;
-    }
-    .text-left {
-      width: 10%;
-      margin-top: 7vh;
-      margin-left: 35%;
-    }
-    .text-right {
-      width: 8%;
-      margin-top: 5vh;
-      margin-right: 37%;
-    }
-    #Btn1 {
-        float: left;
-        margin-top: 70%;
-        position: relative;
-    }
-
-}*/
+/*certification*/
 
 /*social media icons*/
 .bottom-right{

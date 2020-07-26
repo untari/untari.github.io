@@ -36,7 +36,7 @@ class Main extends Component {
                  </div>*/}
 
                     <nav className="navbar navbar-expand-lg navbar-dark sticky-top">
-                        <NavbarBrand id="navbarBrand" className="img-responsive"> <Link to="/home"><img src={logo} alt="logo" /></Link></NavbarBrand>
+                        <NavbarBrand className="img-fluid"> <Link to="/home"><img src={logo} id="logo" alt="logo" /></Link></NavbarBrand>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
