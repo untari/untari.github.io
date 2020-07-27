@@ -4,9 +4,16 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js'
 import 'font-awesome/css/font-awesome.min.css';
+import WebFont from 'webfontloader';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+
+WebFont.load({
+  google: {
+    families: ['Roboto Web:300,400,700', 'sans-serif']
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>
