@@ -43,7 +43,7 @@ class ContactForm extends Component {
     return (
       <>
         <div id="contact">
-          <h1 className="p-heading1 text-secondary">Get in Touch</h1>
+          <h2 className="p-heading2">Get in Touch</h2>
              
           <Form onSubmit={this.handleSubmit.bind(this)}>
             <FormGroup controlId="formBasicEmail" className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
@@ -89,7 +89,7 @@ class ContactForm extends Component {
                 onChange={this.handleChange.bind(this, 'message')}
               />
             </FormGroup>
-            <Button variant="primary" type="submit">
+            <Button color="info" type="submit" className="active" id="btnSend">
               Send
             </Button>
           </Form>

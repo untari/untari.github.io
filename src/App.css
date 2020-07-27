@@ -35,9 +35,9 @@
 
 /*navbar brand*/
 #logo {
-    width: 15vw;
+    width: 14vw;
     height: auto;
-    margin-left: -8%;
+    padding-left: 8px; 
 }
 /*certs  card collapse*/
 .card, 
@@ -63,16 +63,19 @@
     background-color: transparent;
     text-decoration: none;
     border: none;
+    padding-top: 10px 25px;
 }
 #headingTwo {
     background-color: transparent;
     text-decoration: none;
     border: none;
+    padding-top: 10px 25px;
 }
 #headingThree {
     background-color: transparent;
     text-decoration: none;
     border: none;
+    padding-top: 10px 25px;
 }
 #about {
     margin: 0;
@@ -156,56 +159,55 @@
 
 }
 
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 992px) {
          
 
     #logo {
-        width: 45vw;
+        width: 25vw;
         height: auto;
-        margin-left: -9%;
+        padding-left: 10%;
+       
     }
 
     #certs {
         float: left;
         right: 65%;
-        width: 15%;
+        width: 17%;
         position: fixed;
-        top: 42%;
+        top: 36%;
    
     }
     #project {
         float: right;
         left: 40%; 
         width: 18%;
-        top: 40vh;
+        top: 28vh;
         height: auto;
         position: fixed;
     }
     #cv {
-        width: 100%;
+        width: 80%;
         float: left;
-        right: -50%;
+        right: -55%;
          height: 30%;
-         top: 43vh;    
+         top: 36vh;    
          position: fixed;
     }
-    .card {
-        float: right;
-        width: 14rem;
-        background-color: #c7ebea;
-        border: none;
-        right: 24%;
-        font-weight: bold;
-    }
+    
     #contact {
         margin: 0;
         position: fixed;
-        width: 70%;
+        width: 67%;
         height: 100vh;
         background-color: #c7ebea;
-        left: 6%;
-        font-weight: bold;
-        top: 18%;
+        left: 8%;
+        top: 15%;
+    }
+    #btnSend:hover {
+        background-color: #36b0b3;
+        color: #f7f0f0 !important;
+        text-decoration: none;
+
     }
     #about {
         margin: 0;
@@ -213,7 +215,7 @@
         width: 100%;
         height: 100vh;
         background-color: #c7ebea;
-        top: 30%;
+        top: 25%;
     }
     #blog {
         margin: 0;
@@ -222,9 +224,19 @@
         height: 100vh;
         background-color: #c7ebea;
         left: -2%;
-        top: 30%;
+        top: 25%;
+    }
+    .card, 
+    .card-body .card-header {
+            background-color: transparent;
+            border: none;
+            text-decoration: transparent;
+            text-align: left;
+            color: #21617a;
+            padding-top: 20px 20px;
     }
 }
+
 
 /*bubl light
 .centered{
