@@ -55,9 +55,7 @@ class Main extends Component {
                         </div>
                     </nav>
 
-                    <div>
-                         <Home />
-                    </div>
+                   <div><Home /></div>
 
                  
                  <Route exact path="/home" component={Home}  />

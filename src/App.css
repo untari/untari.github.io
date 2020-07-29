@@ -1,16 +1,16 @@
 
 
-#home {
+body {
     background: url('Components/bG.jpg');
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
-    background-size: 45%;
-    width: 100vw;
+    object-fit: contain;
+    background-size: 43%;
+    max-width: 100vw;
     height: 100vh;
     background-color: #c7ebea;
-     
+    
 }
 /*navbar*/
 .navbar-nav {
@@ -35,7 +35,7 @@
 
 /*navbar brand*/
 #logo {
-    width: 14vw;
+    width: 15vw;
     height: auto;
     padding-left: 8px; 
 }
@@ -81,7 +81,7 @@
     margin: 0;
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: #c7ebea;
 }
 .text-dark {
@@ -103,139 +103,338 @@
     left: 30%;
 }
 /*middle menu*/
- .wrapper{
-    width: 50%;
+
+#div1 {
     display: inline-block;
     position: fixed;
-         
- }
- .wrapper:after {
-  padding-top: 46.25%;
-  /* 16:9 ratio */
-  display: block;
-  content: '';
+    width: 960;
+    background-size: contain;
+    margin: 0px auto;
+   
 }
-.main-content {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-    
-}
-.img-item {
-    padding: 15px 15px;
-    width: 50%;
-    margin: 10px 0;
-    position: relative;
-}
-
-.images {
-    width: 100%;
-    position: relative;
-    z-index: 50;
+#cv {
+    left: 58%;
+    position: fixed;
+    top: 25%;
 }
 #certs {
-    width: 7%;
-    float: right;
-    right: 60%;
+    left: 45%;
+    position: fixed;
+    top: 10%
+}
+#projects {
+    left: 30%;
     top: 25%;
     position: fixed;
 }
-
-#project {
-   width:8%;
-   float: right;
-   left: 47%;
-   top: 8%;
-   position: fixed; 
-}
-#cv {
-  width: 50%;
-   float: right;
-   left: 64%;
-   top: 24%;
-   position: fixed; 
-
-}
-
-@media screen and (max-width: 992px) {
-         
-
-    #logo {
-        width: 25vw;
-        height: auto;
-        padding-left: 10%;
-       
-    }
-
-    #certs {
-        float: left;
-        right: 65%;
-        width: 17%;
-        position: fixed;
-        top: 36%;
-   
-    }
-    #project {
-        float: right;
-        left: 40%; 
-        width: 18%;
-        top: 28vh;
-        height: auto;
-        position: fixed;
-    }
-    #cv {
-        width: 80%;
-        float: left;
-        right: -55%;
-         height: 30%;
-         top: 36vh;    
-         position: fixed;
-    }
-    
-    #contact {
-        margin: 0;
-        position: fixed;
-        width: 67%;
-        height: 100vh;
-        background-color: #c7ebea;
-        left: 8%;
-        top: 15%;
-    }
-    #btnSend:hover {
-        background-color: #36b0b3;
-        color: #f7f0f0 !important;
-        text-decoration: none;
-
-    }
+@media screen and (max-width: 959px) { 
     #about {
         margin: 0;
         position: fixed;
+        width: 90%;
+        height: 100vh;
+        background-color: #c7ebea;
+         top: 18%;
+        left: -4%;
+    }
+  
+    #blog {
+        position: fixed;
+        width: 91%;
+        height: 100%;
+        background-color: #c7ebea;
+        top: 18%;
+        left: -4%;
+    }
+    #contact {
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #c7ebea;
+         top: 18%;
+        left: 30%;
+       
+    }
+  
+  
+    /*middle menu*/
+    #div1 {
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        background-size: contain;
+    }
+    #cv {
+        left: 58%;
+        position: fixed;
+        top: 29%;
+    }
+    #certs {
+        left: 45%;
+        position: fixed;
+        top: 17%
+    }
+    #projects {
+        left: 28%;
+        top: 30%;
+        position: fixed;
+    }
+}
+@media screen and (max-width: 640px) {
+        #about {
+            margin: 0;
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background-color: #c7ebea;
+    }
+  
+    #blog {
+        position: fixed;
+        width: 90%;
+        height: 100%;
+        background-color: #c7ebea;
+
+    }
+    #contact {
+        position: fixed;
         width: 100%;
         height: 100vh;
         background-color: #c7ebea;
-        top: 25%;
+        left: 25%;
     }
-    #blog {
+    /*middle menu*/
+    #div1 {
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        background-size: contain;
+    }
+    #cv {
+        left: 60%;
+        position: fixed;
+        top: 35%;
+    }
+    #certs {
+        left: 43%;
+        position: fixed;
+        top: 25%
+    }
+    #projects {
+        left: 20%;
+        top: 35%;
+        position: fixed;
+    }
+}
+@media screen and (max-width: 577px) {
+        #logo {
+            width: 40vw;
+            height: auto;
+            padding-left: 6px; 
+       }
+       #about {
         margin: 0;
         position: fixed;
         width: 100%;
         height: 100vh;
         background-color: #c7ebea;
-        left: -2%;
-        top: 25%;
     }
-    .card, 
-    .card-body .card-header {
-            background-color: transparent;
-            border: none;
-            text-decoration: transparent;
-            text-align: left;
-            color: #21617a;
-            padding-top: 20px 20px;
+  
+    #blog {
+        position: fixed;
+        width: 88%;
+        height: 100%;
+        background-color: #c7ebea;
+
+    }
+    #contact {
+        margin: 0;
+        position: fixed;
+        width: 58vw;
+        height: 100vh;
+        background-color: #c7ebea;
+        left: 22%;
+    }
+       #div1 {
+            display: inline-block;
+            position: fixed;
+            width: 100%;
+            background-size: contain;
+    }
+    #cv {
+        left: 55%;
+        position: fixed;
+        top: 37%;
+    }
+    #certs {
+        left: 38%;
+        position: fixed;
+        top: 28%
+    }
+    #projects {
+        left: 16%;
+        top: 38%;
+        position: fixed;
+        
     }
 }
+@media screen and (max-width: 498px) {
+        #logo {
+            width: 30vw;
+            height: auto;
+            padding-left: 6px; 
+        }
+       #div1 {
+            display: inline-block;
+            position: fixed;
+            width: 100%;
+            background-size: contain;
+    }
+    #cv {
+        left: 55%;
+        position: fixed;
+        top: 37%;
+    }
+    #certs {
+        left: 33%;
+        position: fixed;
+        top: 28%
+    }
+    #projects {
+        left: 9%;
+        top: 39%;
+        position: fixed;
+        
+    }
+     #about {
+      
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #c7ebea;
+    }
+  
+    #blog {
+        position: fixed;
+        width: 87%;
+        height: 100%;
+        background-color: #c7ebea;
+
+    }
+    #contact {
+        position: fixed;
+        width: 63vw;
+        height: 70vh;
+        background-color: #c7ebea;
+        left: 13%;
+    }
+}
+@media screen and (max-width: 408px) {
+        #logo {
+            width: 35vw;
+            height: auto;
+            padding-left: 6px; 
+        }
+       #div1 {
+            display: inline-block;
+            position: fixed;
+            width: 100%;
+            background-size: contain;
+    }
+    #cv {
+        left: 55%;
+        position: fixed;
+        top: 37%;
+    }
+    #certs {
+        left: 33%;
+        position: fixed;
+        top: 28%
+    }
+    #projects {
+        left: 5%;
+        top: 39%;
+        position: fixed;
+        
+    }
+     #about {
+      
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #c7ebea;
+    }
+  
+    #blog {
+        position: fixed;
+        width: 320px;
+        height: 60%;
+        background-color: #c7ebea;
+
+    }
+    #contact {
+        position: fixed;
+        width: 252px;
+        height: 70vh;
+        background-color: #c7ebea;
+        left: 13%;
+    }
+}
+@media screen and (max-width: 320px) {
+         #logo {
+            width: 35vw;
+            height: auto;
+            padding-left: 6px; 
+        }
+       #div1 {
+            display: inline-block;
+            position: fixed;
+            width: 100%;
+            background-size: contain;
+    }
+    #cv {
+        left: 55%;
+        position: fixed;
+        top: 37%;
+    }
+    #certs {
+        left: 33%;
+        position: fixed;
+        top: 28%
+    }
+    #projects {
+        left: 5%;
+        top: 39%;
+        position: fixed;
+        
+    }
+     #about {
+      
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: #c7ebea;
+    }
+  
+    #blog {
+        position: fixed;
+        width: 320px;
+        height: 60%;
+        background-color: #c7ebea;
+
+    }
+    #contact {
+        position: fixed;
+        width: 270px;
+        height: 100vh;
+        background-color: #c7ebea;
+        left: 3%;
+    }
+} 
+    /*middle menu*/
+   
+
 
 
 /*bubl light
@@ -248,11 +447,7 @@
     overflow:visible;
 }*/
 /*resume image*/
-img {
-    margin: -2px;
-    overflow: hidden;
-    text-align: center;
-}
+
 /*certification*/
 
 /*social media icons*/
