@@ -1,39 +1,20 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import resume from './Resume.pdf';
+import { Button } from 'reactstrap';
+import FileSaver from 'file-saver';
+import PdfImg from './screen.svg'; 
 
 
 class Resume extends React.Component {
-	
-	constructor(props) {
-		super(props);
-	}
-	
-	downloadEmployeeData = () => {
-		fetch('http://localhost:8080/employees/download')
-			.then(response => {
-				response.blob().then(blob => {
-					let url = window.URL.createObjectURL(blob);
-					let a = document.createElement('a');
-					a.href = url;
-					a.download = 'employees.json';
-					a.click();
-				});
-				//window.location.href = response.url;
-		});
-	}
-	
 	render() {
-		return (
-			<div id="container">
-				<h1>Download File using React App</h1>
-				<h3>Download  Data using Button</h3>
-				<button onClick={this.downloadEmployeeData}>Download</button>
-				<p/>
-				<h3>Download Data using Link</h3>
-				<a href="#" onClick={this.downloadEmployeeData}>Download</a>
-			</div>
-		)
-	}
-
+        return(
+            <div className="container">
+                <Button color="info" id="btnDownload" ><a href={require("./Resume.pdf")} download={resume}>Download File</a></Button>
+                
+           </div>
+        );
+   }
 }
 
 export default Resume;
