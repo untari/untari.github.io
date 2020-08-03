@@ -12,38 +12,47 @@ import { Button } from 'reactstrap';
 ReactModal.defaultStyles.overlay.backgroundColor = '#c7ebea';
 
 class Home extends Component {
+ 
  constructor() {
         super();
         this.state = {
             showModal: false,
             showModal2: false,
+  
         };
+
+        
         this.handleOpenModal = this.handleOpenModal.bind(this);
         this.handleOpenModal2 = this.handleOpenModal2.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
-        
         this.handleCloseModal2 = this.handleCloseModal2.bind(this);
+
     }
+ 
     handleOpenModal () {
         this.setState({showModal: true});
     }
     handleCloseModal () {
         this.setState({showModal: false});
     }
-     handleOpenModal2 () {
-    this.setState({ showModal2: true });
-  }
-  handleCloseModal2 () {
+    handleOpenModal2 () {
+       this.setState({ showModal2: true });
+   }
+   handleCloseModal2 () {
         this.setState({showModal2: false});
-    }
-    render() {
- 
+  }
+
+ render() {
+
        return(
              <div id="div1">
                 <div className="col align-self-end "  id="projects">
                         <div className=" col-12 col-md m-1 md-auto " >
-                            <Link to="project"><img src={projects} alt="projects"  className="img-responsive" width="60" height="40"/></Link>
-                             
+                            <Link to="project" 
+                               ><img   src={projects}   alt="projects"  className="img-responsive" width="60" height="40"/>
+                                 
+                           </Link>
+                              
                         </div>
                     </div>
                     <div className="col align-self-center" id="certs">
@@ -74,10 +83,13 @@ class Home extends Component {
                                     onRequestClose={this.handleCloseModal2}
                                     >
                                     <div>
-                                            <h5>Click the Download button for my resume!</h5>
-                                            <Button color="info" id="btnDownload" ><a href={require("./Resume.pdf")} download={resume}>Download File</a></Button>
+                                           <Button id= "btnDownload" color="info" ><a href={require("./Resume.pdf")} download={resume}>Download File</a></Button>
+                                            <Button  className="text-light mx-2 " onClick={this.handleCloseModal2}>Close</Button>
+                                         <div>   
+                                            <iframe src={resume} style={{width: "500px", height: "400px"}}  title="myFrame"></iframe>
+                                          </div>  
                                     </div>
-                                    <button  className="btn btn-secondary mr-2 mt-2" onClick={this.handleCloseModal2}>Close</button>
+                                    
                             </ReactModal>
                         </div>
                     </div>
