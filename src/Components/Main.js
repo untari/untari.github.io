@@ -5,9 +5,7 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Blog from './Blog';
-import Resume from './Resume';
 import Project from './Project';
-import Certification from './Certification';
 import logo from './logo.svg';
 
 
@@ -63,15 +61,14 @@ class Main extends Component {
                  <Route  path="/about" component={About} />
                  <Route  path="/contact" component={Contact} />
                  <Route  path="/blog" component={Blog} />
-                 <Route  path="/resume" component={Resume} />
                  <Route  path="/project" component={Project} />
-                 <Route  path="/certification" component={Certification} />
+               
 
 
                  <div className="container">
                     <div className="bottom-right">
                         <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"  tooltip="LinkedIn"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
-                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari"  tooltip="Github"><i class="fa fa-github-alt fa-2x"></i></a>
+                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari"  tooltip="Github"><i className="fa fa-github-alt fa-2x"></i></a>
                     </div>
                  </div>
           </div>

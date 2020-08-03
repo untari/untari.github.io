@@ -1,15 +1,42 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import { Link } from "react-router-dom";
 import Cv from './cv.svg';
+import  coursera from './screen.svg';
 import certificate from './certs.svg';
 import projects from './projects.svg';
-import {  UncontrolledTooltip } from 'reactstrap';
+import ReactModal from "react-modal";
+import resume from './Resume.pdf';
+import { Button } from 'reactstrap';
 
 
+ReactModal.defaultStyles.overlay.backgroundColor = '#c7ebea';
 
-
-const Home = (props) => {
-      
+class Home extends Component {
+ constructor() {
+        super();
+        this.state = {
+            showModal: false,
+            showModal2: false,
+        };
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleOpenModal2 = this.handleOpenModal2.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
+        
+        this.handleCloseModal2 = this.handleCloseModal2.bind(this);
+    }
+    handleOpenModal () {
+        this.setState({showModal: true});
+    }
+    handleCloseModal () {
+        this.setState({showModal: false});
+    }
+     handleOpenModal2 () {
+    this.setState({ showModal2: true });
+  }
+  handleCloseModal2 () {
+        this.setState({showModal2: false});
+    }
+    render() {
  
        return(
              <div id="div1">
@@ -21,17 +48,42 @@ const Home = (props) => {
                     </div>
                     <div className="col align-self-center" id="certs">
                             <div className=" col-12 col-md m-1 md-auto ">
-                                    <Link to="certification"><img src={certificate} alt="certs"  className="img-responsive" width="45" height="45"/></Link>
+                                    <img src={certificate} alt="certs" onClick={this.handleOpenModal} className="img-responsive" width="45" height="45"/>
+                                     <ReactModal 
+                                            isOpen={this.state.showModal}
+                                            contentLabel="Modal #1 Global Style Override Example"
+                                            onRequestClose={this.handleCloseModal}
+                                            >
+                                             <div className="media">
+                                                <img src={coursera} width="20%"className="mr-3" alt="Sample" />
+                                                <div className="media-body">
+                                                    <h6 className="mt-1">The Hong Kong University of Science and Technology <br /> <small><i>(Coursera)</i></small></h6>
+                                                    <p>Front-End Web Development with React</p>
+                                                  </div>
+                                               </div>
+                                            <button className="btn btn-secondary"  onClick={this.handleCloseModal}>Close </button>
+                                    </ReactModal>
                             </div>
                      </div>
                     <div className="col align-self-end" id="cv">
                         <div className="col-12 col-md m-1 md-auto">
-                            <Link to="resume" ><img src={Cv} alt="cv's" className="img-responsive"  width="52" height="55" /></Link>
+                            <img src={Cv} alt="cv's" onClick={this.handleOpenModal2} className="img-responsive"  width="52" height="55" />
+                             <ReactModal 
+                                    isOpen={this.state.showModal2}
+                                    contentLabel="Modal #2 Global Style Override Example"
+                                    onRequestClose={this.handleCloseModal2}
+                                    >
+                                    <div>
+                                            <h5>Click the Download button for my resume!</h5>
+                                            <Button color="info" id="btnDownload" ><a href={require("./Resume.pdf")} download={resume}>Download File</a></Button>
+                                    </div>
+                                    <button  className="btn btn-secondary mr-2 mt-2" onClick={this.handleCloseModal2}>Close</button>
+                            </ReactModal>
                         </div>
                     </div>
            </div>
         );
-    
+    }
 }
 export default Home;
 
