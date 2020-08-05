@@ -4,12 +4,10 @@ import Cv from './cv.svg';
 import  coursera from './screen.svg';
 import certificate from './certs.svg';
 import projects from './projects.svg';
-import ReactModal from "react-modal";
+import Modal from "react-modal";
 import resume from './Resume.pdf';
 import { Button } from 'reactstrap';
 
-
-ReactModal.defaultStyles.overlay.backgroundColor = '#c7ebea';
 
 class Home extends Component {
  
@@ -41,7 +39,9 @@ class Home extends Component {
    handleCloseModal2 () {
         this.setState({showModal2: false});
   }
-
+    componentDidMount() {
+       Modal.setAppElement('#root');
+  }
  render() {
 
        return(
@@ -58,10 +58,11 @@ class Home extends Component {
                     <div className="col align-self-center" id="certs">
                             <div className=" col-12 col-md m-1 md-auto ">
                                     <img src={certificate} alt="certs" onClick={this.handleOpenModal} className="img-responsive" width="45" height="45"/>
-                                     <ReactModal 
+                                     <Modal 
                                             isOpen={this.state.showModal}
                                             contentLabel="Modal #1 Global Style Override Example"
                                             onRequestClose={this.handleCloseModal}
+                                             
                                             >
                                              <div className="media">
                                                 <img src={coursera} width="20%"className="mr-3" alt="Sample" />
@@ -71,13 +72,13 @@ class Home extends Component {
                                                   </div>
                                                </div>
                                             <button className="btn btn-secondary"  onClick={this.handleCloseModal}>Close </button>
-                                    </ReactModal>
+                                    </Modal>
                             </div>
                      </div>
                     <div className="col align-self-end" id="cv">
                         <div className="col-12 col-md m-1 md-auto">
                             <img src={Cv} alt="cv's" onClick={this.handleOpenModal2} className="img-responsive"  width="52" height="55" />
-                             <ReactModal 
+                             <Modal 
                                     isOpen={this.state.showModal2}
                                     contentLabel="Modal #2 Global Style Override Example"
                                     onRequestClose={this.handleCloseModal2}
@@ -90,12 +91,13 @@ class Home extends Component {
                                           </div>  
                                     </div>
                                     
-                            </ReactModal>
+                            </Modal>
                         </div>
                     </div>
            </div>
         );
     }
 }
+
 export default Home;
 

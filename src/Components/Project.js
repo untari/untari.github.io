@@ -1,9 +1,10 @@
 import React  from "react";
 import ReactModal from "react-modal";
+import ReactDOM from 'react-dom';
 import {  Card, CardImg, CardText, CardBody,  CardTitle } from 'reactstrap';
 import screen from './screen.jpg';
 
-ReactModal.defaultStyles.overlay.backgroundColor = '#c7ebea';
+ReactModal.setAppElement('#root');
 
 class Project extends React.Component {
   constructor () {
@@ -47,7 +48,7 @@ class Project extends React.Component {
   }
   render () {
     return (
-      <div style={{marginLeft: "13%"}}>
+      <div style={{marginLeft: "13%"}} >
         <button className="btn btn-info mr-2 mt-2 " onClick={this.handleOpenModal}>HTML&CSS</button>
         <button className="btn btn-info mr-2 mt-2" onClick={this.handleOpenModal2}>JavaScript</button>
         <button className="btn btn-info mr-2 mt-2" onClick={this.handleOpenModal3}>React</button>
@@ -55,7 +56,7 @@ class Project extends React.Component {
            isOpen={this.state.showModal}
            contentLabel="Modal #1 Global Style Override Example"
            onRequestClose={this.handleCloseModal}
-          
+           className="Modal"
         >
 
           <div className="container">
@@ -81,6 +82,7 @@ class Project extends React.Component {
            isOpen={this.state.showModal2}
            contentLabel="Modal #2 Global Style Override Example"
            onRequestClose={this.handleCloseModal2}
+           className="Modal"
         >
             <div className="container">
                 <Card>
@@ -105,6 +107,7 @@ class Project extends React.Component {
            isOpen={this.state.showModal3}
            contentLabel="Modal #3 Global Style Override Example"
            onRequestClose={this.handleCloseModal3}
+           className="Modal"
         >
            <div className="container">
                 <Card>
@@ -129,5 +132,7 @@ class Project extends React.Component {
   }
 }
 
+const props = {};
 
+ReactDOM.render(<Project {...props} />, document.getElementById('root'))
 export default Project;

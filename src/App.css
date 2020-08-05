@@ -223,7 +223,16 @@ body {
     }
 
 }
+Modal {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: papayawhip;
+  }
 
+ 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
         #about {
             margin: 0;
