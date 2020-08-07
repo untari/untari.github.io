@@ -13,6 +13,7 @@ class Project extends React.Component {
       showModal: false,
       showModal2: false,
       showModal3: false
+      
     };
     
     this.handleOpenModal = this.handleOpenModal.bind(this);
@@ -47,6 +48,7 @@ class Project extends React.Component {
     this.setState({ showModal3: false });
   }
   render () {
+    
     return (
       <div style={{marginLeft: "13%"}} >
         <button className="btn btn-info mr-2 mt-2 " onClick={this.handleOpenModal}>HTML&CSS</button>
@@ -131,8 +133,4 @@ class Project extends React.Component {
     );
   }
 }
-
-const props = {};
-
-ReactDOM.render(<Project {...props} />, document.getElementById('root'))
 export default Project;

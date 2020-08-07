@@ -23,6 +23,7 @@
     "popper.js": "^1.16.1",
     "react": "^16.13.1",
     "react-addons-css-transition-group": "^15.6.2",
+    "react-animation-components": "^3.0.0",
     "react-aspect-ratio": "^1.0.42",
     "react-dom": "^16.13.1",
     "react-floating-action-button": "^1.0.5",

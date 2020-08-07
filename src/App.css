@@ -127,6 +127,12 @@ body {
     border: none;
     
 }
+#btnDownload {
+    margin-top: 5%;
+}
+.iframe {
+    position: fixed;
+}
 /*bubl light
 .centered{
     position: fixed;
@@ -167,6 +173,17 @@ body {
 #btn1 {
     margin-left: 20%;
 }
+.Modal {
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    right: 90px;
+    bottom: 50px;
+    background-color: #d8f0eb;
+    overflow-y: auto;
+  }
+.screen { display:inline; }
+ 
 /*media queries*/
 @media (min-width: 768px) and (max-width: 1024px){ 
     #about {
@@ -205,6 +222,7 @@ body {
         position: fixed;
         width: 100%;
         background-size: contain;
+       
     }
     #cv {
         left: 58%;
@@ -223,14 +241,6 @@ body {
     }
 
 }
-Modal {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    right: 40px;
-    bottom: 40px;
-    background-color: papayawhip;
-  }
 
  
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
