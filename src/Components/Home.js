@@ -11,9 +11,18 @@ import { Button } from 'reactstrap';
 import screen from './screen.jpg';
 import dog from './dog.jpg';
 import clock from './clock.png';
+import { bounce } from 'react-animations';
+import Radium  from 'radium';
 
 
 ReactModal.setAppElement('#root');
+
+const styles = {
+  bounce: {
+    animation: 'x 1s',
+    animationName: Radium.keyframes(bounce, 'bounce')
+  }
+}
 class Home extends Component {
  
  constructor() {
@@ -57,7 +66,7 @@ class Home extends Component {
        return(
             <div id="div1" style={{overflow: "scroll"}}>
                     <div className="col align-self-end "  id="projects">
-                            <div className=" col-12 col-md m-1 md-auto " >
+                            <div className=" col-12 col-md m-1 md-auto " style={styles.bounce} >
                                     <img  src={projects} onClick={this.handleOpenModal3}  alt="projects"  className="img-responsive" width="60" height="40"/>
                                         <ReactModal 
                                                 isOpen={this.state.showModal3}
@@ -65,7 +74,9 @@ class Home extends Component {
                                                 onRequestClose={this.handleCloseModal3}
                                                 className="Modal">
                                              <div >
-                                                <button className="btn btn-secondary"  style={{marginLeft: "97%"}} onClick={this.handleCloseModal3}>X</button>
+                                                <Media id="btn2">
+                                                   <button className="btn btn-secondary"  style={{marginLeft: "96%"}} onClick={this.handleCloseModal3}>X</button>
+                                                </Media>
                                                 <Media className="screen text-center  mr-3 mt-3 ">
                                                     <Media left top href="#">
                                                     <Media object src={dog} style={{width:"30%", height:"30%", marginLeft: "33%"}} alt="Generic placeholder image" />
@@ -75,7 +86,7 @@ class Home extends Component {
                                                         HTML&CSS <small>(Animal Trading Card)</small>
                                                     </Media>
                                                        This project website is about Animat Trading Card using HTML and CSS.
-                                                       To check the code source click on <a href="https://github.com/untari/animal_trading_card"> here</a>
+                                                       To check the website click on <a href="https://untari.github.io/animal_trading_card/"> here</a>
                                                     </Media>
                                                 </Media>
                                                 <Media className="screen  text-center mr-3 mt-3 ">
@@ -87,7 +98,7 @@ class Home extends Component {
                                                         HTML, CSS & JavaScript <small>(Digital Analog Clock)</small>
                                                     </Media>
                                                        This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
-                                                        To check the code source click on  <a href="https://github.com/untari/an-analog-clock"> here</a>
+                                                        To check the code source click on  <a href="https://untari.github.io/an-analog-clock/"> here</a>
                                                     </Media>
                                                 </Media>
                                                 <Media className=" screen text-center ">
@@ -98,8 +109,8 @@ class Home extends Component {
                                                     <Media heading>
                                                         Restaurant Website<small>(React)</small>
                                                     </Media>
-                                                        This website project is about how to create personal website using React JS.
-                                                        To check the code source click on  <a href="https://github.com/untari/untari-website"> here</a>
+                                                        This website project is about how to create restaurant website using React JS.
+                                                        To check the website click on  <a href="https://github.com/untari/untari-website"> here</a>
                                                     </Media>
                                                 </Media>
                                             </div>
@@ -116,9 +127,11 @@ class Home extends Component {
                                                     className="Modal"
                                                     >
                                                     <Media className="screen text-center">
-                                                        <button className="btn btn-secondary" style={{marginLeft: "97%"}}  onClick={this.handleCloseModal}>X</button>
+                                                       <Media id="btn2">
+                                                         <button className="btn btn-secondary" style={{marginLeft: "95%"}}  onClick={this.handleCloseModal}>X</button>
+                                                        </Media> 
                                                         <Media left top href="#">
-                                                            <Media object src={coursera} style={{width: "25%", marginLeft: "38%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                            <Media object src={coursera} style={{width: "35%", marginLeft: "35%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -141,12 +154,12 @@ class Home extends Component {
                                             >
                                             <div>
                                                 <Media className="screen text-center">
-                                                    <Media>
+                                                    <Media id="mediaBtn">
                                                         <Button id= "btnDownload" color="info" style={{marginLeft: "90%", marginTop: "-1px"}}><a href={require("./Resume.pdf")} download={resume}>D</a></Button>
                                                         <Button  className="mx-2 "   onClick={this.handleCloseModal2}>X</Button>
                                                     </Media>
-                                                    <Media  href="#">
-                                                    <Media  style={{ marginLeft: "25%"}} ><iframe src={resume}  width= "650px" height= "400px" title="myFrame"></iframe> </Media>
+                                                    <Media  id="pdf">
+                                                       <iframe src={resume} style={{width: "550", height: "400px", marginLeft: "30%"}}   title="myFrame"></iframe> 
                                                     </Media>
                                                     <Media body>
                                                        Click the <em>D</em> button to download my resume!

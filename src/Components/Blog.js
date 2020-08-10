@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Typical from 'react-typical';
 
 
 const Spacer=styled.div`
@@ -9,9 +10,10 @@ const Spacer=styled.div`
 const Google = () => (
 
      <div>
-     <h2>Google</h2>
-      <p>This is Google. It's a search engine started by Sergey Brin and Larry Page.</p>
-      <p>PageRank is the search algorithm that started it all. Today's it's a 100 trillion dollar company.</p>
+            <h2>Hey! I'm Tari.</h2>
+            <p>
+                I am a frontend-developer a compendium of the things I have learned and created, and anything else I want to write about.
+            </p>
      </div>
 
 )

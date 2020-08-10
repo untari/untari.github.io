@@ -176,9 +176,9 @@ body {
 .Modal {
     position: absolute;
     top: 50px;
-    left: 90px;
-    right: 90px;
-    bottom: 50px;
+    left: 300px;
+    right: 300px;
+    bottom: 40px;
     background-color: #d8f0eb;
     overflow-y: auto;
   }
@@ -348,6 +348,15 @@ body {
         left: 27%;
         top: 17%;
     }
+    .Modal {
+        position: absolute;
+        top: 50px;
+        left: 20px;
+        right: 20px;
+        bottom: 40px;
+        background-color: #d8f0eb;
+        overflow-y: auto;
+  }
    
 }
 @media (min-width: 320px) and (max-width: 480px) and (orientation: portrait){
@@ -404,6 +413,24 @@ body {
         left: 16%;
         top: 20%;
     }
+    .Modal {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        right: 50px;
+        bottom: 40px;
+        background-color: #d8f0eb;
+        overflow-y: auto;
+    }
+    #mediaBtn {
+        margin-right: 18%;
+    }
+    #btn2 {
+        margin-right: 7%;
+    }
+   #pdf {
+     width: 4%;    
+   }
     
 } 
 @media (min-width: 320px) and (max-width: 1024px) and (orientation: landscape){
@@ -460,6 +487,16 @@ body {
         left: 26%;
         top: 8%;
     }
+    #mediaBtn {
+        margin-right: 5%;
+    }
+    #btn2 {
+        margin-right: 7%;
+    }
+   #pdf {
+     width: 32%;    
+   }
+    
     
 } 
  
