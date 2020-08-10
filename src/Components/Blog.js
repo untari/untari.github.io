@@ -20,8 +20,8 @@ const Google = () => (
 const Amazon = () => (
 
      <div>
-      <h2>Amazon</h2>
-      <p>This is Amazon.</p>
+      <h2>Introduction to programming language</h2>
+   
    
      </div>
 

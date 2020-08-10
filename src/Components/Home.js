@@ -11,18 +11,10 @@ import { Button } from 'reactstrap';
 import screen from './screen.jpg';
 import dog from './dog.jpg';
 import clock from './clock.png';
-import { bounce } from 'react-animations';
-import Radium  from 'radium';
+
 
 
 ReactModal.setAppElement('#root');
-
-const styles = {
-  bounce: {
-    animation: 'x 1s',
-    animationName: Radium.keyframes(bounce, 'bounce')
-  }
-}
 class Home extends Component {
  
  constructor() {
@@ -66,7 +58,7 @@ class Home extends Component {
        return(
             <div id="div1" style={{overflow: "scroll"}}>
                     <div className="col align-self-end "  id="projects">
-                            <div className=" col-12 col-md m-1 md-auto " style={styles.bounce} >
+                            <div className=" col-12 col-md m-1 md-auto " >
                                     <img  src={projects} onClick={this.handleOpenModal3}  alt="projects"  className="img-responsive" width="60" height="40"/>
                                         <ReactModal 
                                                 isOpen={this.state.showModal3}

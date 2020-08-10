@@ -183,7 +183,15 @@ body {
     overflow-y: auto;
   }
 .screen { display:inline; }
- 
+.img-responsive {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+ .img-responsive:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
 /*media queries*/
 @media (min-width: 768px) and (max-width: 1024px){ 
     #about {
