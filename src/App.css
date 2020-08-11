@@ -95,10 +95,11 @@ body {
 #div1 {
     display: inline-block;
     position: fixed;
-    width: 960;
     background-size: contain;
     margin: 0px auto;
-   
+    cursor: pointer;
+    overflow: scroll;
+    overflow: hidden;
 }
 #cv {
     left: 58%;
@@ -183,7 +184,7 @@ body {
     overflow-y: auto;
   }
 .screen { display:inline; }
-.img-responsive {
+/*.img-responsive {
     overflow: hidden;
     transition-duration: 0.8s;
     transition-property: transform;
@@ -191,17 +192,17 @@ body {
  .img-responsive:hover {
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
-}
+}*/
 /*media queries*/
-@media (min-width: 768px) and (max-width: 1024px){ 
+@media (min-width: 768px) and (max-width: 1400px){ 
     #about {
         margin: 0;
         position: fixed;
         width: 90%;
         height: 100vh;
         background-color: #c7ebea;
-         top: 18%;
-        left: -4%;
+         top: 10%;
+        left: 5%;
     }
   
     #blog {
@@ -209,8 +210,8 @@ body {
         width: 91%;
         height: 100%;
         background-color: #c7ebea;
-        top: 18%;
-        left: -4%;
+        top: 10%;
+        left: 6%;
     }
     #contact {
         margin: 0;
@@ -218,7 +219,7 @@ body {
         width: 100%;
         height: 100%;
         background-color: #c7ebea;
-         top: 18%;
+         top: 10%;
         left: 30%;
        
     }
@@ -243,7 +244,7 @@ body {
         top: 9%
     }
     #projects {
-        left: 28%;
+        left: 30%;
         top: 30%;
         position: fixed;
     }

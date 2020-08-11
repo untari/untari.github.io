@@ -5,7 +5,6 @@ import Home from './Home';
 import About from './About';
 import Contact from './Contact';
 import Blog from './Blog';
-import Project from './Project';
 import logo from './logo.svg';
 
 
@@ -61,7 +60,6 @@ class Main extends Component {
                  <Route  path="/about" component={About} />
                  <Route  path="/contact" component={Contact} />
                  <Route  path="/blog" component={Blog} />
-                 <Route  path="/project" component={Project} />
                
 
 

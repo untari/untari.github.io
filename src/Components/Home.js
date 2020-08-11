@@ -1,5 +1,4 @@
 import React, { Component  } from 'react';
-import { Link } from "react-router-dom";
 import { Media } from 'reactstrap';
 import Cv from './cv.svg';
 import  coursera from './screen.svg';
@@ -11,7 +10,10 @@ import { Button } from 'reactstrap';
 import screen from './screen.jpg';
 import dog from './dog.jpg';
 import clock from './clock.png';
-
+import udacity from './udacity.jpg';
+import linkedin from './linkedin.jpg';
+import linkedin2 from './linkedin2.jpg';
+import {Animated} from "react-animated-css";
 
 
 ReactModal.setAppElement('#root');
@@ -56,11 +58,13 @@ class Home extends Component {
  
  render() {
        return(
-            <div id="div1" style={{overflow: "scroll"}}>
+            <div id="div1">
                     <div className="col align-self-end "  id="projects">
                             <div className=" col-12 col-md m-1 md-auto " >
+                                <Animated animationIn="bounceInRight" animationOut="bounceInRight" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
                                     <img  src={projects} onClick={this.handleOpenModal3}  alt="projects"  className="img-responsive" width="60" height="40"/>
-                                        <ReactModal 
+                                </Animated>
+                                 <ReactModal 
                                                 isOpen={this.state.showModal3}
                                                 contentLabel="Modal #3 Global Style Override Example"
                                                 onRequestClose={this.handleCloseModal3}
@@ -102,7 +106,7 @@ class Home extends Component {
                                                         Restaurant Website<small>(React)</small>
                                                     </Media>
                                                         This website project is about how to create restaurant website using React JS.
-                                                        To check the website click on  <a href="https://github.com/untari/untari-website"> here</a>
+                                                        To check the website click on  <a href="https://untari.github.io/home"> here</a>
                                                     </Media>
                                                 </Media>
                                             </div>
@@ -111,14 +115,16 @@ class Home extends Component {
                             </div>
                             <div className="col align-self-center" id="certs">
                                     <div className=" col-12 col-md m-1 md-auto ">
+                                        <Animated animationIn="rotateIn" animationOut="rotateOut" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
                                             <img src={certificate} alt="certs" onClick={this.handleOpenModal} className="img-responsive" width="45" height="45"/>
-                                            <ReactModal 
+                                         </Animated>
+                                         <ReactModal 
                                                     isOpen={this.state.showModal}
                                                     contentLabel="Modal #1 Global Style Override Example"
                                                     onRequestClose={this.handleCloseModal}
                                                     className="Modal"
                                                     >
-                                                    <Media className="screen text-center">
+                                                    <Media className="screen text-center ">
                                                        <Media id="btn2">
                                                          <button className="btn btn-secondary" style={{marginLeft: "95%"}}  onClick={this.handleCloseModal}>X</button>
                                                         </Media> 
@@ -132,12 +138,47 @@ class Home extends Component {
                                                               Front-End Web Development with React
                                                         </Media>
                                                     </Media>
-                                            </ReactModal>
+                                                    <Media className="screen text-center">
+                                                        <Media left top href="#">
+                                                            <Media object src={udacity} style={{width: "35%", marginLeft: "35%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                        </Media>
+                                                        <Media body>
+                                                            <Media heading>
+                                                                Udacity
+                                                            </Media>
+                                                              Programming Languages Introduction
+                                                        </Media>
+                                                    </Media>
+                                                    <Media className="screen text-center">
+                                                        <Media left top href="#">
+                                                                <Media object src={linkedin} style={{width: "38%", marginLeft: "33%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                        </Media>
+                                                        <Media body>
+                                                            <Media heading>
+                                                                LinkedIn Learning
+                                                        </Media>
+                                                                React Learning Path
+                                                        </Media>
+                                                </Media>
+                                                 <Media className="screen text-center">
+                                                        <Media left top href="#">
+                                                                <Media object src={linkedin2} style={{width: "38%", marginLeft: "33%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                        </Media>
+                                                        <Media body>
+                                                            <Media heading>
+                                                                LinkedIn Learning
+                                                        </Media>
+                                                                Front-End Web Developer Learning Path
+                                                        </Media>
+                                                </Media>
+                                        </ReactModal>
                                     </div>
                             </div>
                             <div className="col align-self-end" id="cv">
                                 <div className="col-12 col-md m-1 md-auto">
-                                    <img src={Cv} alt="cv's" onClick={this.handleOpenModal2} className="img-responsive"  width="52" height="55" />
+                                   <Animated animationIn="bounceInLeft" animationOut="bounceOutLeft" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
+                                      <img src={Cv} alt="cv's" onClick={this.handleOpenModal2} className="img-responsive"  width="52" height="55" />
+                                    </Animated>
                                     <ReactModal 
                                             isOpen={this.state.showModal2}
                                             contentLabel="Modal #2 Global Style Override Example"
