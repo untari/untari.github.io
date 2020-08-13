@@ -1,7 +1,7 @@
 import React, { Component  } from 'react';
 import { Media } from 'reactstrap';
 import Cv from './cv.svg';
-import  coursera from './screen.svg';
+import  coursera from './coursera.jpg';
 import certificate from './certs.svg';
 import projects from './projects.svg';
 import ReactModal from "react-modal";
@@ -61,17 +61,15 @@ class Home extends Component {
             <div id="div1">
                     <div className="col align-self-end "  id="projects">
                             <div className=" col-12 col-md m-1 md-auto " >
-                                <Animated animationIn="bounceInRight" animationOut="bounceInRight" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
                                     <img  src={projects} onClick={this.handleOpenModal3}  alt="projects"  className="img-responsive" width="60" height="40"/>
-                                </Animated>
                                  <ReactModal 
                                                 isOpen={this.state.showModal3}
                                                 contentLabel="Modal #3 Global Style Override Example"
                                                 onRequestClose={this.handleCloseModal3}
                                                 className="Modal">
                                              <div >
-                                                <Media id="btn2">
-                                                   <button className="btn btn-secondary"  style={{marginLeft: "96%"}} onClick={this.handleCloseModal3}>X</button>
+                                                <Media id="btn">
+                                                   <button className="btn btn-secondary" style={{marginLeft: "53%", position: "fixed"}} onClick={this.handleCloseModal3}>X</button>
                                                 </Media>
                                                 <Media className="screen text-center  mr-3 mt-3 ">
                                                     <Media left top href="#">
@@ -82,31 +80,35 @@ class Home extends Component {
                                                         HTML&CSS <small>(Animal Trading Card)</small>
                                                     </Media>
                                                        This project website is about Animat Trading Card using HTML and CSS.
-                                                       To check the website click on <a href="https://untari.github.io/animal_trading_card/"> here</a>
+                                                       To check the source code click <a href="https://github.com/untari/animal_trading_card"> here</a> and 
+                                                       to check the website click on <a href="https://untari.github.io/animal_trading_card/"> here</a>
                                                     </Media>
                                                 </Media>
-                                                <Media className="screen  text-center mr-3 mt-3 ">
+                                                <Media className="screen  text-center mr-3 mt-3 " >
                                                     <Media  pull-left href="#">
-                                                       <Media object src={clock} style={{width:"30%", height:"20%", marginLeft: "35%"}}  alt="Generic placeholder image" />
+                                                       <Media object src={clock} style={{width:"30%",  height:"20%", marginLeft: "35%"}}  alt="Generic placeholder image" />
                                                     </Media>
                                                     <Media body>
                                                     <Media heading>
                                                         HTML, CSS & JavaScript <small>(Digital Analog Clock)</small>
                                                     </Media>
                                                        This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
-                                                        To check the code source click on  <a href="https://untari.github.io/an-analog-clock/"> here</a>
+                                                        To check the code source click on <a href="https://github.com/untari/an-analog-clock"> here </a>
+                                                         and 
+                                                       to check the website click on <a href="https://untari.github.io/an-analog-clock/"> here</a>
                                                     </Media>
                                                 </Media>
-                                                <Media className=" screen text-center ">
+                                                <Media className=" screen text-center " >
                                                     <Media  left top href="#">
-                                                    <Media object src={screen} style={{width:"30%", height:"30%", marginLeft: "33%"}} alt="Generic placeholder image" />
+                                                    <Media object src={screen} style={{width:"30%", marginTop: "5%", height:"30%", marginLeft: "33%"}} alt="Generic placeholder image" />
                                                     </Media>
                                                     <Media body>
                                                     <Media heading>
                                                         Restaurant Website<small>(React)</small>
                                                     </Media>
                                                         This website project is about how to create restaurant website using React JS.
-                                                        To check the website click on  <a href="https://untari.github.io/home"> here</a>
+                                                        To check the code source click on <a href="https://github.com/untari/confusion"> here </a>
+                                                         and  to check the website click on  <a href="https://untari.github.io/confusion/"> here</a>
                                                     </Media>
                                                 </Media>
                                             </div>
@@ -115,9 +117,7 @@ class Home extends Component {
                             </div>
                             <div className="col align-self-center" id="certs">
                                     <div className=" col-12 col-md m-1 md-auto ">
-                                        <Animated animationIn="rotateIn" animationOut="rotateOut" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
                                             <img src={certificate} alt="certs" onClick={this.handleOpenModal} className="img-responsive" width="45" height="45"/>
-                                         </Animated>
                                          <ReactModal 
                                                     isOpen={this.state.showModal}
                                                     contentLabel="Modal #1 Global Style Override Example"
@@ -125,11 +125,11 @@ class Home extends Component {
                                                     className="Modal"
                                                     >
                                                     <Media className="screen text-center ">
-                                                       <Media id="btn2">
-                                                         <button className="btn btn-secondary" style={{marginLeft: "95%"}}  onClick={this.handleCloseModal}>X</button>
+                                                       <Media id="btn">
+                                                         <button className="btn btn-secondary" style={{marginLeft: "53%", position: "fixed"}}  onClick={this.handleCloseModal}>X</button>
                                                         </Media> 
                                                         <Media left top href="#">
-                                                            <Media object src={coursera} style={{width: "35%", marginLeft: "35%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                            <Media object src={coursera} style={{width: "38%", marginLeft: "32%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -140,7 +140,7 @@ class Home extends Component {
                                                     </Media>
                                                     <Media className="screen text-center">
                                                         <Media left top href="#">
-                                                            <Media object src={udacity} style={{width: "35%", marginLeft: "35%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                            <Media object src={udacity} style={{width: "38%", marginTop: "5%",marginLeft: "32%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -151,7 +151,7 @@ class Home extends Component {
                                                     </Media>
                                                     <Media className="screen text-center">
                                                         <Media left top href="#">
-                                                                <Media object src={linkedin} style={{width: "38%", marginLeft: "33%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                                <Media object src={linkedin} style={{width: "38%", marginLeft: "32%", marginTop: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -162,7 +162,7 @@ class Home extends Component {
                                                 </Media>
                                                  <Media className="screen text-center">
                                                         <Media left top href="#">
-                                                                <Media object src={linkedin2} style={{width: "38%", marginLeft: "33%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                                <Media object src={linkedin2} style={{width: "38%", marginLeft: "32%", marginTop: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -176,9 +176,9 @@ class Home extends Component {
                             </div>
                             <div className="col align-self-end" id="cv">
                                 <div className="col-12 col-md m-1 md-auto">
-                                   <Animated animationIn="bounceInLeft" animationOut="bounceOutLeft" animationInDuration={2000} animationOutDuration={2000} isVisible={true}>
+                                   
                                       <img src={Cv} alt="cv's" onClick={this.handleOpenModal2} className="img-responsive"  width="52" height="55" />
-                                    </Animated>
+                                 
                                     <ReactModal 
                                             isOpen={this.state.showModal2}
                                             contentLabel="Modal #2 Global Style Override Example"
@@ -186,13 +186,13 @@ class Home extends Component {
                                             className="Modal"
                                             >
                                             <div>
-                                                <Media className="screen text-center">
-                                                    <Media id="mediaBtn">
-                                                        <Button id= "btnDownload" color="info" style={{marginLeft: "90%", marginTop: "-1px"}}><a href={require("./Resume.pdf")} download={resume}>D</a></Button>
-                                                        <Button  className="mx-2 "   onClick={this.handleCloseModal2}>X</Button>
+                                                <Media className="screen text-center" >
+                                                    <Media  style={{marginLeft: "50%", position: "fixed"}} id="btn">
+                                                        <Button id= "btnDownload" color="info" ><a href={require("./Resume.pdf")} download={resume}>D</a></Button>
+                                                        <Button  className="mx-1 "   onClick={this.handleCloseModal2}>X</Button>
                                                     </Media>
-                                                    <Media  id="pdf">
-                                                       <iframe src={resume} style={{width: "550", height: "400px", marginLeft: "30%"}}   title="myFrame"></iframe> 
+                                                    <Media style={{ marginLeft: "32%"}}  >
+                                                       <iframe src={resume}  title="myFrame" style={{width: "550", height: "400px", marginTop: "15%"}} id="pdf"></iframe> 
                                                     </Media>
                                                     <Media body>
                                                        Click the <em>D</em> button to download my resume!
