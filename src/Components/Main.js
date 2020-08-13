@@ -20,6 +20,7 @@ const style = {
   padding: '2px 9px',
   marginRight: '10px',
 };
+    
 class Main extends Component {
     render() {
         return(
@@ -65,8 +66,8 @@ class Main extends Component {
 
                  <div className="container">
                     <div className="bottom-right">
-                        <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"  tooltip="LinkedIn"><i className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
-                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari"  tooltip="Github"><i className="fa fa-github-alt fa-2x"></i></a>
+                        <a className="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/untari"><i data-toggle="tooltip" data-placement="top" title="LinkedIn"  className="fa fa-linkedin-square fa-2x" aria-hidden="true" ></i></a>
+                        <a className="btn btn-social-icon btn-github" href="https://github.com/untari"><i data-toggle="tooltip" data-placement="top" title="Github" className="fa fa-github-alt fa-2x" ></i></a>
                     </div>
                  </div>
           </div>
