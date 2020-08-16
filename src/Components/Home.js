@@ -69,7 +69,7 @@ class Home extends Component {
                                                 className="Modal">
                                              <div >
                                                 <Media id="btn">
-                                                   <button className="btn btn-secondary" style={{marginLeft: "25%", position: "fixed"}} onClick={this.handleCloseModal3}>X</button>
+                                                   <button className="btn btn-secondary" style={{marginLeft: "39%", position: "fixed"}} onClick={this.handleCloseModal3}>X</button>
                                                 </Media>
                                                 <Media className="screen text-center  mr-3 mt-3 ">
                                                      <a href="https://github.com/untari?tab=repositories"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_gray_6d6d6d.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" /></a>
@@ -123,10 +123,10 @@ class Home extends Component {
                                                     >
                                                     <Media className="screen text-center ">
                                                        <Media id="btn">
-                                                         <button className="btn btn-secondary" style={{marginLeft: "25%", position: "fixed"}}  onClick={this.handleCloseModal}>X</button>
+                                                         <button className="btn btn-secondary" style={{marginLeft: "39%", position: "fixed"}}  onClick={this.handleCloseModal}>X</button>
                                                         </Media> 
                                                         <Media left top>
-                                                            <Media object src={coursera} style={{width: "38%", marginLeft: "32%", marginTop: "15px"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                            <Media object src={coursera} style={{width: "38%", marginLeft: "10%", marginTop: "15px"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -137,7 +137,7 @@ class Home extends Component {
                                                     </Media>
                                                     <Media className="screen text-center">
                                                         <Media left top>
-                                                            <Media object src={udacity} style={{width: "38%", marginTop: "5%",marginLeft: "32%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                            <Media object src={udacity} style={{width: "38%", marginTop: "5%",marginLeft: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -148,7 +148,7 @@ class Home extends Component {
                                                     </Media>
                                                     <Media className="screen text-center">
                                                         <Media left top >
-                                                                <Media object src={linkedin} style={{width: "38%", marginLeft: "32%", marginTop: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                                <Media object src={linkedin} style={{width: "38%", marginLeft: "5%", marginTop: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -159,7 +159,7 @@ class Home extends Component {
                                                 </Media>
                                                  <Media className="screen text-center">
                                                         <Media left top>
-                                                                <Media object src={linkedin2} style={{width: "38%", marginLeft: "32%", marginTop: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
+                                                                <Media object src={linkedin2} style={{width: "38%", marginLeft: "5%", marginTop: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
                                                         </Media>
                                                         <Media body>
                                                             <Media heading>
@@ -176,7 +176,7 @@ class Home extends Component {
                                    
                                       <img src={Cv} alt="cv's" onClick={this.handleOpenModal2} className="img-responsive"  width="52" height="55" />
                                  
-                                    <ReactModal 
+                                     <ReactModal 
                                             isOpen={this.state.showModal2}
                                             contentLabel="Modal #2 Global Style Override Example"
                                             onRequestClose={this.handleCloseModal2}
@@ -184,12 +184,12 @@ class Home extends Component {
                                             >
                                             <div>
                                                 <Media className="screen text-center" >
-                                                    <Media  style={{marginLeft: "238px", position: "fixed"}} id="btn">
-                                                        <Button id= "btnDownload" color="info" ><a href={require("./Resume.pdf")} download={resume}>D</a></Button>
+                                                    <Media   id="btnDownload"   style={{marginLeft: "36%", position: "fixed"}}>
+                                                        <Button color="info" ><a href={require("./Resume.pdf")} download={resume} className="text-light">D</a></Button>
                                                         <Button  className="mx-1 "   onClick={this.handleCloseModal2}>X</Button>
                                                     </Media>
                                                     <Media >
-                                                       <iframe src={resume}  title="myFrame" style={{width: "900px", height: "370px", marginTop: "10%", marginLeft: "-2%"}} id="pdf"></iframe> 
+                                                       <iframe src={resume}  title="myFrame" style={{width: "900px", height: "370px", marginTop: "15%", marginLeft: "-2%"}} id="pdf"></iframe> 
                                                     </Media>
                                                     <Media body>
                                                        
