@@ -112,7 +112,7 @@ body {
     top: 30%
 }
 #projects {
-    left: 32%;
+    left: 30%;
     top: 30%;
     position: fixed;
 }
@@ -200,7 +200,7 @@ body {
   transform: scale(1.5); 
 }
 /*mobile from 320-480px*/
-@media only screen and (min-width : 320px) and (max-width : 480px) and (orientation: portrait ){
+@media only screen and (min-width : 320px) and (max-width : 480px) and (orientation: portrait )  {
        #div1 {
            width: 100%;
            padding-top: 56.25%;
@@ -212,18 +212,18 @@ body {
       }
 
       #cv {
-            left: 33%;
+            left: 32%;
             position: fixed;
-            top: 33%;
+            top: 25%;
      }
      #certs {
             left: 60%;
             position: fixed;
-            top: 43%
+            top: 40%
      }
      #projects {
             left: 5%;
-            top: 43%;
+            top:  39%;
             position: fixed;
      }
      .container {
@@ -250,11 +250,11 @@ body {
         height: 80px;
     }
     #btnDownload {
-        left: 36%;
+        left: 38%;
         position: fixed;
     }
     #btn {
-        margin-left: 40%;
+        margin-left: 42%;
     }
     
     #about {
@@ -268,24 +268,25 @@ body {
     }
     #blog {
         position: fixed;
-        width: 100%;
+        width: 90%;
         height: 80%;
         background-color: #c7ebea;
-        top: 15%;
+        top: 22%;
+        left: -2%;
         overflow: scroll;
     }
     #contact {
         margin: 0;
         position: fixed;
-        width: 80%;
+        width: 63%;
         height: 80vh;
         background-color: #c7ebea;
-        left: 10%;
-        top: 21%;
+        left: 8%;
+        top: 25%;
         overflow: scroll;
     }
 }
-@media only screen and (min-width : 320px) and ()and (orientation: landscape)  {
+@media only screen and (min-width : 480px) and (max-width : 768px) and (orientation: portrait)  {
        body {
             background: url('Components/bG.jpg');
             background-position: center center;
@@ -305,18 +306,18 @@ body {
       }
 
       #cv {
-            left: 42%;
+            left: 40%;
             position: fixed;
-            top: 7%;
+            top: 30%;
      }
      #certs {
-            left: 58%;
+            left: 56%;
             position: fixed;
-            top: 28%
+            top: 42%
      }
      #projects {
-            left: 25%;
-            top: 30%;
+            left: 20%;
+            top: 42%;
             position: fixed;
      }
      .container {
@@ -343,11 +344,11 @@ body {
         height: 80px;
     }
     #btnDownload {
-        left: 48%;
+        left: 39%;
         position: fixed;
     }
     #btn {
-        margin-left: 51%;
+        margin-left: 42%;
     }
     
     #about {
@@ -380,7 +381,7 @@ body {
     }
 }
 
-@media only screen and (min-width : 481px)  and (max-width : 768px)  {
+@media only screen and (min-width : 480px)  and (max-width : 768px) and (orientation: landscape) {
       
       #logo {
             width: 35vw;
@@ -389,9 +390,9 @@ body {
       }
 
       #cv {
-            left: 41%;
+            left: 39%;
             position: fixed;
-            top: 20%;
+            top: 13%;
      }
      #certs {
             left: 60%;
@@ -450,7 +451,7 @@ body {
         background-color: #c7ebea;
         top: 15%;
         overflow: scroll;
-        left: -7%;
+        left: -2%;
     }
     #contact {
         margin: 0;
@@ -458,12 +459,12 @@ body {
         width: 80%;
         height: 80vh;
         background-color: #c7ebea;
-        left: 11%;
+        left: 31%;
         top: 18%;
         overflow: scroll;
     }
 }
-@media only screen and (min-device-width : 769px) and (max-device-width : 1024px )  {
+@media only screen and (min-device-width : 769px) and (max-device-width : 1024px ) {
         body {
             background: url('Components/bG.jpg');
             background-position: center center;
@@ -483,18 +484,18 @@ body {
       }
 
       #cv {
-            left: 43%;
+            left: 41%;
             position: fixed;
-            top: 9%;
+            top: 25%;
      }
      #certs {
-            left: 60%;
+            left: 58%;
             position: fixed;
-            top: 30%
+            top: 39%
      }
      #projects {
-            left: 25%;
-            top: 30%;
+            left: 26%;
+            top: 40%;
             position: fixed;
      }
      .container {
@@ -507,7 +508,7 @@ body {
         position: absolute;
         top: 75px;
         left: 104px;
-        right: 107px;
+        right: 111px;
         bottom: 90px;
         background-color: #d8f0eb;
         overflow-y: auto;
@@ -517,15 +518,15 @@ body {
         top: 2px;
         left: 4px;
         z-index: 2;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
     #btnDownload {
-        left: 43%;
+        left: 40%;
         position: fixed;
     }
     #btn {
-        margin-left: 43%;
+        margin-left: 40%;
     }
     
     #about {
@@ -556,7 +557,7 @@ body {
         overflow: scroll;
     }
 }
-@media only screen and (min-device-width : 1224px) and (max-device-width : 1842px ) {
+@media only screen and (min-device-width : 1025px) and (max-device-width : 1200px ) {
       #logo {
             width: 100%;
             height: auto;
@@ -564,18 +565,18 @@ body {
       }
 
       #cv {
-            left: 46%;
+            left: 44%;
             position: fixed;
-            top: 5%;
+            top: 20%;
      }
      #certs {
-            left: 60%;
+            left: 61%;
             position: fixed;
-            top: 28%
+            top: 38%
      }
      #projects {
-            left: 32%;
-            top: 28%;
+            left: 27%;
+            top: 38%;
             position: fixed;
      }
      .container {
@@ -586,10 +587,10 @@ body {
      }
      .Modal {
         position: absolute;
-        top: 75px;
-        left: 305px;
-        right: 310px;
-        bottom: 90px;
+        top: 85px;
+        left: 205px;
+        right: 335px;
+        bottom: 50px;
         background-color: #d8f0eb;
         overflow-y: auto;
     }
@@ -598,15 +599,15 @@ body {
         top: 2px;
         left: 4px;
         z-index: 2;
-        width: 80px;
-        height: 80px;
+        width: 150px;
+        height: 150px;
     }
     #btnDownload {
-        left: 36%;
+        left: 28%;
         position: fixed;
     }
     #btn {
-        margin-left: 25%;
+        margin-left: 20%;
     }
     
     #about {
@@ -634,7 +635,7 @@ body {
         height: 100%;
         background-color: #c7ebea;
         left: 30%;
-        top: 18%;
+        top: 10%;
         overflow: scroll;
     }
 }
