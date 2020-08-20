@@ -1,28 +1,36 @@
 import React from 'react';
+import { Grid, Cell } from 'react-mdl';
 import styled from 'styled-components';
-import Typical from 'react-typical';
 
 
 const Spacer=styled.div`
   padding-left: 2vw;
 `
+const Article1 = () => (
 
-const Google = () => (
-
-     <div>
-            <h2>Hey! I'm Tari.</h2>
-            <p>
-                I am a frontend-developer a compendium of the things I have learned and created, and anything else I want to write about.
-            </p>
+      <div>
+         <Grid >
+            <Cell col={4}>
+                <h3>Hey! I'm Tari.</h3>
+                <p>
+                    I am a frontend-developer a compendium of the things I have learned and created, and anything else I want to write about.
+                </p>
+            </Cell>
+         </Grid>
      </div>
 
 )
-const Amazon = () => (
+const Article2 = () => (
 
      <div>
-      <h2>Introduction to programming language</h2>
-   
-   
+        <Grid className="about">
+            <Cell col={4}>
+                <h3>Introduction to programming language</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+                </p>
+            </Cell>
+         </Grid>
      </div>
 
 )
@@ -30,12 +38,14 @@ const Wrap=styled.div`
   max-width: 1200px;
   margin: 0 auto;
   padding: 1em;
+  background-color: #c7ebea;
 `
 
 const Primary=styled.div`
   max-width: 650px;
   margin: 0 auto;
   font-family: 'Sen', sans-serif;
+   background-color: #c7ebea;
 `
 const Block = styled.div`
   cursor: pointer;
@@ -56,17 +66,19 @@ const Block = styled.div`
 
 function Blog(){
   return (
-    <div id="blog" >
-      <Wrap>
-          <Primary>
-            <Spacer>
-
-             <Block><Google/></Block>
-            <Block><Amazon /></Block>
-
-            </Spacer>
-          </Primary>
-      </Wrap>
+    <div   >
+        <Grid  className="about" style={{paddingTop: "7em"}}>
+           <Cell>
+            <Wrap>
+                <Primary>
+                    <Spacer>
+                    <Block><Article1/></Block>
+                    <Block><Article2 /></Block>
+                    </Spacer>
+                </Primary>
+            </Wrap>
+         </Cell>
+       </Grid>
     </div>
   );
 }

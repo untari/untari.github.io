@@ -1,210 +1,229 @@
 import React, { Component  } from 'react';
-import { Media } from 'reactstrap';
+import {  Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle, Button } from 'reactstrap';
+import { Grid, Cell } from 'react-mdl';
 import Cv from './cv.svg';
+import girl from './girl.jpg'
 import  coursera from './coursera.jpg';
 import certificate from './certs.svg';
 import projects from './projects.svg';
-import ReactModal from "react-modal";
 import resume from './Resume.pdf';
-import { Button } from 'reactstrap';
 import screen from './screen.jpg';
 import dog from './dog.jpg';
 import clock from './clock.png';
 import udacity from './udacity.jpg';
-import linkedin from './linkedin.jpg';
 import linkedin2 from './linkedin2.jpg';
-import {Animated} from "react-animated-css";
 
 
-ReactModal.setAppElement('#root');
+
 class Home extends Component {
- 
- constructor() {
-        super();
-        this.state = {
-            showModal: false,
-            showModal2: false,
-            showModal3: false
-        };
 
-        
-        this.handleOpenModal = this.handleOpenModal.bind(this);
-        this.handleOpenModal2 = this.handleOpenModal2.bind(this);
-        this.handleOpenModal3= this.handleOpenModal3.bind(this);
-        this.handleCloseModal = this.handleCloseModal.bind(this);
-       this.handleCloseModal2 = this.handleCloseModal2.bind(this);
-       this.handleCloseModal3= this.handleCloseModal3.bind(this);
-
-    }
- 
-    handleOpenModal () {
-        this.setState({showModal: true});
-    }
-    handleCloseModal () {
-        this.setState({showModal: false});
-    }
-    handleOpenModal2 () {
-       this.setState({ showModal2: true });
-   }
-   handleCloseModal2 () {
-        this.setState({showModal2: false});
-  }
-  handleOpenModal3 () {
-    this.setState({ showModal3: true });
-  }
-  handleCloseModal3 () {
-    this.setState({ showModal3: false });
-  }
- 
  render() {
        return(
-              <div id="div1">
-                    <div className="col align-self-end "  id="projects">
-                            <div className=" col-12 col-md m-1 md-auto " >
-                                    <img  src={projects} onClick={this.handleOpenModal3}  alt="projects"  className="img-responsive" width="60" height="40"/>
-                                 <ReactModal 
-                                                isOpen={this.state.showModal3}
-                                                contentLabel="Modal #3 Global Style Override Example"
-                                                onRequestClose={this.handleCloseModal3}
-                                                className="Modal">
-                                             <div >
-                                                <Media id="btn">
-                                                   <button className="btn btn-secondary" style={{marginLeft: "39%", position: "fixed"}} onClick={this.handleCloseModal3}>X</button>
-                                                </Media>
-                                                <Media className="screen text-center  mr-3 mt-3 ">
-                                                     <a href="https://github.com/untari?tab=repositories"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_gray_6d6d6d.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" /></a>
-                                                    <Media left top href="https://untari.github.io/animal_trading_card/">
-                                                    <Media object src={dog} style={{width:"30%", height:"30%", marginLeft: "33%", marginTop: "20px"}} alt="Generic placeholder image" />
-                                                    </Media>
-                                                    <Media body>
-                                                    <Media heading>
-                                                        HTML&CSS <small>(Animal Trading Card)</small>
-                                                    </Media>
-                                                       This project website is about Animat Trading Card using HTML and CSS.
-                                                       To check the source code click <a href="https://github.com/untari/animal_trading_card"> here</a> 
-                                                    </Media>
-                                                </Media>
-                                                <Media className="screen  text-center mr-3 mt-3 " >
-                                                    <Media  pull-left href="https://untari.github.io/an-analog-clock/">
-                                                       <Media object src={clock} style={{width:"30%",  height:"20%", marginLeft: "35%"}}  alt="Generic placeholder image" />
-                                                    </Media>
-                                                    <Media body>
-                                                    <Media heading>
-                                                        HTML, CSS & JavaScript <small>(Digital Analog Clock)</small>
-                                                    </Media>
-                                                       This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
-                                                        To check the code source click on <a href="https://github.com/untari/an-analog-clock"> here </a>
-                                                    </Media>
-                                                </Media>
-                                                <Media className=" screen text-center " >
-                                                    <Media  left top href="https://untari.github.io/confusion/">
-                                                    <Media object src={screen} style={{width:"30%", marginTop: "5%", height:"30%", marginLeft: "33%"}} alt="Generic placeholder image" />
-                                                    </Media>
-                                                    <Media body>
-                                                    <Media heading>
-                                                        Restaurant Website<small>(React)</small>
-                                                    </Media>
-                                                        This website project is about how to create restaurant website using React JS.
-                                                        To check the code source click on <a href="https://github.com/untari/confusion"> here </a>
-                                                    </Media>
-                                                </Media>
-                                            </div>
-                                         </ReactModal>
-                                    </div>
+           <div>
+                <header className="masthead  text-center">
+                    <div className="container d-flex align-items-center flex-column">
+                        <img className="masthead-avatar mb-5" src={girl} alt="header"  />
+                        <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
+                            <div className="divider-custom divider-light">
+                                <div className="divider-custom-line"></div>
+                                <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
+                                <div className="divider-custom-line"></div>
                             </div>
-                            <div className="col align-self-center" id="certs">
-                                    <div className=" col-12 col-md m-1 md-auto ">
-                                            <img src={certificate} alt="certs" onClick={this.handleOpenModal} className="img-responsive" width="45" height="45"/>
-                                         <ReactModal 
-                                                    isOpen={this.state.showModal}
-                                                    contentLabel="Modal #1 Global Style Override Example"
-                                                    onRequestClose={this.handleCloseModal}
-                                                    className="Modal"
-                                                    >
-                                                    <Media className="screen text-center ">
-                                                       <Media id="btn">
-                                                         <button className="btn btn-secondary" style={{marginLeft: "39%", position: "fixed"}}  onClick={this.handleCloseModal}>X</button>
-                                                        </Media> 
-                                                        <Media left top>
-                                                            <Media object src={coursera} style={{width: "38%", marginLeft: "10%", marginTop: "15px"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
-                                                        </Media>
-                                                        <Media body>
-                                                            <Media heading>
-                                                                The Hong Kong University of Science and Technology <br /> <small><i>(Coursera)</i></small>
-                                                            </Media>
-                                                              Front-End Web Development with React
-                                                        </Media>
-                                                    </Media>
-                                                    <Media className="screen text-center">
-                                                        <Media left top>
-                                                            <Media object src={udacity} style={{width: "38%", marginTop: "5%",marginLeft: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
-                                                        </Media>
-                                                        <Media body>
-                                                            <Media heading>
-                                                                Udacity
-                                                            </Media>
-                                                              Programming Languages Introduction
-                                                        </Media>
-                                                    </Media>
-                                                    <Media className="screen text-center">
-                                                        <Media left top >
-                                                                <Media object src={linkedin} style={{width: "38%", marginLeft: "5%", marginTop: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
-                                                        </Media>
-                                                        <Media body>
-                                                            <Media heading>
-                                                                LinkedIn Learning
-                                                        </Media>
-                                                                React Learning Path
-                                                        </Media>
-                                                </Media>
-                                                 <Media className="screen text-center">
-                                                        <Media left top>
-                                                                <Media object src={linkedin2} style={{width: "38%", marginLeft: "5%", marginTop: "5%"}} className="mr-3" alt="Sample" alt="Generic placeholder image" />
-                                                        </Media>
-                                                        <Media body>
-                                                            <Media heading>
-                                                                LinkedIn Learning
-                                                        </Media>
-                                                                Front-End Web Developer Learning Path
-                                                        </Media>
-                                                </Media>
-                                        </ReactModal>
-                                    </div>
-                            </div>
-                            <div className="col align-self-end" id="cv">
-                                <div className="col-12 col-md m-1 md-auto">
-                                   
-                                      <img src={Cv} alt="cv's" onClick={this.handleOpenModal2} className="img-responsive"  width="52" height="55" />
-                                 
-                                     <ReactModal 
-                                            isOpen={this.state.showModal2}
-                                            contentLabel="Modal #2 Global Style Override Example"
-                                            onRequestClose={this.handleCloseModal2}
-                                            className="Modal"
-                                            >
-                                            <div>
-                                                <Media className="screen text-center" >
-                                                    <Media   id="btnDownload"   style={{marginLeft: "36%", position: "fixed"}}>
-                                                        <Button color="info" ><a href={require("./Resume.pdf")} download={resume} className="text-light">D</a></Button>
-                                                        <Button  className="mx-1 "   onClick={this.handleCloseModal2}>X</Button>
-                                                    </Media>
-                                                    <Media >
-                                                       <iframe src={resume}  title="myFrame" style={{width: "900px", height: "370px", marginTop: "15%", marginLeft: "-2%"}} id="pdf"></iframe> 
-                                                    </Media>
-                                                    <Media body>
-                                                       
-                                                    </Media>
-                                                </Media>
+                    </div>
+                </header>
+                <hr />
+               <Grid  className=" container">
+                    <Cell col={12}>
+                            <div className="row">
+                                    <div className="col-md-6 col-lg-4 mb-5">
+                                        <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal1">
+                                            <img className="img-fluid" src={projects} alt="projects" />
+                                                <div className="overlay"><div className="text">projects</div></div>
                                             </div>
-                                    </ReactModal>
+                                    </div>
+                                    <div className="col-md-6 col-lg-4 mb-5">
+                                        <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                            <img className="img-fluid"  src={certificate} alt="certs"  />
+                                            <div className="overlay"><div className="text">certificate</div></div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-6 col-lg-4 mb-5">
+                                        <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal3">
+                                            <img className="img-fluid" src={Cv} alt="cv's"/>
+                                            <div className="overlay"><div className="text">resume</div></div>
+                                       </div>
+                                    </div>
+                                    
+                                    <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+                                     <div className="modal-dialog modal-xl" role="document">
+                                        <div className="modal-content">
+                                        <a href="https://github.com/you"><img loading="lazy" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
+                                            <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><i className="fa fa-times"></i></span>
+                                            </button>
+                                             
+                                            <div className="modal-body text-center" style={{marginTop: "-10rem"}}>
+                                                <div className="container">
+                                                    <div className="row justify-content-center">
+                                                        <div className="col-lg-8">
+                                                            <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Projects</h2>
+                                                             <div className="divider-custom">
+                                                                <div className="divider-custom-line"></div>
+                                                                <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
+                                                                <div className="divider-custom-line"></div>
+                                                            </div>
+                                                           
+                                                             <Card className="text-dark">
+                                                                    <CardBody>
+                                                                        <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
+                                                                        <CardSubtitle>Digital Analog Clock</CardSubtitle>
+                                                                    </CardBody>
+                                                                    <img width="50%" src={clock} alt="Clock" />
+                                                                    <CardBody>
+                                                                        <CardText>This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
+                                                                        To check the code source and the website click on link bellow. </CardText>
+                                                                        <CardLink href="https://github.com/untari/an-analog-clock">Code source</CardLink>
+                                                                        <CardLink href="https://untari.github.io/an-analog-clock/">Website</CardLink>
+                                                                    </CardBody>
+                                                            </Card>
+                                                            <Card className="text-dark">
+                                                                    <CardBody>
+                                                                        <CardTitle className="h3"> HTML&CSS </CardTitle>
+                                                                        <CardSubtitle>Animal Trading Card</CardSubtitle>
+                                                                    </CardBody>
+                                                                    <img width="50%" src={dog} alt="dogCard" />
+                                                                    <CardBody>
+                                                                        <CardText> This project website is about Animat Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>
+                                                                        <CardLink href="https://github.com/untari/animal_trading_card">Code source</CardLink>
+                                                                        <CardLink href="https://untari.github.io/animal_trading_card/">Website</CardLink>
+                                                                    </CardBody>
+                                                            </Card>
+                                                            <Card className="text-dark">
+                                                                <CardBody>
+                                                                <CardTitle className="h3">Restaurant Confusion</CardTitle>
+                                                                <CardSubtitle>React</CardSubtitle>
+                                                                </CardBody>
+                                                                <img width="50%" src={screen}  alt="restaurant" />
+                                                                <CardBody>
+                                                                <CardText>This website project is about how to create restaurant website using React JS.
+                                                                To check the code source click and the website click on bellow.</CardText>
+                                                                <CardLink href="https://github.com/untari/confusion">Coude source</CardLink>
+                                                                <CardLink href="https://untari.github.io/confusion/">website</CardLink>
+                                                                </CardBody>
+                                                            </Card>
+                                                            <button className="btn btn-primary" data-dismiss="modal">
+                                                                <i className="fa fa-times fa-fw"></i>
+                                                                Close 
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-            </div>
+                                <div className="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+                                    <div className="modal-dialog modal-xl" role="document">
+                                        <div className="modal-content">
+                                            <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><i className="fa fa-times"></i></span>
+                                            </button>
+                                            <div className="modal-body text-center">
+                                                <div className="container">
+                                                    <div className="row justify-content-center">
+                                                        <div className="col-lg-8">
+                                                      
+                                                            <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Certificate Achievment</h2>
+                                                       
+                                                            <div className="divider-custom">
+                                                                <div className="divider-custom-line"></div>
+                                                                <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
+                                                                <div className="divider-custom-line"></div>
+                                                            </div>
+                                                             <Card className="text-dark">
+                                                                <CardBody>
+                                                                    <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
+                                                                    <CardSubtitle>Coursera</CardSubtitle>
+                                                                </CardBody>
+                                                                <img width="50%" src={coursera} alt="Coursera" />
+                                                                <CardBody>
+                                                                    <CardText>Front-End Web Development with React</CardText>
+                                                                </CardBody>
+                                                            </Card>
+                                                            <Card className="text-dark">
+                                                                <CardBody>
+                                                                    <CardTitle>Udacity</CardTitle>
+                                                                </CardBody>
+                                                                <img width="50%" src={udacity} alt="udacity" />
+                                                                <CardBody>
+                                                                    <CardText>Programming Languages Introduction</CardText>
+                                                                </CardBody>
+                                                            </Card>
+                                                            <Card className="text-dark">
+                                                                <CardBody>
+                                                                    <CardTitle className="h3">  LinkedIn Learning</CardTitle>
+                                                                    <CardSubtitle>React Learning Path</CardSubtitle>
+                                                                </CardBody>
+                                                                <img width="50%" src={linkedin2} alt="linkedin" />
+                                                                <CardBody>
+                                                                    <CardText>Front-End Web Developer Learning Path</CardText>
+                                                                </CardBody>
+                                                            </Card>
+                                                            <button className="btn btn-primary" data-dismiss="modal">
+                                                                <i className="fa fa-times fa-fw"></i>
+                                                                Close 
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+                                    <div className="modal-dialog modal-xl" role="document">
+                                        <div className="modal-content">
+                                            <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true"><i className="fa fa-times"></i></span>
+                                            </button>
+                                            <div className="modal-body text-center">
+                                                <div className="container">
+                                                    <div className="row justify-content-center">
+                                                        <div className="col-lg-8">
+                                                
+                                                            <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Resume</h2>
+                                                        
+                                                            <div className="divider-custom">
+                                                                <div className="divider-custom-line"></div>
+                                                                <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
+                                                                <div className="divider-custom-line"></div>
+                                                            </div>
+                                                            <Card >
+                                                                <iframe src={resume}   title="myFrame" style={{width: "100%", height:"40rem"}}></iframe>
+                                                                <CardBody>
+                                                                <Button color="info" ><a href={require("./Resume.pdf")} download={resume} className="text-light">Download</a></Button>
+                                                                </CardBody>
+                                                            </Card>
+                                                            <button className="btn btn-primary" data-dismiss="modal">
+                                                                <i className="fa fa-times fa-fw"></i>
+                                                                Close 
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                            </div>        
+                    </Cell>
+               </Grid>
+        </div>
             
         );
     }
 }
 
 export default Home;
-
 

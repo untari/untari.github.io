@@ -1,21 +1,11 @@
-
-
 body {
-    background: url('Components/bG.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    object-fit: contain;
-    background-size: 43%;
-    max-width: 100vw;
-    height: 100vh;
     background-color: #c7ebea;
-    
 }
+
 /*navbar*/
 .navbar-nav {
     float: right;
-
+  
 }
 
 .active {
@@ -31,25 +21,10 @@ body {
     background-color: #36b0b3;
     color: #f7f0f0 !important;
     text-decoration: none;
+    line-height: 2em;
 }
 
 
-/*navbar brand*/
-#logo {
-    width: 15vw;
-    height: auto;
-    padding-left: 8px;
-}
-/*certs  card collapse*/
-.card, 
-.card-body .card-header {
-        background-color: transparent;
-        border: none;
-        text-decoration: transparent;
-        text-align: left;
-        color: #21617a;
-
-}
 /*btn*/
 .btn {
     color: black;
@@ -62,66 +37,220 @@ body {
     background-color: #36b0b3;
 }
 
-#about {
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #c7ebea;
-}
-.text-dark {
-   float: right;
-}
-#blog {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: #c7ebea;
-
-}
-#contact {
-    margin: 0;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: #c7ebea;
-    left: 30%;
-}
 /*middle menu*/
-
-#div1 {
-    display: inline;
-    position: relative;
-    margin: 0px auto;
-    cursor: pointer;
-    overflow: scroll;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
+. {
+  box-sizing: border-box;
+  margin: 0 ;
 }
 
+/*.banner-text {
+  background-color: #303838;
+  opacity: 1;
+  width: 75%;
+  margin: auto;
+  border-radius: 30px;
+  color: white;
+}*/
 
-#cv {
-    left: 46%;
-    position: fixed;
-    top: 8%;
-}
-#certs {
-    left: 60%;
-    position: fixed;
-    top: 30%
-}
-#projects {
-    left: 30%;
-    top: 30%;
-    position: fixed;
-}
+
 .container {
-    position: fixed;
-    top: 24%;
-    width: 30%;
-   
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
 }
+.container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
+  width: 100%;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+/*.menu{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}*/
+.contact-body {
+  margin: auto;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 5em;
+  padding-left: 3em;
+}
+.contact-grid {
+  background-color: #c7ebea;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 550px;
+  color: black;
+  margin-bottom: 20px;
+}
+.contact-grid hr {
+  border-top: 5px dotted black;
+  width: 50%;
+  margin: auto;
+}
+.about {
+     background-color: #c7ebea;
+     height: 100%;
+     width: 100%;
+}
+/*.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0rem 0rem;
+  margin-top: 20%;
+  margin-bottom: -20%;
+  margin-left: 12%;
+}*/
+
+.masthead-heading {
+    font-size: 1.5rem;
+    line-height: .5rem;
+    margin-top: -.9rem;
+    
+}
+.masthead-subheading {
+    font-size: .5rem;
+}
+.masthead-avatar {
+    width: 20rem;
+    padding-top: 1rem;
+}
+hr {
+    border: none;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.portfolio-item:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.portfolio-item {
+        cursor: pointer;
+        position: relative;
+        display: block;
+        max-width: 16rem;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        border-radius: 12px; 
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+} 
+.divider-custom {
+    margin: 1.rem 0 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.divider-custom-line {
+    width: 100%;
+    max-width: 6rem;
+    height: 0.25rem;
+    background-color: $secondary;
+    border-radius: 1rem;
+    border-color: $secondary !important;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.divider-custom-icon {
+        color: $secondary !important;
+        font-size: 2rem;
+}
+.divider-light {
+      background-color: $white;
+}
+.divider-custom-line {
+     background-color: white;
+}
+.divider-custom-icon {
+    color: white !important;
+}
+
+
+.portfolio-modal-title {
+    font-size: 2.25rem;
+    line-height: 2rem;
+}
+    @include media-breakpoint-up(lg) {
+        font-size: 3rem;
+        line-height: 2.5rem;
+    }
+    
+    .close {
+        position: absolute;
+        z-index: 1;
+        right: 1.5rem;
+        top: 1rem;
+        font-size: 3rem;
+        line-height: 3rem;
+        color: $primary;
+        opacity: 1;
+    }
+
+
+
+.fa {
+ color: #454241;
+}
+.fa-github{
+   color: #383535;
+}
+.fa-linkedin {
+ color: #383535;
+}
+  
+/*image hover*/
+
+
+/*social media icons*/
+.bottom-right{
+  position: fixed;
+  bottom: 8px;
+  right: 10px;
+}
+
+
 #btnDownload a {
     color: white;
     text-decoration: none;
@@ -129,9 +258,29 @@ body {
     
 }
 
-#pdf {
-   position: relative;
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+
 /*bubl light
 .centered{
     position: fixed;
@@ -141,12 +290,7 @@ body {
     left:42%;
     overflow:visible;
 }*/
-/*social media icons*/
-.bottom-right{
-  position: fixed;
-  bottom: 8px;
-  right: 10px;
-}
+
 
 /*
 #overlay {  //dirty solution, not recommended)//
@@ -157,488 +301,5 @@ body {
   width:100%;
   height:100%;
 } */
-.fa {
- color: #454241;
-}
-.fa-github{
-   color: #383535;
-}
-.fa-linkedin {
- color: #383535;
-}
-
-
-.Modal {
-    position: absolute;
-    top: 65px;
-    left: 400px;
-    right: 400px;
-    bottom: 40px;
-    background-color: #d8f0eb;
-    overflow-y: auto;
-  }
-  .attachment-full {
-      position:absolute;
-      top: 5px;
-      left: 5px;
-      z-index: 2;
-      
-}
-  
-.screen {
-    display:inline;
-    margin-top: 10%;         
-}
-/*image hover*/
-
-.img-responsive:hover {
-   transition: transform .2s;
-}
-.img-responsive:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
-}
-/*mobile from 320-480px*/
-@media only screen and (min-width : 320px) and (max-width : 480px) and (orientation: portrait )  {
-       #div1 {
-           width: 100%;
-           padding-top: 56.25%;
-      }
-      #logo {
-            width: 30vw;
-            height: auto;
-            padding-left: 8px;
-      }
-
-      #cv {
-            left: 32%;
-            position: fixed;
-            top: 25%;
-     }
-     #certs {
-            left: 60%;
-            position: fixed;
-            top: 40%
-     }
-     #projects {
-            left: 5%;
-            top:  39%;
-            position: fixed;
-     }
-     .container {
-            position: fixed;
-            top: 24%;
-            width: 30%;
-        
-     }
-     .Modal {
-        position: absolute;
-        top: 75px;
-        left: 45px;
-        right: 45px;
-        bottom: 90px;
-        background-color: #d8f0eb;
-        overflow-y: auto;
-    }
-    .attachment-full {
-        position:absolute;
-        top: 2px;
-        left: 4px;
-        z-index: 2;
-        width: 80px;
-        height: 80px;
-    }
-    #btnDownload {
-        left: 38%;
-        position: fixed;
-    }
-    #btn {
-        margin-left: 42%;
-    }
-    
-    #about {
-        left: 2%;
-        top: 25%;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #c7ebea;
-        
-    }
-    #blog {
-        position: fixed;
-        width: 90%;
-        height: 80%;
-        background-color: #c7ebea;
-        top: 22%;
-        left: -2%;
-        overflow: scroll;
-    }
-    #contact {
-        margin: 0;
-        position: fixed;
-        width: 63%;
-        height: 80vh;
-        background-color: #c7ebea;
-        left: 8%;
-        top: 25%;
-        overflow: scroll;
-    }
-}
-@media only screen and (min-width : 480px) and (max-width : 768px) and (orientation: portrait)  {
-       body {
-            background: url('Components/bG.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            object-fit: contain;
-            background-size: 33%;
-            max-width: 100vw;
-            height: 100vh;
-            background-color: #c7ebea;
-            
-        }
-      #logo {
-            width: 20vw;
-            height: auto;
-            padding-left: 8px;
-      }
-
-      #cv {
-            left: 40%;
-            position: fixed;
-            top: 30%;
-     }
-     #certs {
-            left: 56%;
-            position: fixed;
-            top: 42%
-     }
-     #projects {
-            left: 20%;
-            top: 42%;
-            position: fixed;
-     }
-     .container {
-            position: fixed;
-            top: 24%;
-            width: 30%;
-        
-     }
-     .Modal {
-        position: absolute;
-        top: 75px;
-        left: 45px;
-        right: 49px;
-        bottom: 90px;
-        background-color: #d8f0eb;
-        overflow-y: auto;
-    }
-    .attachment-full {
-        position:absolute;
-        top: 2px;
-        left: 4px;
-        z-index: 2;
-        width: 80px;
-        height: 80px;
-    }
-    #btnDownload {
-        left: 39%;
-        position: fixed;
-    }
-    #btn {
-        margin-left: 42%;
-    }
-    
-    #about {
-        left: -2%;
-        top: 18%;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #c7ebea;
-        
-    }
-    #blog {
-        position: fixed;
-        width: 100%;
-        height: 80%;
-        background-color: #c7ebea;
-        top: 15%;
-        overflow: scroll;
-        left: -7%;
-    }
-    #contact {
-        margin: 0;
-        position: fixed;
-        width: 80%;
-        height: 80vh;
-        background-color: #c7ebea;
-        left: 31%;
-        top: 18%;
-        overflow: scroll;
-    }
-}
-
-@media only screen and (min-width : 480px)  and (max-width : 768px) and (orientation: landscape) {
-      
-      #logo {
-            width: 35vw;
-            height: auto;
-            padding-left: 8px;
-      }
-
-      #cv {
-            left: 39%;
-            position: fixed;
-            top: 13%;
-     }
-     #certs {
-            left: 60%;
-            position: fixed;
-            top: 35%
-     }
-     #projects {
-            left: 19%;
-            top: 35%;
-            position: fixed;
-     }
-     .container {
-            position: fixed;
-            top: 24%;
-            width: 30%;
-        
-     }
-     .Modal {
-        position: absolute;
-        top: 75px;
-        left: 45px;
-        right: 49px;
-        bottom: 90px;
-        background-color: #d8f0eb;
-        overflow-y: auto;
-    }
-    .attachment-full {
-        position:absolute;
-        top: 2px;
-        left: 4px;
-        z-index: 2;
-        width: 80px;
-        height: 80px;
-    }
-    #btnDownload {
-        left: 39%;
-        position: fixed;
-    }
-    #btn {
-        margin-left: 43%;
-    }
-    
-    #about {
-        left: 5%;
-        top: 18%;
-        position: fixed;
-        width: 90%;
-        height: 100%;
-        background-color: #c7ebea;
-        
-    }
-    #blog {
-        position: fixed;
-        width: 90%;
-        height: 80%;
-        background-color: #c7ebea;
-        top: 15%;
-        overflow: scroll;
-        left: -2%;
-    }
-    #contact {
-        margin: 0;
-        position: fixed;
-        width: 80%;
-        height: 80vh;
-        background-color: #c7ebea;
-        left: 31%;
-        top: 18%;
-        overflow: scroll;
-    }
-}
-@media only screen and (min-device-width : 769px) and (max-device-width : 1024px ) {
-        body {
-            background: url('Components/bG.jpg');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            object-fit: contain;
-            background-size: 33%;
-            max-width: 100vw;
-            height: 100vh;
-            background-color: #c7ebea;
-            
-        }
-      #logo {
-            width: 20vw;
-            height: auto;
-            padding-left: 8px;
-      }
-
-      #cv {
-            left: 41%;
-            position: fixed;
-            top: 25%;
-     }
-     #certs {
-            left: 58%;
-            position: fixed;
-            top: 39%
-     }
-     #projects {
-            left: 26%;
-            top: 40%;
-            position: fixed;
-     }
-     .container {
-            position: fixed;
-            top: 24%;
-            width: 30%;
-        
-     }
-     .Modal {
-        position: absolute;
-        top: 75px;
-        left: 104px;
-        right: 111px;
-        bottom: 90px;
-        background-color: #d8f0eb;
-        overflow-y: auto;
-    }
-    .attachment-full {
-        position:absolute;
-        top: 2px;
-        left: 4px;
-        z-index: 2;
-        width: 100px;
-        height: 100px;
-    }
-    #btnDownload {
-        left: 40%;
-        position: fixed;
-    }
-    #btn {
-        margin-left: 40%;
-    }
-    
-    #about {
-        left: -2%;
-        top: 18%;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #c7ebea;
-        
-    }
-    #blog {
-        position: fixed;
-        width: 90%;
-        height: 80%;
-        background-color: #c7ebea;
-        top: 15%;
-        overflow: scroll;
-    }
-    #contact {
-        margin: 0;
-        position: fixed;
-        width: 100%;
-        height: 80vh;
-        background-color: #c7ebea;
-        left: 30%;
-        top: 18%;
-        overflow: scroll;
-    }
-}
-@media only screen and (min-device-width : 1025px) and (max-device-width : 1200px ) {
-      #logo {
-            width: 100%;
-            height: auto;
-            padding-left: 8px;
-      }
-
-      #cv {
-            left: 44%;
-            position: fixed;
-            top: 20%;
-     }
-     #certs {
-            left: 61%;
-            position: fixed;
-            top: 38%
-     }
-     #projects {
-            left: 27%;
-            top: 38%;
-            position: fixed;
-     }
-     .container {
-            position: fixed;
-            top: 24%;
-            width: 30%;
-        
-     }
-     .Modal {
-        position: absolute;
-        top: 85px;
-        left: 205px;
-        right: 335px;
-        bottom: 50px;
-        background-color: #d8f0eb;
-        overflow-y: auto;
-    }
-    .attachment-full {
-        position:absolute;
-        top: 2px;
-        left: 4px;
-        z-index: 2;
-        width: 150px;
-        height: 150px;
-    }
-    #btnDownload {
-        left: 28%;
-        position: fixed;
-    }
-    #btn {
-        margin-left: 20%;
-    }
-    
-    #about {
-        left: -2%;
-        top: 18%;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #c7ebea;
-        
-    }
-    #blog {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #c7ebea;
-        top: 18%;
-        left: 3%;
-        overflow: scroll;
-    }
-    #contact {
-        margin: 0;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: #c7ebea;
-        left: 30%;
-        top: 10%;
-        overflow: scroll;
-    }
-}
-
 
  

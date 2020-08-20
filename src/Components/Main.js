@@ -1,4 +1,4 @@
-import React, { Component, useState  } from 'react';
+import React, { Component  } from 'react';
 import { Redirect,  Route, Link, NavLink } from 'react-router-dom';
 import { NavbarBrand } from 'reactstrap';
 import Home from './Home';
@@ -25,7 +25,7 @@ const style = {
 class Main extends Component {
     render() {
         return(
-          <div id="home">
+          <div >
                 {/*<div id="overlay">  //dirty solution, not recommended)//
                      <div className="centered">
                         <a href="#">
@@ -34,8 +34,8 @@ class Main extends Component {
                      </div>
                  </div>*/}
 
-                    <nav className="navbar navbar-expand-lg navbar-dark sticky-top ">
-                        <NavbarBrand className="img-fluid"> <Link to="/home"><img src={logo} id="logo" alt="logo" /></Link></NavbarBrand>
+                    <nav className="navbar navbar-expand-lg navbar-dark fixed-top ">
+                        <NavbarBrand className="img-responsive"> <Link to="/home"><img src={logo} id="logo" alt="logo" /></Link></NavbarBrand>
                         
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,8 +55,6 @@ class Main extends Component {
                            
                         </div>
                     </nav>
-
-                   
 
                  
                  <Route exact path="/home" component={Home}  />

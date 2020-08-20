@@ -1,30 +1,34 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Tari from './tari.png';
-import Typical from 'react-typical';
+import { Grid, Cell } from 'react-mdl';
+import {  Card, CardText, CardBody } from 'reactstrap';
 
 
-function About() {
 
+class About extends Component {
+  render() {
     return (
-      <div id="about">
-            <card type="nav-tabs" class="text-center">
-                <div slot="header" class="card-header-primary">
-                   <img src={Tari} className="rounded-circle" alt="cardImg" width="100" height="100"/>
-                </div>
-                <h2 class="card-title">Untari</h2>
-                <p class="card-text"><font size="3" face="verdana" >
-                    I am a frontend software developer looking for challenging projects  <br />
-                  <Typical 
-                      loop={Infinity}
-                      wrapper="p"
-                      steps={[
-                           'that make an impact and allow me to keep learning and improving my skills' , 1000]} />
-                  
-                </font>
-             </p>                
-          </card>
-
+       <div >
+            <Grid className="about">
+            <Cell col={4}>
+                    <div style={{textAlign: 'center'}}>
+                    <img
+                        src={Tari}
+                        alt="avatar"
+                        style={{height: "300px",   paddingTop: "4em"}}
+                        />
+                    </div>
+                    <Card  style={{textAlign: 'center', color: "black", backgroundColor: "#c7ebea", border: "none"}}>
+                        <CardBody>
+                        <h3>Untari</h3>
+                        <CardText>I am a frontend software developer looking for challenging projects  <br />
+                            that make an impact and allow me to keep learning and improving my skills.</CardText>
+                        </CardBody>
+                    </Card>
+            </Cell>
+            </Grid>
       </div>
     );
+  }
 }
 export default About;

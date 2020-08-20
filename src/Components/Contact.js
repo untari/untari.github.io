@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com';
 import { Button,  Form, FormGroup, Label, Input } from 'reactstrap';
+import { Grid, Cell } from 'react-mdl';
 
 class ContactForm extends Component {
   state = {
@@ -41,60 +42,63 @@ class ContactForm extends Component {
  }
  render() {
     return (
-      <>
-        <div id="contact">
-          <h2 className="p-heading2">Get in Touch</h2>
-             
-          <Form onSubmit={this.handleSubmit.bind(this)}>
-            <FormGroup controlId="formBasicEmail" className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-              <Label className="text-muted">Email address</Label>
-              <Input
-                type="email"
-                name="email"
-                value={this.state.email}
-                className="text-primary"
-                onChange={this.handleChange.bind(this, 'email')}
-                placeholder="Enter email"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicName" className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-              <Label className="text-muted">Name</Label>
-              <Input
-                type="text"
-                name="name"
-                value={this.state.name}
-                className="text-primary"
-                onChange={this.handleChange.bind(this, 'name')}
-                placeholder="Name"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicSubject" className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-              <Label className="text-muted">Subject</Label>
-              <Input
-                type="text"
-                name="subject"
-                className="text-primary"
-                value={this.state.subject}
-                onChange={this.handleChange.bind(this, 'subject')}
-                placeholder="Subject"
-              />
-            </FormGroup>
-            <FormGroup controlId="formBasicMessage" className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
-              <Label className="text-muted">Message</Label>
-              <Input
-                type="textarea"
-                name="message"
-                className="text-primary"
-                value={this.state.message}
-                onChange={this.handleChange.bind(this, 'message')}
-              />
-            </FormGroup>
-            <Button color="info" type="submit" className="active" id="btnSend">
-              Send
-            </Button>
-          </Form>
-        </div>
-      </>
+      <div className="contact-body">
+            < Grid className="contact-grid">
+                    <Cell col={6}>
+                        <h2>Get In Touch</h2>
+                        <hr/>
+                        <Form onSubmit={this.handleSubmit.bind(this)} style={{ width: '45%', marginLeft: "25%", paddingTop: '1em'}}>
+                                <FormGroup controlId="formBasicEmail">
+                                <Label className="text-muted">Email address</Label>
+                                <Input
+                                    type="email"
+                                    name="email"
+                                    value={this.state.email}
+                                    className="text-primary"
+                                    onChange={this.handleChange.bind(this, 'email')}
+                                    placeholder="Enter email"
+                                />
+                                </FormGroup>
+                                <FormGroup controlId="formBasicName">
+                                <Label className="text-muted">Name</Label>
+                                <Input
+                                    type="text"
+                                    name="name"
+                                    value={this.state.name}
+                                    className="text-primary"
+                                    onChange={this.handleChange.bind(this, 'name')}
+                                    placeholder="Name"
+                                />
+                                </FormGroup>
+                                <FormGroup controlId="formBasicSubject" >
+                                <Label className="text-muted">Subject</Label>
+                                <Input
+                                    type="text"
+                                    name="subject"
+                                    className="text-primary"
+                                    value={this.state.subject}
+                                    onChange={this.handleChange.bind(this, 'subject')}
+                                    placeholder="Subject"
+                                />
+                                </FormGroup>
+                                <FormGroup controlId="formBasicMessage">
+                                <Label className="text-muted">Message</Label>
+                                <Input
+                                    type="textarea"
+                                    name="message"
+                                    className="text-primary"
+                                    value={this.state.message}
+                                    onChange={this.handleChange.bind(this, 'message')}
+                                />
+                                <Button color="info" type="submit" className="active ">
+                                Send
+                                </Button>
+                                </FormGroup>
+                                
+                            </Form>
+                    </Cell>
+            </Grid>
+      </div>
     )
   }
 }export default ContactForm
