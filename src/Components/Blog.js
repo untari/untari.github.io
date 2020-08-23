@@ -20,20 +20,6 @@ const Article1 = () => (
      </div>
 
 )
-const Article2 = () => (
-
-     <div>
-        <Grid className="about">
-            <Cell col={4}>
-                <h3>Introduction to programming language</h3>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
-                </p>
-            </Cell>
-         </Grid>
-     </div>
-
-)
 const Wrap=styled.div`
   max-width: 1200px;
   margin: 0 auto;
@@ -42,7 +28,7 @@ const Wrap=styled.div`
 `
 
 const Primary=styled.div`
-  max-width: 650px;
+  max-width: 670px;
   margin: 0 auto;
   font-family: 'Sen', sans-serif;
    background-color: #c7ebea;
@@ -66,19 +52,16 @@ const Block = styled.div`
 
 function Blog(){
   return (
-    <div   >
-        <Grid  className="about" style={{paddingTop: "7em"}}>
-           <Cell>
-            <Wrap>
-                <Primary>
-                    <Spacer>
-                    <Block><Article1/></Block>
-                    <Block><Article2 /></Block>
-                    </Spacer>
-                </Primary>
-            </Wrap>
-         </Cell>
-       </Grid>
+       <div className="container" id="blog">
+            <div  className="text-center">
+                    <Wrap>
+                        <Primary>
+                            <Spacer>
+                            <Block><Article1/></Block>
+                            </Spacer>
+                        </Primary>
+                    </Wrap>
+       </div>
     </div>
   );
 }

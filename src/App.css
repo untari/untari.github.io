@@ -1,3 +1,4 @@
+
 body {
     background-color: #c7ebea;
 }
@@ -38,11 +39,6 @@ body {
 }
 
 /*middle menu*/
-. {
-  box-sizing: border-box;
-  margin: 0 ;
-}
-
 /*.banner-text {
   background-color: #303838;
   opacity: 1;
@@ -55,8 +51,7 @@ body {
 
 .container {
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
+  height: auto;
 }
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
@@ -65,39 +60,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
-/*.menu{
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-  margin: auto;
-}*/
-.contact-body {
-  margin: auto;
-  position: fixed;
+.footer {position: fixed;
+  bottom: 0;
   width: 100%;
-  height: 100%;
-  justify-content: center;
-  padding-top: 5em;
-  padding-left: 3em;
-}
-.contact-grid {
-  background-color: #c7ebea;
+  background-color: none;
+  color: white;
   text-align: center;
-  justify-content: center;
-  width: 100%;
-  height: 550px;
-  color: black;
-  margin-bottom: 20px;
-}
-.contact-grid hr {
-  border-top: 5px dotted black;
-  width: 50%;
-  margin: auto;
-}
-.about {
-     background-color: #c7ebea;
-     height: 100%;
-     width: 100%;
 }
 /*.container {
   margin: 0 auto;
@@ -111,19 +79,20 @@ body {
 .masthead-heading {
     font-size: 1.5rem;
     line-height: .5rem;
-    margin-top: -.9rem;
+    margin-top: -1.5rem;
     
 }
 .masthead-subheading {
-    font-size: .5rem;
+    font-size: .3rem;
 }
 .masthead-avatar {
     width: 20rem;
-    padding-top: 1rem;
+    padding-top: 5rem;
 }
 hr {
     border: none;
 }
+
 .img-fluid {
   max-width: 100%;
   height: auto;
@@ -163,21 +132,16 @@ hr {
         cursor: pointer;
         position: relative;
         display: block;
-        max-width: 16rem;
+        max-width: 20rem;
         overflow: hidden;
         top: 0;
         left: 0;
         border-radius: 12px; 
 }
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -1.5rem;
-  margin-left: -1.5rem;
-} 
 .divider-custom {
     margin: 1.rem 0 1.5rem;
     width: 100%;
+    top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -196,6 +160,7 @@ hr {
 .divider-custom-icon {
         color: $secondary !important;
         font-size: 2rem;
+        margin-top: .7rem;
 }
 .divider-light {
       background-color: $white;
@@ -228,7 +193,10 @@ hr {
         opacity: 1;
     }
 
-
+#pic {
+    width: 18%;
+    height: 18%;
+}
 
 .fa {
  color: #454241;
@@ -239,59 +207,200 @@ hr {
 .fa-linkedin {
  color: #383535;
 }
-  
-/*image hover*/
-
-
-/*social media icons*/
-.bottom-right{
-  position: fixed;
-  bottom: 8px;
-  right: 10px;
-}
-
 
 #btnDownload a {
     color: white;
     text-decoration: none;
     border: none;
     
+} 
+#home {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    
 }
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
+#about {
+     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
 }
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
+#blog{
+     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
 }
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
+#contact {
+     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
 }
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-  }
+@media screen and (min-width: 320px){
+    #home{
+        margin-top: 9%;
+        grid-gap: 1rem;
+    } 
+    #about{
+        margin-top: 49%;
+    }
+    #blog{
+        margin-top: 51%;
+    } 
+    #contact{
+        margin-top: 54%;
+    } 
+    .page-section-heading {
+        font-size: 22px;
+    }
+    .masthead-avatar {
+        padding-top: 10rem;
+   }
 }
-
-
-
-/*bubl light
-.centered{
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    top:40%;
-    left:42%;
-    overflow:visible;
-}*/
-
-
+@media screen and (min-width: 480px) {
+    #home{
+        margin-top: 9%;
+        grid-gap: 1rem;
+    } 
+    #about{
+        margin-top: 40%;
+    }
+    #blog{
+        margin-top: 40%;
+    } 
+    #contact{
+        margin-top: 40%;
+    } 
+    .page-section-heading {
+        font-size: 22px;
+    }
+    .masthead-avatar {
+        padding-top: 10rem;
+   }
+}
+@media screen and (min-width: 600px) {
+    #home{
+        margin-top: 9%;
+        grid-gap: 1rem;
+    } 
+    #about{
+        margin-top: 30%;
+    }
+    #blog{
+        margin-top: 30%;
+          position: fixed;
+    } 
+    #contact{
+        margin-top: 30%;
+    } 
+    .page-section-heading {
+        font-size: 22px;
+    }
+    .masthead-avatar {
+        padding-top: 10rem;
+   }
+   .container {
+       max-width: 100%;
+   }
+}
+@media screen and (min-width: 768px) {
+    #home{
+        margin-top: 9%;
+        grid-gap: 1rem;
+    } 
+    #about{
+        margin-top: 25%;
+    }
+    #blog{
+        margin-top: 25%;
+    } 
+    #contact{
+        margin-top: 25%;
+    } 
+    .page-section-heading {
+        font-size: 22px;
+    }
+    .masthead-avatar {
+        padding-top: 10rem;
+   }
+}
+@media screen and (min-width: 830px)  {
+    #home{
+        margin-top: 3%;
+        grid-gap: 1rem;
+    } 
+    #about{
+        margin-top: 5%;
+        width: 60%;
+    }
+    #blog{
+        margin-top: 3%;
+        width: 84%;
+    } 
+    #contact{
+        margin-top: 3%;
+        width: 90%;
+    } 
+    .page-section-heading {
+        font-size: 22px;
+    }
+    .masthead-avatar {
+        padding-top: 2rem;
+   }
+}
+@media screen and (min-width: 900px) {
+    #home{
+        margin-top: 9%;
+        grid-gap: 1rem;
+    } 
+    #about{
+        margin-top: 20%;
+    }
+    #blog{
+        margin-top: 20%;
+    } 
+    #contact{
+        margin-top: 20%;
+    } 
+    .page-section-heading {
+        font-size: 22px;
+    }
+    .masthead-avatar {
+        padding-top: 10rem;
+   }
+}
+@media screen and (min-width: 1024px) {
+    #home {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+        margin-top: 1%;
+    }
+    #about {
+       max-width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit);
+        position: fixed;
+        margin-top: 5%;
+        margin-left: 20%;
+    }
+    #blog{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit);
+        position: fixed;
+        margin-top: 5%;
+    }
+    #contact {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit);
+        position: fixed;
+        margin-top: 5%;
+    }  
+    .masthead-avatar {
+        padding-top: 4rem;
+   }
+}
 /*
 #overlay {  //dirty solution, not recommended)//
   background-color: rgba(0,0,0,0.5);
