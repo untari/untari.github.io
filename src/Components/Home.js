@@ -19,9 +19,9 @@ class Home extends Component {
 
  render() {
        return(
-              <div>
+           <div>
                     <div className=" masthead text-center">
-                        <div className="container d-flex align-items-center flex-column">
+                        <div className="centered">
                             <img className="masthead-avatar mb-5" src={girl} alt="header"  />
                             <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
                                 <div className="divider-custom divider-light">
@@ -31,7 +31,7 @@ class Home extends Component {
                                 </div>
                         </div>
                     </div>
-                   <div id="home">
+                    <div id="home">
                                         <div>
                                             <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal1">
                                                 <img className="img-fluid" src={projects} alt="projects" />
@@ -213,8 +213,7 @@ class Home extends Component {
                                         </div>
                                     </div>
                 </div>
-            </div>
-            
+           </div>
         );
     }
 }

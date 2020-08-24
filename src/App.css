@@ -25,7 +25,6 @@ body {
     line-height: 2em;
 }
 
-
 /*btn*/
 .btn {
     color: black;
@@ -47,27 +46,19 @@ body {
   border-radius: 30px;
   color: white;
 }*/
-
-
-.container {
-  width: 100%;
-  height: auto;
+ .wrapper { 
+    display: grid;
+ }
+ #home { 
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+ }
+ .masthead {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+     text-align: center;
 }
-.container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
-  width: 100%;
-  padding-right: 1.5rem;
-  padding-left: 1.5rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-.footer {position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: none;
-  color: white;
-  text-align: center;
-}
-
 .masthead-heading {
     font-size: 1.5rem;
     line-height: .5rem;
@@ -80,6 +71,14 @@ body {
 .masthead-avatar {
     width: 20rem;
     padding-top: 5rem;
+    
+    
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
 }
 .img-fluid {
   max-width: 100%;
@@ -202,28 +201,8 @@ body {
     border: none;
     
 } 
-#home {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-    
-}
-#about {
-     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit);
-}
-#blog{
-     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit);
-}
-#contact {
-     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit);
-}
-@media screen and (min-width: 320px){
+
+/*@media screen and (min-width: 320px){
     #home{
         margin-bottom: 5rem;
         margin-top: 9%;
@@ -358,6 +337,7 @@ body {
     .container {
        max-width: 100%;
    }
+
 }
 @media screen and (min-width: 900px) {
     #home{
@@ -413,6 +393,12 @@ body {
     .masthead-avatar {
         padding-top: 4rem;
    }
+   .footer {
+        background-color: #c7ebea;
+    }
+    .navbar {
+        background-color: #c7ebea;
+    }
 }
 /*
 #overlay {  //dirty solution, not recommended)//
