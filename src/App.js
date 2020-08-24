@@ -9,7 +9,7 @@ class App extends Component {
      render() {
          return (
             <HashRouter basename='/'>
-                    <div className="wrapper">
+                    <div>
                         <Main />
                     </div>
            </HashRouter>

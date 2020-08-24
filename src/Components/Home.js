@@ -19,10 +19,10 @@ class Home extends Component {
 
  render() {
        return(
-           <div>
+           <div className="container">
                     <div className=" masthead text-center">
                         <div className="centered">
-                            <img className="masthead-avatar mb-5" src={girl} alt="header"  />
+                            <img className="masthead-avatar mb-5" src={girl} alt="header" className="img-fluid" style={{width: "50%"}} />
                             <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
                                 <div className="divider-custom divider-light">
                                     <div className="divider-custom-line"></div>
@@ -34,19 +34,19 @@ class Home extends Component {
                     <div id="home">
                                         <div>
                                             <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal1">
-                                                <img className="img-fluid" src={projects} alt="projects" />
+                                                <img className="img-fluid" src={projects} alt="projects"  />
                                                     <div className="overlay"><div className="text">projects</div></div>
                                                 </div>
                                         </div>
                                         <div>
                                             <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                                                <img className="img-fluid"  src={certificate} alt="certs"  />
+                                                <img className="img-fluid"  src={certificate} alt="certs"   />
                                                 <div className="overlay"><div className="text">certificate</div></div>
                                             </div>
                                         </div>
                                         <div>
                                             <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal3">
-                                                <img className="img-fluid" src={Cv} alt="cv's"/>
+                                                <img className="img-fluid" src={Cv} alt="cv's" />
                                                 <div className="overlay"><div className="text">resume</div></div>
                                         </div>
                                         </div>
@@ -75,7 +75,7 @@ class Home extends Component {
                                                                             <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
                                                                             <CardSubtitle>Digital Analog Clock</CardSubtitle>
                                                                         </CardBody>
-                                                                        <img width="50%" src={clock} alt="Clock" />
+                                                                        <img width="50%" src={clock} alt="Clock" className="img-fluid" />
                                                                         <CardBody>
                                                                             <CardText>This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
                                                                             To check the code source and the website click on link bellow. </CardText>
@@ -83,24 +83,24 @@ class Home extends Component {
                                                                             <CardLink href="https://untari.github.io/an-analog-clock/">Website</CardLink>
                                                                         </CardBody>
                                                                 </Card>
-                                                                <Card className="text-dark">
+                                                                <Card className="text-dark mt-3">
                                                                         <CardBody>
                                                                             <CardTitle className="h3"> HTML&CSS </CardTitle>
                                                                             <CardSubtitle>Animal Trading Card</CardSubtitle>
                                                                         </CardBody>
-                                                                        <img width="50%" src={dog} alt="dogCard" />
+                                                                        <img width="50%" src={dog} alt="dogCard"  className="img-fluid" />
                                                                         <CardBody>
                                                                             <CardText> This project website is about Animat Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>
                                                                             <CardLink href="https://github.com/untari/animal_trading_card">Code source</CardLink>
                                                                             <CardLink href="https://untari.github.io/animal_trading_card/">Website</CardLink>
                                                                         </CardBody>
                                                                 </Card>
-                                                                <Card className="text-dark">
+                                                                <Card className="text-dark mt-3">
                                                                     <CardBody>
                                                                     <CardTitle className="h3">Restaurant Confusion</CardTitle>
                                                                     <CardSubtitle>React</CardSubtitle>
                                                                     </CardBody>
-                                                                    <img width="50%" src={screen}  alt="restaurant" />
+                                                                    <img width="50%" src={screen}  alt="restaurant"  className="img-fluid" />
                                                                     <CardBody>
                                                                     <CardText>This website project is about how to create restaurant website using React JS.
                                                                     To check the code source click and the website click on bellow.</CardText>
@@ -108,7 +108,7 @@ class Home extends Component {
                                                                     <CardLink href="https://untari.github.io/confusion/">website</CardLink>
                                                                     </CardBody>
                                                                 </Card>
-                                                                <button className="btn btn-primary" data-dismiss="modal">
+                                                                <button className="active mt-3"  id="nav2" data-dismiss="modal">
                                                                     <i className="fa fa-times fa-fw"></i>
                                                                     Close 
                                                                 </button>
@@ -130,43 +130,43 @@ class Home extends Component {
                                                         <div className="row justify-content-center">
                                                             <div className="col-lg-8">
                                                         
-                                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Certificate Achievment</h2>
+                                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Certificate</h2>
                                                         
                                                                 <div className="divider-custom">
                                                                     <div className="divider-custom-line"></div>
                                                                     <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
                                                                     <div className="divider-custom-line"></div>
                                                                 </div>
-                                                                <Card className="text-dark">
+                                                                <Card className="text-dark mt-3">
                                                                     <CardBody>
                                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                                         <CardSubtitle>Coursera</CardSubtitle>
                                                                     </CardBody>
-                                                                    <img width="50%" src={coursera} alt="Coursera" />
+                                                                    <img width="50%" src={coursera} alt="Coursera"  className="img-fluid" />
                                                                     <CardBody>
                                                                         <CardText>Front-End Web Development with React</CardText>
                                                                     </CardBody>
                                                                 </Card>
-                                                                <Card className="text-dark">
+                                                                <Card className="text-dark mt-3">
                                                                     <CardBody>
                                                                         <CardTitle>Udacity</CardTitle>
                                                                     </CardBody>
-                                                                    <img width="50%" src={udacity} alt="udacity" />
+                                                                    <img width="50%" src={udacity} alt="udacity"  className="img-fluid"  />
                                                                     <CardBody>
                                                                         <CardText>Programming Languages Introduction</CardText>
                                                                     </CardBody>
                                                                 </Card>
-                                                                <Card className="text-dark">
+                                                                <Card className="text-dark mt-3">
                                                                     <CardBody>
                                                                         <CardTitle className="h3">  LinkedIn Learning</CardTitle>
                                                                         <CardSubtitle>React Learning Path</CardSubtitle>
                                                                     </CardBody>
-                                                                    <img width="50%" src={linkedin2} alt="linkedin" />
+                                                                    <img width="50%" src={linkedin2} alt="linkedin"  className="img-fluid"  />
                                                                     <CardBody>
                                                                         <CardText>Front-End Web Developer Learning Path</CardText>
                                                                     </CardBody>
                                                                 </Card>
-                                                                <button className="btn btn-primary" data-dismiss="modal">
+                                                                <button className="active mt-3"  id="nav2" data-dismiss="modal">
                                                                     <i className="fa fa-times fa-fw"></i>
                                                                     Close 
                                                                 </button>
@@ -196,12 +196,12 @@ class Home extends Component {
                                                                     <div className="divider-custom-line"></div>
                                                                 </div>
                                                                 <Card >
-                                                                    <iframe src={resume}   title="myFrame" style={{width: "100%", height:"40rem"}}></iframe>
+                                                                    <iframe src={resume}   title="myFrame" style={{width: "100%", height: "50rem"}}></iframe>
                                                                     <CardBody>
                                                                     <Button color="info" ><a href={require("./Resume.pdf")} download={resume} className="text-light">Download</a></Button>
                                                                     </CardBody>
                                                                 </Card>
-                                                                <button className="btn btn-primary" data-dismiss="modal">
+                                                                <button className="active mt-3" id="nav2" data-dismiss="modal">
                                                                     <i className="fa fa-times fa-fw"></i>
                                                                     Close 
                                                                 </button>

@@ -1,6 +1,8 @@
 
 body {
     background-color: #c7ebea;
+    display: grid;
+    
 }
 
 /*navbar*/
@@ -14,7 +16,7 @@ body {
     text-decoration: none;
     background-color: #0b9c8f;
     font-weight: bold;
-    line-height: 2em;
+    line-height: 2.5em;
 }
 
 
@@ -22,9 +24,8 @@ body {
     background-color: #36b0b3;
     color: #f7f0f0 !important;
     text-decoration: none;
-    line-height: 2em;
+    line-height: 2.5em;
 }
-
 /*btn*/
 .btn {
     color: black;
@@ -46,18 +47,17 @@ body {
   border-radius: 30px;
   color: white;
 }*/
- .wrapper { 
-    display: grid;
- }
  #home { 
-    width: 100%;
+    margin-bottom: 15%;
     display: grid;
+    grid-gap: 2rem;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
  }
  .masthead {
      display: grid;
      grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
      text-align: center;
+     margin-top: 10%;
 }
 .masthead-heading {
     font-size: 1.5rem;
@@ -68,20 +68,14 @@ body {
 .masthead-subheading {
     font-size: .3rem;
 }
-.masthead-avatar {
-    width: 20rem;
-    padding-top: 5rem;
-    
-    
-}
+
 .footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-
 }
 .img-fluid {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .overlay {
@@ -119,7 +113,6 @@ body {
         cursor: pointer;
         position: relative;
         display: block;
-        max-width: 20rem;
         overflow: hidden;
         top: 0;
         left: 0;
@@ -180,10 +173,6 @@ body {
         opacity: 1;
     }
 
-#pic {
-    width: 18%;
-    height: 18%;
-}
 
 .fa {
  color: #454241;
@@ -201,28 +190,52 @@ body {
     border: none;
     
 } 
-
-/*@media screen and (min-width: 320px){
+#about {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem; 
+  margin-bottom: 5rem;
+}
+#blog {
+    margin-top: 10rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+#contact {
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 320px){
+    .page-section-heading {
+        font-size: 20px;
+    }
+    .masthead-avatar {
+        padding-top: 5rem;
+   }
+   .navbar {
+     background-color:  rgba(255, 255, 255, 0.5);    
+   }
+   .footer {
+       background-color:  rgba(255, 255, 255, 0.5);    
+   }
+}
+/*@media screen and (min-width: 480px) {
     #home{
-        margin-bottom: 5rem;
         margin-top: 9%;
         grid-gap: 1rem;
         max-width: 100%;
     } 
-     .navbar  {
-         background-color: rgba(255, 255, 255, 0.5);
-    }
-    .footer {
-        background-color: rgba(255, 255, 255, 0.5);
-    }
     #about{
-        margin-top: 49%;
+        margin-top: 18%;
     }
     #blog{
-        margin-top: 51%;
+        margin-top: 40%;
     } 
     #contact{
-        margin-top: 54%;
+        margin-top: 18%;
     } 
     .page-section-heading {
         font-size: 22px;
@@ -234,46 +247,25 @@ body {
        max-width: 100%;
    }
 }
-@media screen and (min-width: 480px) {
-    #home{
-        margin-top: 9%;
-        grid-gap: 1rem;
-        max-width: 100%;
-    } 
-    #about{
-        margin-top: 40%;
+@media screen and (min-width: 570px) {
+     .masthead {
+      margin-top: -10%;
     }
-    #blog{
-        margin-top: 40%;
-    } 
-    #contact{
-        margin-top: 40%;
-    } 
-    .page-section-heading {
-        font-size: 22px;
-    }
-    .masthead-avatar {
-        padding-top: 10rem;
-   }
-    .container {
-       max-width: 100%;
-   }
-}
-@media screen and (min-width: 622px) {
     #home{
-        margin-top: 9%;
+        margin-top: 3%;
         grid-gap: 1rem;
          max-width: 100%;
     } 
     #about{
-        margin-top: 30%;
+        margin-top: 14%;
     }
     #blog{
         margin-top: 30%;
           position: fixed;
     } 
     #contact{
-        margin-top: 30%;
+        margin-top: 10%;
+        width: 85%;
     } 
     .page-section-heading {
         font-size: 22px;
@@ -287,21 +279,21 @@ body {
 }
 @media screen and (min-width: 768px) {
     #home{
-        margin-top: 9%;
-        grid-gap: 1rem;
+        margin-top: 3%;
+        grid-gap: .5rem;
         max-width: 100%;
     } 
     #about{
-        margin-top: 25%;
+        margin-top: 14%;
     }
     #blog{
         margin-top: 25%;
     } 
     #contact{
-        margin-top: 25%;
+        margin-top: 12%;
     } 
     .page-section-heading {
-        font-size: 22px;
+        font-size: 32px;
     }
     .masthead-avatar {
         padding-top: 10rem;
@@ -311,21 +303,24 @@ body {
    }
 }
 @media screen and (min-width: 830px)  {
+    .masthead {
+       margin-top: 4%;
+    }
     #home{
         margin-top: 3%;
         grid-gap: 1rem;
         max-width: 100%;
     } 
     #about{
-        margin-top: 5%;
-        width: 60%;
+        margin-top: 10%;
+        
     }
     #blog{
-        margin-top: 3%;
-        width: 84%;
+        margin-top: 6%;
+        margin-left: 7%;
     } 
     #contact{
-        margin-top: 3%;
+        margin-top: 10%;
         width: 90%;
     } 
     .page-section-heading {
@@ -334,65 +329,34 @@ body {
     .masthead-avatar {
         padding-top: 2rem;
    }
-    .container {
-       max-width: 100%;
-   }
+  
 
 }
 @media screen and (min-width: 900px) {
+ 
     #home{
         margin-top: 9%;
         grid-gap: 1rem;
         max-width: 100%;
     } 
     #about{
-        margin-top: 20%;
+        margin-top: 10%;
     }
     #blog{
-        margin-top: 20%;
+        margin-top: 10%;
     } 
     #contact{
-        margin-top: 20%;
+        margin-top: 10%;
     } 
     .page-section-heading {
-        font-size: 22px;
+        font-size: 32px;
     }
     .masthead-avatar {
         padding-top: 10rem;
    }
 }
 @media screen and (min-width: 1024px) {
-    #home {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-        margin-top: 1%;
-    }
-    #about {
-       max-width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit);
-        position: fixed;
-        margin-top: 5%;
-        margin-left: 20%;
-    }
-    #blog{
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit);
-        position: fixed;
-        margin-top: 5%;
-    }
-    #contact {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(auto-fit);
-        position: fixed;
-        margin-top: 4%;
-    }  
-    .masthead-avatar {
-        padding-top: 4rem;
-   }
+  
    .footer {
         background-color: #c7ebea;
     }

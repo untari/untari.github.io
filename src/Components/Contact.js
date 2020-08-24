@@ -95,7 +95,7 @@ class ContactForm extends Component {
                                             value={this.state.message}
                                             onChange={this.handleChange.bind(this, 'message')}
                                         />
-                                        <Button color="info" type="submit" className="active ">
+                                        <Button color="info" type="submit" className="active mt-2">
                                         Send
                                         </Button>
                                         </FormGroup>
