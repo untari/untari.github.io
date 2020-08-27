@@ -184,6 +184,9 @@ svg {
     border: none;
     
 }
+.attachment-full {
+    float: left;
+}
 .about {
   color: black;
   background: #c7ebea;

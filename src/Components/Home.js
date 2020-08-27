@@ -11,7 +11,6 @@ import dog from './dog.jpg';
 import clock from './clock.png';
 import udacity from './udacity.jpg';
 import linkedin2 from './linkedin2.jpg';
-import { Container, Row, Col } from 'reactstrap';
 
 class Home extends Component {
 
@@ -19,7 +18,7 @@ class Home extends Component {
        return(
            <div className="text-center" style={{verticalAlign: "middle", marginBottom: "50px"}}>
                    <div className="container col-xs-6 col-sm-6 col-lg-8" >
-                        <img className="masthead-avatar mb-5 img-fluid" src={girl} alt="header" style={{ marginTop: "30%"}} />
+                        <img className="masthead-avatar mb-5 img-fluid" src={girl} alt="header"  />
                         <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
                         <div className="divider-custom divider-light">
                             <div className="divider-custom-line"></div>
@@ -28,7 +27,7 @@ class Home extends Component {
                         </div>
                     </div>
                     <div>
-                         <div className="container" style={{maxWidth: "100%", marginBottom: "10px"}}>
+                         <div className="container" style={{ marginBottom: "10px"}}>
                             <div className="row">
                           
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
@@ -58,7 +57,7 @@ class Home extends Component {
                      <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
                             <div className="modal-dialog modal-xl" role="document">
                                 <div className="modal-content">
-                                <a href="https://github.com/you"><img loading="lazy" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
+                                <a href="https://github.com/untari?tab=repositories"><img loading="lazy" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
                                     <button className="close" type="button" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true"><i className="fa fa-times"></i></span>
                                     </button>
@@ -79,7 +78,7 @@ class Home extends Component {
                                                                 <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
                                                                 <CardSubtitle>Digital Analog Clock</CardSubtitle>
                                                             </CardBody>
-                                                            <img width="50%" src={clock} alt="Clock" className="img-fluid" />
+                                                            <img  src={clock} alt="Clock" className="img-fluid" />
                                                             <CardBody>
                                                                 <CardText>This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
                                                                 To check the code source and the website click on link bellow. </CardText>
@@ -92,7 +91,7 @@ class Home extends Component {
                                                                 <CardTitle className="h3"> HTML&CSS </CardTitle>
                                                                 <CardSubtitle>Animal Trading Card</CardSubtitle>
                                                             </CardBody>
-                                                            <img width="50%" src={dog} alt="dogCard"  className="img-fluid" />
+                                                            <img  src={dog} alt="dogCard"  className="img-fluid" />
                                                             <CardBody>
                                                                 <CardText> This project website is about Animat Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>
                                                                 <CardLink href="https://github.com/untari/animal_trading_card">Code source</CardLink>
@@ -104,7 +103,7 @@ class Home extends Component {
                                                         <CardTitle className="h3">Restaurant Confusion</CardTitle>
                                                         <CardSubtitle>React</CardSubtitle>
                                                         </CardBody>
-                                                        <img width="50%" src={screen}  alt="restaurant"  className="img-fluid" />
+                                                        <img  src={screen}  alt="restaurant"  className="img-fluid" />
                                                         <CardBody>
                                                         <CardText>This website project is about how to create restaurant website using React JS.
                                                         To check the code source click and the website click on bellow.</CardText>
@@ -146,18 +145,34 @@ class Home extends Component {
                                                             <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                             <CardSubtitle>Coursera</CardSubtitle>
                                                         </CardBody>
-                                                        <img width="50%" src={coursera} alt="Coursera"  className="img-fluid" />
+                                                        <img src={coursera} alt="Coursera"  className="img-fluid" />
                                                         <CardBody>
-                                                            <CardText>Front-End Web Development with React</CardText>
+                                                            <CardText><strong>Front-End Web Development with React</strong></CardText>
+                                                              <CardText>  This course explores Javascript based front-end application development,<br /> and in particular the React library (Currently Ver. 16.3),
+                                                                      JavaScript ES6 for developing React application.
+                                                                        Introduction to the use of Reactstrap for Bootstrap 4-based responsive UI design.
+                                                                        Introduced to various aspects of React components. 
+                                                                        Learn about React router and its use in developing single-page applications. 
+                                                                        Learn about designing controlled forms. 
+                                                                        Introduced to the Flux architecture and Redux various aspects of Redux and use it to develop React-Redux powered applications. 
+                                                                        Learn to use Fetch for client-server communication and the use of REST API on the server side. </CardText>
                                                         </CardBody>
                                                     </Card>
                                                     <Card className="text-dark mt-3">
                                                         <CardBody>
                                                             <CardTitle>Udacity</CardTitle>
                                                         </CardBody>
-                                                        <img width="50%" src={udacity} alt="udacity"  className="img-fluid"  />
+                                                        <img  src={udacity} alt="udacity"  className="img-fluid"  />
                                                         <CardBody>
-                                                            <CardText>Programming Languages Introduction</CardText>
+                                                            <CardText><strong>Programming Languages Introduction</strong></CardText>
+                                                            <CardText> Introduction to the fundamentals of programming languages.
+                                                                     HTML: Web development in HTML including document structure, tags, syntax, inline and block elements. 
+                                                                     CSS: Combine CSS and HTML for visual styling using browser devtools, CSS divs, spans, classes and semantic tags. 
+                                                                     Built a project that links HTML and CSS using semantically organized classes.
+                                                                     Python: Create object oriented Python programs using classes and functions, Command Line Interface (CLI) inputs, string manipulations, and version control. 
+                                                                     JavaScript: Create websites using Document Object Model (DOM), ES6 Syntax, browser events ,JQuery in functions, arrays, and objects. 
+                                                                     Created an intuitive and responsive web application that allows the user to create and edit their design pixel by pixel with different sizes and colors.
+                                                            </CardText>
                                                         </CardBody>
                                                     </Card>
                                                     <Card className="text-dark mt-3">
@@ -165,9 +180,18 @@ class Home extends Component {
                                                             <CardTitle className="h3">  LinkedIn Learning</CardTitle>
                                                             <CardSubtitle>React Learning Path</CardSubtitle>
                                                         </CardBody>
-                                                        <img width="50%" src={linkedin2} alt="linkedin"  className="img-fluid"  />
+                                                        <img src={linkedin2} alt="linkedin"  className="img-fluid"  />
                                                         <CardBody>
-                                                            <CardText>Front-End Web Developer Learning Path</CardText>
+                                                            <CardText><strong>Front-End Web Developer Learning Path</strong></CardText>
+                                                            <CardText>
+                                                                 Web Development: Core responsibilities of front-end vs back-end developers.
+                                                                 Web Design: UX design principles, structure content, use graphics, integration of Video, audio, and other media
+                                                                Front-end Development: Python, HTML5 semantic markup, style text and layouts with Flexbox and Grid, fluid layouts with CSS,
+                                                                JavaScript principles: variables, data types, conditionals, functions, loops, closures, and DOM.
+                                                                Bootstrap 4 and SASS : Bootstrap responsive layout, SassScript to create complex functions from Sass lists and control statements.
+                                                                Github & Git: GitHub web, git: branching, commits, and pull requests, create a local project and move it to GitHub.
+                                                                React.js: Operate Components, elements, and state, leverage JSX syntax extension, render components from a list, generate an optimized production build with create-react-app.
+                                                            </CardText>
                                                         </CardBody>
                                                     </Card>
                                                     <button className="active mt-3"  id="nav2" data-dismiss="modal">
