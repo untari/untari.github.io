@@ -7,15 +7,14 @@ import {  Card, CardText, CardBody, CardImg } from 'reactstrap';
 class About extends Component {
   render() {
     return (
-             <div  id="about">
-                    <div className="text-center" >                    
-                            <Card style={{backgroundColor: "#c7ebea", border: "none"}}>
+             <div  className="container">                 
+                 <div className="about">
+                            <Card style={{border: "none", backgroundColor:"#c7ebea"}}>
                                 <CardImg
                                 src={Tari}
                                 alt="avatar"
-                                id="pic"
                                 className="img-fluid"
-                                style={{ borderRadius: "25px", width: "40%", marginLeft: "30%"}}
+                                style={{ borderRadius: "25px", width: "50%"}}
                                 />
                                 <CardBody>
                                 <h3>Untari</h3>
@@ -23,7 +22,7 @@ class About extends Component {
                                     that make an impact and allow me to keep learning and improving my skills.</CardText>
                                 </CardBody>
                             </Card>
-                  </div>
+                    </div>
             </div>
     );
   }

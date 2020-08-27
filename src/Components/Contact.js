@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com';
 import { Button,  Form, FormGroup, Label, Input } from 'reactstrap';
-import { Grid, Cell } from 'react-mdl';
 
 class ContactForm extends Component {
   state = {
@@ -42,8 +41,8 @@ class ContactForm extends Component {
  }
  render() {
     return (
-       <div class="page-section" id="contact">
-            <div class="container">
+       <div class="container">
+            <div class="contact">
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
                     <div class="divider-custom">
                         <div class="divider-custom-line"></div>

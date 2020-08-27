@@ -52,7 +52,8 @@ const Block = styled.div`
 
 function Blog(){
   return (
-            <div  className="text-center" id="blog">
+     <div className="container">
+         <div className= "blog">
                     <Wrap>
                         <Primary>
                             <Spacer>
@@ -60,7 +61,8 @@ function Blog(){
                             </Spacer>
                         </Primary>
                     </Wrap>
-       </div>
+           </div>
+     </div>
   );
 }
 
