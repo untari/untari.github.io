@@ -1,14 +1,15 @@
+
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 body {
     background-color: #c7ebea;
-    display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+ 
 }
-
 /*navbar*/
 .navbar-nav {
     float: right;
@@ -40,6 +41,7 @@ body {
     color: white;
     background-color: #36b0b3;
 }
+
 img {
   vertical-align: middle;
   border-style: none;
@@ -58,20 +60,27 @@ svg {
   margin-right: auto;
   margin-left: auto;
 }
+.row {
+  align-items: center;
+  justify-content: center;
+}
 .masthead-heading {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: .5rem;
-    margin-top: -5rem;
+ 
     
 }
 .masthead-subheading {
     font-size: 1rem;
 }
-
-.footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+.img-fluid {
+    max-width: 100%;
+    height: 100%;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
 .overlay {
   position: absolute;
@@ -106,11 +115,9 @@ svg {
 }
 .portfolio-item {
         cursor: pointer;
-        position: relative;
         overflow: hidden;
-        top: 0rem;
-        left: 0;
         border-radius: 12px;
+        position: relative;
 }
 .divider-custom {
     margin: 1.rem 0 1.5rem;
@@ -134,7 +141,7 @@ svg {
 .divider-custom-icon {
         color: $secondary !important;
         font-size: 2rem;
-        margin-top: .7rem;
+        margin: 0;
 }
 .divider-light {
       background-color: $white;
@@ -145,7 +152,6 @@ svg {
 .divider-custom-icon {
     color: white !important;
 }
-
 
 .portfolio-modal-title {
     font-size: 2.25rem;
@@ -187,6 +193,18 @@ svg {
 .attachment-full {
     float: left;
 }
+
+#home {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 45%;
+  height: 50%;
+  padding: 20px;  
+  text-align: center;
+	
+}
 .about {
   color: black;
   background: #c7ebea;
@@ -208,8 +226,8 @@ svg {
   transform: translate(-50%,-50%);
 }
 .contact {
-    width: 100%;
-    padding: 2px;
+    width: 90%;
+    padding: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -217,14 +235,67 @@ svg {
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
-@media screen and (min-width: 320px){
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
    
    .navbar {
      background-color:  rgba(255, 255, 255, 0.5);    
    }
+   .masthead-heading {
+    font-size: 1rem;
+    line-height: .5rem;
+  }
+  #home {
+    width: 100%;   
+    margin-top: 6rem;
+  }
    
 }
+@media (min-width: 481px) and (max-width: 767px){
+  .masthead-heading {
+    font-size: 1rem;
+    line-height: .5rem;
+  }
+  #home {
+    width: 90%;   
+  }  
+}
 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .masthead-heading {
+    font-size: 1.5rem;
+    line-height: .5rem;
+  }
+  #home {
+     width: 90%;
+    
+  }  
+}
+@media (min-width: 1025px) and (max-width: 1280px){
+  .masthead-heading {
+    font-size: 2rem;
+    line-height: .5rem;
+  }
+  #home {
+      width: 80%;
+  }  
+}
+@media (min-width: 1281px) {
+  .masthead-heading {
+    font-size: 2rem;
+    line-height: .5rem;
+  }
+  #home {
+      width: 80%;
+  }  
+}
 /*
 #overlay {  //dirty solution, not recommended)//
   background-color: rgba(0,0,0,0.5);
