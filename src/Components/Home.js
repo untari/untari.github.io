@@ -16,41 +16,42 @@ class Home extends Component {
 
  render() {
        return(
-        <div className="text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
-                   <div className="container col-xs-6 col-sm-6 col-lg-8" >
-                        <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
-                        <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
-                        <div className="divider-custom divider-light">
-                            <div className="divider-custom-line"></div>
-                            <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
-                            <div className="divider-custom-line"></div>
-                        </div>
-                    </div>
+           <>
+                <div className="text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
+                        <div className="container col-xs-6 col-sm-6 col-lg-8" >
+                                <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
+                                <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
+                                <div className="divider-custom divider-light">
+                                    <div className="divider-custom-line"></div>
+                                    <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
+                                    <div className="divider-custom-line"></div>
+                                </div>
+                            </div>
+                            
+                            <div className="row" style={{marginBottom: "2rem"}}>
+                                <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
+                                    <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                        <img className="img-fluid" src={projects} alt="projects"  />
+                                        <div className="overlay"><div className="text">projects</div></div>
+                                    </div>
+                                </div>
                     
-                    <div className="row" style={{marginBottom: "2rem"}}>
-                        <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
-                            <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                                <img className="img-fluid" src={projects} alt="projects"  />
-                                <div className="overlay"><div className="text">projects</div></div>
-                            </div>
-                        </div>
-            
-                        <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
-                            <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                                <img className="img-fluid"  src={certificate} alt="certs"   />
-                            <div className="overlay"><div className="text">certificate</div></div>
-                            </div>
-                        </div>
-            
-                        <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
-                            <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                                    <img className="img-fluid" src={Cv} alt="cv's" />
-                                <div className="overlay"><div className="text">resume</div></div>
-                            </div>
-                        </div>
-                    </div>
+                                <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
+                                    <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                        <img className="img-fluid"  src={certificate} alt="certs"   />
+                                    <div className="overlay"><div className="text">certificate</div></div>
+                                    </div>
+                                </div>
                     
-                     <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+                                <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
+                                    <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                                            <img className="img-fluid" src={Cv} alt="cv's" />
+                                        <div className="overlay"><div className="text">resume</div></div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+               <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
                             <a href="https://github.com/untari?tab=repositories"><img loading="lazy" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
@@ -236,7 +237,7 @@ class Home extends Component {
                             </div>
                         </div>
                 </div>
-           </div>
+           </>
        );
    }
 }
