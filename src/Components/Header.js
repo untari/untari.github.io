@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import {  NavbarBrand } from 'reactstrap';
 import { NavLink, Link} from 'react-router-dom';
-import { Redirect,  Route } from 'react-router-dom';
-import Footer from './Footer';
-import Home from './Home';
-import About from './About';
-import Contact from './Contact';
-import Blog from './Blog';
-
 import logo from './logo.svg';
 
 

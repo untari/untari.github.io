@@ -1,5 +1,5 @@
 import React, { Component  } from 'react';
-import {  Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle, Button, CardImg } from 'reactstrap';
+import {  Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle, Button } from 'reactstrap';
 import Cv from './cv.png';
 import girl from './girl.jpg'
 import  coursera from './coursera.jpg';
@@ -17,6 +17,7 @@ class Home extends Component {
  render() {
        return(
            <>
+                {/*header pic*/}
                 <div className="text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
                         <div className="container col-xs-6 col-sm-6 col-lg-8" >
                                 <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
@@ -28,6 +29,7 @@ class Home extends Component {
                                 </div>
                             </div>
                             
+                              {/*middle menu*/}
                             <div className="row" style={{marginBottom: "2rem"}}>
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
@@ -51,6 +53,8 @@ class Home extends Component {
                                 </div>
                             </div>
                 </div>
+                
+                  {/*modal menu for  project */}
                <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
@@ -69,7 +73,8 @@ class Home extends Component {
                                                     <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
                                                     <div className="divider-custom-line"></div>
                                                 </div>
-                                            
+                                                
+                                                 {/*modal menu contents for project */}
                                                 <Card className="text-dark">
                                                         <CardBody>
                                                             <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
@@ -119,6 +124,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
+                     {/*modal menu for certificate */}
                     <div className="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
@@ -137,6 +143,8 @@ class Home extends Component {
                                                     <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
                                                     <div className="divider-custom-line"></div>
                                                 </div>
+                                                
+                                                 {/*modal content for certificate*/}
                                                 <Card className="text-dark mt-3">
                                                     <CardBody>
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
@@ -202,6 +210,8 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
+                    
+                     {/*modal menu for resume*/}
                     <div className="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
@@ -220,6 +230,8 @@ class Home extends Component {
                                                     <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
                                                     <div className="divider-custom-line"></div>
                                                 </div>
+                                                
+                                                 {/*modal resume content*/}
                                                 <Card >
                                                     <iframe src={resume}   title="myFrame" style={{width: "100%", height: "50rem"}}></iframe>
                                                     <CardBody>

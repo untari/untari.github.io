@@ -41,6 +41,11 @@ body {
     color: white;
     background-color: #36b0b3;
 }
+#btnDownload a {
+    color: white;
+    text-decoration: none;
+    border: none;
+}
 
 img {
   vertical-align: middle;
@@ -53,6 +58,7 @@ svg {
   overflow: hidden;
   vertical-align: middle;
 }
+
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   max-width: 100%;
   padding-right: 1.5rem;
@@ -60,15 +66,15 @@ svg {
   margin-right: auto;
   margin-left: auto;
 }
+/*row in Home*/
 .row {
   align-items: center;
   justify-content: center;
 }
+/*heading in Home menu*/
 .masthead-heading {
     font-size: 1rem;
     line-height: .5rem;
- 
-    
 }
 .masthead-subheading {
     font-size: 1rem;
@@ -82,6 +88,7 @@ img {
     display: block;
     height: auto;
 }
+/*overlay for the images in the home menu*/
 .overlay {
   position: absolute;
   bottom: 0;
@@ -119,6 +126,8 @@ img {
         border-radius: 12px;
         position: relative;
 }
+
+/*dicider white line in home menu*/
 .divider-custom {
     margin: 1.rem 0 1.5rem;
     width: 100%;
@@ -153,6 +162,7 @@ img {
     color: white !important;
 }
 
+/*Modal title and button*/
 .portfolio-modal-title {
     font-size: 2.25rem;
     line-height: 2rem;
@@ -173,7 +183,7 @@ img {
         opacity: 1;
     }
 
-
+/*icon footer*/
 .fa {
  color: #454241;
 }
@@ -183,17 +193,18 @@ img {
 .fa-linkedin {
  color: #383535;
 }
-
-#btnDownload a {
-    color: white;
-    text-decoration: none;
-    border: none;
-    
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
+
+/*github ribbon*/
 .attachment-full {
     float: left;
 }
 
+/*middle menu*/
 #home {
   position: absolute;
   left: 50%;
@@ -207,6 +218,8 @@ img {
   text-align: center;
 	
 }
+
+/*Navbar content*/
 .about {
   color: black;
   background: #c7ebea;
@@ -238,13 +251,8 @@ img {
     transform: translate(-50%,-50%);
 }
 
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    
-}
 
+/*media-queries*/
 @media (min-width: 320px) and (max-width: 480px) {
    
    .navbar {
