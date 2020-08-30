@@ -28,10 +28,10 @@ class Header extends Component {
                         <div className="collapse navbar-collapse" id="navbarCollapse">
                             <div className="navbar-nav  ml-auto">
                         
-                                      <NavLink to="/home"  style={style} activeClassName="active" id="nav2">Home</NavLink>
-                                      <NavLink to="/about"   style={style} activeClassName="active "  id="nav2">About me</NavLink>
-                                      <NavLink to="/blog"   style={style} activeClassName="active "  id="nav2" >Blog</NavLink>
-                                     <NavLink  to="/contact"   style={style} activeClassName="active "  id="nav2" >Contact</NavLink >
+                                      <NavLink to="/home"  style={style} activeClassName="active" id="nav2">HOME</NavLink>
+                                      <NavLink to="/about"   style={style} activeClassName="active "  id="nav2">ABOUT ME</NavLink>
+                                      <NavLink to="/blog"   style={style} activeClassName="active "  id="nav2" >BLOG</NavLink>
+                                     <NavLink  to="/contact"   style={style} activeClassName="active "  id="nav2" >CONTACT</NavLink >
                                     
                             </div>
                            

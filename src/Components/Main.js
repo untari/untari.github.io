@@ -8,13 +8,33 @@ import Contact from './Contact';
 import Blog from './Blog';
 
 
-
+const Loading =()=>
+  <div className="loading">
+    <div></div>
+    <div></div>
+  </div> 
 
 
 class Main extends Component {
+   state = {
+        loading: true,
+    };
+    componentDidMount(){
+        this.isLoading = setTimeout(()=>{this.setState({loading: false})}, 2300);
+    }
+    componentWillUnmount() {
+        clearTimeout(this.isLoading);
+    }
+    
+    timer = () => setTimeout(()=>{
+        this.setState({loading: false})
+    }, 2300);
+
     render() {
+        const {loading} = this.state;
         return(
-            <div>
+            loading ? (<Loading/>)
+           :(<div>
                 <Header />
                             <Route exact path="/home" component={Home}  />
                             <Redirect to="/home" component={Home} />
@@ -22,7 +42,7 @@ class Main extends Component {
                             <Route  path="/contact" component={Contact} />
                             <Route  path="/blog" component={Blog} />
                 <Footer />
-            </div>
+            </div>)
         );
     }
 }
