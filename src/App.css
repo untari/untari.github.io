@@ -5,9 +5,9 @@
 }
 
 body {
-    background-color: #1f1a19;
-    height: 100%;
-    width: 100%;
+    background-color: #c7ebea;
+    height: 100vh;
+    width: 100vw;
     margin: 0px 0 0 0;
     padding: 0px;
 }
@@ -253,7 +253,6 @@ img {
 .content{
   top: 0;
   left: 0;
-  position: fixed;
   height: 100vh;
   width: 100vw;
   align-items: center;
@@ -263,10 +262,10 @@ img {
 }
 @keyframes bg {
   0% {
-    background: #000;
+    background: #737874;
   }
   100% {
-    background: #54a8b0;
+    background:#45433d;
   }
 }
 .loading {
@@ -282,7 +281,7 @@ img {
 }
 .loading div {
   position: absolute;
-  background: white;
+  background: black;
   opacity: 1;
   border-radius: 50%;
   animation: loading 1.4s cubic-bezier(0, 0.2, 0.8, 1) infinite;
@@ -322,9 +321,6 @@ img {
   #home {
     width: 100%; 
   }
-  .content {
-    overflow: scroll;    
-  }
    
 }
 @media (min-width: 481px) and (max-width: 767px){
@@ -335,9 +331,7 @@ img {
   #home {
     width: 90%;   
   }  
-   .content {
-    overflow: scroll;    
-  }
+
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .masthead-heading {
