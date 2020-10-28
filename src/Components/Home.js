@@ -34,21 +34,21 @@ class Home extends Component {
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                                         <img className="img-fluid" src={projects} alt="projects"  />
-                                        <div className="overlay"><div className="text">projects</div></div>
+                                        <div className="overlay"><div className="text">PROJECTS</div></div>
                                     </div>
                                 </div>
                     
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                                         <img className="img-fluid"  src={certificate} alt="certs"   />
-                                    <div className="overlay"><div className="text">certificate</div></div>
+                                    <div className="overlay"><div className="text">CERTIFICATES</div></div>
                                     </div>
                                 </div>
                     
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                                             <img className="img-fluid" src={Cv} alt="cv's" />
-                                        <div className="overlay"><div className="text">resume</div></div>
+                                        <div className="overlay"><div className="text">RESUME</div></div>
                                     </div>
                                 </div>
                             </div>
