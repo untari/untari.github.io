@@ -14,6 +14,8 @@ import clock from '../Images/clock.png';
 import udacity from '../Images/udacity.jpg';
 import linkedin2 from '../Images/linkedin2.jpg';
 
+
+
 class Home extends Component {
 
  render() {
@@ -269,8 +271,8 @@ class Home extends Component {
                                                 </div>
                                                 
                                                  {/*modal resume content*/}
-                                                <Card  className="embed-responsive embed-responsive-16by9">
-                                                    <iframe  className="embed-responsive-item" src={resume}   title="myFrame" style={{width: "100%", height: "50rem"}}></iframe>
+                                                <Card>
+                                                    <object data={resume}   title="myFrame" style={{width: "100%", height: "50rem"}}></object>
                                                     <CardBody>
                                                     <Button color="info" ><a href={require("./Resume.pdf")} download={resume} className="text-light">Download</a></Button>
                                                     </CardBody>
