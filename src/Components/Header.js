@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import {  NavbarBrand } from 'reactstrap';
 import { NavLink, Link} from 'react-router-dom';
-import logo from './logo.svg';
+import logo from '../Images/logo.svg';
 
 
 const style = {
   borderRadius: 3,
   border: 0,
   color: 'black',
-  height: 40,
+  height: 30,
   padding: '2px 9px',
   marginRight: '10px',
 };

@@ -50,7 +50,7 @@ class ContactForm extends Component {
                         <div class="divider-custom-line"></div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-8 mx-auto">
+                        <div class="col-lg-6 mx-auto">
                                 <Form onSubmit={this.handleSubmit.bind(this)}>
                                         <FormGroup controlId="formBasicEmail">
                                         <Label className="text-muted">Email address</Label>
@@ -105,4 +105,5 @@ class ContactForm extends Component {
         </div>
     );
   }
-}export default ContactForm
+}
+export default ContactForm;

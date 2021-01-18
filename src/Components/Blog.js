@@ -10,7 +10,7 @@ const Article1 = () => (
 
       <div>
          <Grid >
-            <Cell col={5}>
+            <Cell col={6}>
                 <h3>Hey! I'm Tari.</h3>
                 <p>
                     I am a frontend-developer a compendium of the things I have learned and created, and anything else I want to write about.

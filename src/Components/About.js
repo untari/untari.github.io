@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Tari from './tari.png';
+import Tari from '../Images/tari.png';
 import {  Card, CardText, CardBody, CardImg } from 'reactstrap';
 
 
@@ -14,7 +14,7 @@ class About extends Component {
                                 src={Tari}
                                 alt="avatar"
                                 className="img-fluid"
-                                style={{ borderRadius: "25px", width: "50%"}}
+                                style={{ borderRadius: "25px", width: "40%"}}
                                 />
                                 <CardBody>
                                 <h3>Untari</h3>

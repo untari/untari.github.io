@@ -7,9 +7,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="48.657169mm"
-   height="6.1645727mm"
-   viewBox="0 0 48.657169 6.1645727"
+   width="62.071518mm"
+   height="6.579061mm"
+   viewBox="0 0 62.071518 6.579061"
    version="1.1"
    id="svg1074"
    inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
@@ -23,9 +23,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="108.5462"
-     inkscape:cy="106.24048"
+     inkscape:zoom="1.4"
+     inkscape:cx="259.08458"
+     inkscape:cy="250.49196"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -57,12 +57,12 @@
      id="layer1">
     <text
        id="text254"
-       style="font-variant:normal;font-weight:800;font-size:7.71702px;font-family:Gilroy;-inkscape-font-specification:Gilroy-ExtraBold;writing-mode:lr-tb;display:inline;fill:#ede4f4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
-       x="-0.20347612"
-       y="5.693563"><tspan
+       style="font-variant:normal;font-weight:800;font-size:7.71702px;font-family:roboto;-inkscape-font-specification:roboto-ExtraBold;writing-mode:lr-tb;display:inline;fill:#ede4f4;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       x="-0.81767255"
+       y="5.8631268"><tspan
          id="tspan252"
-         y="5.693563"
-         x="-0.20347612"
+         y="5.8631268"
+         x="-0.81767255"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:roboto;-inkscape-font-specification:'roboto Bold';stroke-width:0.352777"><tspan
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:roboto;-inkscape-font-specification:'roboto Bold';fill:#008080"
            id="tspan840">&lt;</tspan><tspan
@@ -70,5 +70,12 @@
            id="tspan1661">Untari</tspan><tspan
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:roboto;-inkscape-font-specification:'roboto Bold';fill:#008080"
            id="tspan842">.com/&gt;</tspan></tspan></text>
+    <rect
+       style="fill:#d5fff6;stroke-width:0.264583"
+       id="rect838"
+       width="0.19117972"
+       height="0.63644773"
+       x="7.2037296"
+       y="4.1559877" />
   </g>
 </svg>

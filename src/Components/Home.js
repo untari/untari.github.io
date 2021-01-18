@@ -1,16 +1,18 @@
 import React, { Component  } from 'react';
 import {  Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle, Button } from 'reactstrap';
-import Cv from './cv.png';
-import girl from './girl.jpg'
-import  coursera from './coursera.jpg';
-import certificate from './certs.png';
-import projects from './projects.png';
+import Cv from '../Images/cv.png';
+import girl from '../Images/girl.jpg'
+import  coursera from '../Images/coursera.jpg';
+import  coursera3 from '../Images/coursera3.png';
+import  coursera4 from '../Images/coursera4.png';
+import certificate from '../Images/certs.png';
+import projects from '../Images/projects.png';
 import resume from './Resume.pdf';
-import screen from './screen.jpg';
-import dog from './dog.jpg';
-import clock from './clock.png';
-import udacity from './udacity.jpg';
-import linkedin2 from './linkedin2.jpg';
+import screen from '../Images/screen.jpg';
+import dog from '../Images/dog.jpg';
+import clock from '../Images/clock.png';
+import udacity from '../Images/udacity.jpg';
+import linkedin2 from '../Images/linkedin2.jpg';
 
 class Home extends Component {
 
@@ -18,8 +20,8 @@ class Home extends Component {
        return(
            <>
                 {/*header pic*/}
-                <div className="text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
-                        <div className="container col-xs-6 col-sm-6 col-lg-8" >
+                <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
+                        <div className="container col-xs-6 col-md-8 col-lg-8" >
                                 <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
                                 <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
                                 <div className="divider-custom divider-light">
@@ -34,21 +36,21 @@ class Home extends Component {
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                                         <img className="img-fluid" src={projects} alt="projects"  />
-                                        <div className="overlay"><div className="text">PROJECTS</div></div>
+                                        <div className="overlay"><div className="text">projects</div></div>
                                     </div>
                                 </div>
                     
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                                         <img className="img-fluid"  src={certificate} alt="certs"   />
-                                    <div className="overlay"><div className="text">CERTIFICATES</div></div>
+                                    <div className="overlay"><div className="text">certificate</div></div>
                                     </div>
                                 </div>
                     
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                                             <img className="img-fluid" src={Cv} alt="cv's" />
-                                        <div className="overlay"><div className="text">RESUME</div></div>
+                                        <div className="overlay"><div className="text">resume</div></div>
                                     </div>
                                 </div>
                             </div>
@@ -150,9 +152,27 @@ class Home extends Component {
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                         <CardSubtitle>Coursera</CardSubtitle>
                                                     </CardBody>
+                                                    <img src={coursera3} alt="Coursera"  className="img-fluid" />
+                                                    <CardBody>
+                                                        <CardText><strong>Front-End Web UI Frameworks and Tools: Bootstrap 4</strong></CardText>
+                                                            <CardText>
+                                                                    This course give an overview of client-side web UI frameworks, in particular Bootstrap 4.
+                                                                    I learnt about grids and responsive design, Bootstrap CSS and JavaScript components. 
+                                                                    Learnt about CSS preprocessors, Less and Sass. Also learn the basics of Node.js and NPM and task runners like Grunt and Gulp. In this course, I'm be able to:
+                                                                    -Set up, design and style a web page using Bootstrap 4 and its components.
+                                                                    -Create a responsive web page design.
+                                                                    -Make use of web tools to setup and manage web sites.
+                                                            </CardText>
+                                                    </CardBody>
+                                                </Card>
+                                                <Card className="text-dark mt-3">
+                                                    <CardBody>
+                                                        <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
+                                                        <CardSubtitle>Coursera</CardSubtitle>
+                                                    </CardBody>
                                                     <img src={coursera} alt="Coursera"  className="img-fluid" />
                                                     <CardBody>
-                                                        <CardText><strong>Front-End Web Development with React</strong></CardText>
+                                                        <CardText><strong>Front-End Web Development with React with Honours</strong></CardText>
                                                             <CardText>  This course explores Javascript based front-end application development,<br /> and in particular the React library (Currently Ver. 16.3),
                                                                     JavaScript ES6 for developing React application.
                                                                     Introduction to the use of Reactstrap for Bootstrap 4-based responsive UI design.
@@ -161,6 +181,23 @@ class Home extends Component {
                                                                     Learn about designing controlled forms. 
                                                                     Introduced to the Flux architecture and Redux various aspects of Redux and use it to develop React-Redux powered applications. 
                                                                     Learn to use Fetch for client-server communication and the use of REST API on the server side. </CardText>
+                                                    </CardBody>
+                                                </Card>
+                                                <Card className="text-dark mt-3">
+                                                    <CardBody>
+                                                        <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
+                                                        <CardSubtitle>Coursera</CardSubtitle>
+                                                    </CardBody>
+                                                    <img src={coursera4} alt="Coursera"  className="img-fluid" />
+                                                    <CardBody>
+                                                        <CardText><strong>Server-side Development with NodeJS, Express and MongoDB</strong></CardText>
+                                                            <CardText>
+                                                                    The entire course around the NodeJS platform. Started with an overview of the Web protocols: HTTP and HTTPS. 
+                                                                    I learnt how to examine NodeJS and NodeJS modules (Express for building web servers). 
+                                                                    On the database side,  I learnt basic CRUD operations, NoSQL databases, in particular MongoDB and Mongoose for accessing MongoDB from NodeJS.
+                                                                    I learnt to examine the REST concepts and building a RESTful API, authentication and security. 
+                                                                    Review backend as a service (BaaS) approaches, including mobile BaaS, both open-source and commercial BaaS services.
+                                                            </CardText>
                                                     </CardBody>
                                                 </Card>
                                                 <Card className="text-dark mt-3">
@@ -232,8 +269,8 @@ class Home extends Component {
                                                 </div>
                                                 
                                                  {/*modal resume content*/}
-                                                <Card >
-                                                    <iframe src={resume}   title="myFrame" style={{width: "100%", height: "50rem"}}></iframe>
+                                                <Card  className="embed-responsive embed-responsive-16by9">
+                                                    <iframe  className="embed-responsive-item" src={resume}   title="myFrame" style={{width: "100%", height: "50rem"}}></iframe>
                                                     <CardBody>
                                                     <Button color="info" ><a href={require("./Resume.pdf")} download={resume} className="text-light">Download</a></Button>
                                                     </CardBody>
@@ -255,4 +292,3 @@ class Home extends Component {
 }
 
 export default Home;
-
