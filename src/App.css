@@ -49,13 +49,6 @@ body {
     border: none;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
-  max-width: 100%;
-  max-height: 100%;
-}
-
 svg {
   overflow: hidden;
   vertical-align: middle;
@@ -91,6 +84,8 @@ img {
     max-width: 100%;
     display: block;
     height: auto;
+    vertical-align: middle;
+    border-style: none;
 }
 /*overlay for the images in the home menu*/
 .overlay {
@@ -131,7 +126,7 @@ img {
         position: relative;
 }
 
-/*dicider white line in home menu*/
+/*divider white line in home menu*/
 .divider-custom {
     margin: 1.rem 0 1.5rem;
     width: 100%;

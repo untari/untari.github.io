@@ -1,6 +1,6 @@
 {
   "name": "untari.github.io",
-    "homepage": "http://untari.github.io/untari.github.io",
+  "homepage": "http://untari.github.io/untari.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -33,6 +33,7 @@
     "reactstrap": "^8.4.1",
     "styled-components": "^5.2.0",
     "typeface-roboto": "0.0.75",
+    "web-vitals": "^1.1.0",
     "webfontloader": "^1.6.28",
     "yarn": "^1.22.10"
   },
