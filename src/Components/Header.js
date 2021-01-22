@@ -16,6 +16,7 @@ class Header extends Component {
     render() {
         return(
             <div>
+                    
                      <nav className="navbar navbar-expand-lg navbar-dark fixed-top ">
                         <NavbarBrand className="img-responsive"> <Link to="/home"><img src={logo} id="logo" alt="logo" /></Link></NavbarBrand>
                         
@@ -32,9 +33,9 @@ class Header extends Component {
                                       <NavLink to="/about"   style={style} activeClassName="active "  id="nav2">ABOUT ME</NavLink>
                                       <NavLink to="/blog"   style={style} activeClassName="active "  id="nav2" >BLOG</NavLink>
                                      <NavLink  to="/contact"   style={style} activeClassName="active "  id="nav2" >CONTACT</NavLink >
-                                    
+                                     
                             </div>
-                           
+                              
                         </div>
                     </nav>
             </div>

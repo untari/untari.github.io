@@ -21,6 +21,9 @@ class Home extends Component {
  render() {
        return(
            <>
+            
+                <a href="https://github.com/you"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
+
                 {/*header pic*/}
                 <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
                         <div className="container col-xs-6 col-md-8 col-lg-8" >
@@ -62,7 +65,7 @@ class Home extends Component {
                <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
-                            <a href="https://github.com/untari?tab=repositories"><img loading="lazy" src="https://github.blog/wp-content/uploads/2008/12/forkme_left_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
+                           
                                 <button className="close" type="button" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true"><i className="fa fa-times"></i></span>
                                 </button>
