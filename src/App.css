@@ -259,14 +259,7 @@ img {
   background-color: #c7ebea;
   animation: bg 1.4s cubic-bezier(0, 0.2, 0.8, 1);
 }
-@keyframes bg {
-  0% {
-    background: #737874;
-  }
-  100% {
-    background:#45433d;
-  }
-}
+
 .loading {
   display: inline-block;
   position: absolute;

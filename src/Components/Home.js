@@ -21,9 +21,9 @@ class Home extends Component {
  render() {
        return(
            <>
-            
-                <a href="https://github.com/you"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
-
+               <div>
+                    <a href="https://github.com/you"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
+                </div>
                 {/*header pic*/}
                 <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
                         <div className="container col-xs-6 col-md-8 col-lg-8" >
@@ -62,7 +62,7 @@ class Home extends Component {
                 </div>
                 
                   {/*modal menu for  project */}
-               <div className="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+               <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
                            
@@ -70,7 +70,7 @@ class Home extends Component {
                                     <span aria-hidden="true"><i className="fa fa-times"></i></span>
                                 </button>
                                 
-                                <div className="modal-body text-center" style={{marginTop: "-10rem"}}>
+                                <div className="modal-body text-center">
                                     <div className="container">
                                         <div className="row justify-content-center">
                                             <div className="col-lg-8">
@@ -90,8 +90,8 @@ class Home extends Component {
                                                         <img  src={clock} alt="Clock" className="img-fluid" />
                                                         <CardBody>
                                                             <CardText>This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
-                                                            To check the code source and the website click on link bellow. </CardText>
-                                                            <CardLink href="https://github.com/untari/an-analog-clock">Code source</CardLink>
+                                                            To check the source code and the website click on link bellow. </CardText>
+                                                            <CardLink href="https://github.com/untari/an-analog-clock">Source code</CardLink>
                                                             <CardLink href="https://untari.github.io/an-analog-clock/">Website</CardLink>
                                                         </CardBody>
                                                 </Card>
@@ -103,7 +103,7 @@ class Home extends Component {
                                                         <img  src={dog} alt="dogCard"  className="img-fluid" />
                                                         <CardBody>
                                                             <CardText> This project website is about Animat Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>
-                                                            <CardLink href="https://github.com/untari/animal_trading_card">Code source</CardLink>
+                                                            <CardLink href="https://github.com/untari/animal_trading_card">Source Code</CardLink>
                                                             <CardLink href="https://untari.github.io/animal_trading_card/">Website</CardLink>
                                                         </CardBody>
                                                 </Card>
@@ -115,8 +115,8 @@ class Home extends Component {
                                                     <img  src={screen}  alt="restaurant"  className="img-fluid" />
                                                     <CardBody>
                                                     <CardText>This website project is about how to create restaurant website using React JS.
-                                                    To check the code source click and the website click on bellow.</CardText>
-                                                    <CardLink href="https://github.com/untari/confusion">Coude source</CardLink>
+                                                    To check the  source code click and the website click on bellow.</CardText>
+                                                    <CardLink href="https://github.com/untari/confusion">Source Code</CardLink>
                                                     <CardLink href="https://untari.github.io/confusion/">website</CardLink>
                                                     </CardBody>
                                                 </Card>
@@ -132,7 +132,7 @@ class Home extends Component {
                         </div>
                     </div>
                      {/*modal menu for certificate */}
-                    <div className="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+                    <div className="portfolio-modal modal fade" id="portfolioModal2" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
                                 <button className="close" type="button" data-dismiss="modal" aria-label="Close">
@@ -254,7 +254,7 @@ class Home extends Component {
                     </div>
                     
                      {/*modal menu for resume*/}
-                    <div className="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+                    <div className="portfolio-modal modal fade" id="portfolioModal3" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
                                 <button className="close" type="button" data-dismiss="modal" aria-label="Close">
