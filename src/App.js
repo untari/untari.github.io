@@ -8,8 +8,8 @@ import Main from './Components/Main';
 class App extends Component {
      render() {
          return (
-           <BrowserRouter>
-                        <Route basename='/'>
+           <BrowserRouter  >
+                        <Route basename={process.env.PUBLIC_URL} >
                                 <div>
                                     <Main />
                                 </div>

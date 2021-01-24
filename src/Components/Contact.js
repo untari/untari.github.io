@@ -80,7 +80,7 @@ class ContactForm extends Component {
                                             value={this.state.message}
                                             onChange={this.handleChange.bind(this, 'message')} />
                                     </FormGroup>
-                                    <Button color="primary" type="submit">Send</Button>
+                                    <Button color="info" type="submit">Send</Button>
                                </Form>
                         </div>
                     </div>
