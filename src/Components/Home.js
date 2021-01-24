@@ -5,6 +5,8 @@ import girl from '../Images/girl.jpg'
 import  coursera from '../Images/coursera.jpg';
 import  coursera3 from '../Images/coursera3.png';
 import  coursera4 from '../Images/coursera4.png';
+import  coursera5 from '../Images/coursera5.png';
+import  coursera6 from '../Images/coursera6.png';
 import certificate from '../Images/certs.png';
 import projects from '../Images/projects.png';
 import resume from './Resume.pdf';
@@ -39,7 +41,7 @@ class Home extends Component {
                               {/*middle menu*/}
                             <div className="row" style={{marginBottom: "2rem"}}>
                                 <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
-                                    <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                                    <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal1">
                                         <img className="img-fluid" src={projects} alt="projects"  />
                                         <div className="overlay"><div className="text">Projects</div></div>
                                     </div>
@@ -74,7 +76,7 @@ class Home extends Component {
                                     <div className="container">
                                         <div className="row justify-content-center">
                                             <div className="col-lg-8">
-                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Projects</h2>
+                                                <h2 className="portfolio-modal-title text-light text-uppercase mb-0" id="portfolioModal1Label">Projects</h2>
                                                 <div className="divider-custom">
                                                     <div className="divider-custom-line"></div>
                                                     <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
@@ -95,6 +97,8 @@ class Home extends Component {
                                                             <CardLink href="https://untari.github.io/an-analog-clock/">Website</CardLink>
                                                         </CardBody>
                                                 </Card>
+                                                
+                                                 {/*  //udacity project// */}
                                                 <Card className="text-dark mt-3">
                                                         <CardBody>
                                                             <CardTitle className="h3"> HTML&CSS </CardTitle>
@@ -102,11 +106,27 @@ class Home extends Component {
                                                         </CardBody>
                                                         <img  src={dog} alt="dogCard"  className="img-fluid" />
                                                         <CardBody>
-                                                            <CardText> This project website is about Animat Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>
+                                                            <CardText> This project website is about Animal Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>
                                                             <CardLink href="https://github.com/untari/animal_trading_card">Source Code</CardLink>
                                                             <CardLink href="https://untari.github.io/animal_trading_card/">Website</CardLink>
                                                         </CardBody>
                                                 </Card>
+                                                
+                                                  {/* //coursera project  */}
+                                                <Card className="text-dark mt-3n">
+                                                        <CardBody>
+                                                            <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
+                                                            <CardSubtitle>GoSeos</CardSubtitle>
+                                                        </CardBody>
+                                                        <img  src={coursera5} alt="Clock" className="img-fluid" />
+                                                        <CardBody>
+                                                            <CardText>This website is about website that sells SEO services using HTML,  CSS and Bootsrap 4. <br />
+                                                            To check the source code and the website click on link bellow. </CardText>
+                                                            <CardLink href="https://github.com/untari/goseos">Source code</CardLink>
+                                                            <CardLink href="https://untari.com/goseos/">Website</CardLink>
+                                                        </CardBody>
+                                                </Card>
+                                                
                                                 <Card className="text-dark mt-3">
                                                     <CardBody>
                                                     <CardTitle className="h3">Restaurant Confusion</CardTitle>
@@ -120,6 +140,23 @@ class Home extends Component {
                                                     <CardLink href="https://untari.github.io/confusion/">website</CardLink>
                                                     </CardBody>
                                                 </Card>
+                                                
+                                                 {/* //server-side honour project   */}
+                                                <Card className="text-dark mt-3">
+                                                    <CardBody>
+                                                        <CardTitle className="h3">Login Form</CardTitle>
+                                                        <CardSubtitle>MongoDB and NodeJS</CardSubtitle>
+                                                        </CardBody>
+                                                            <img  src={coursera6}  alt="login form"  className="img-fluid" />
+                                                        <CardBody>
+                                                        <CardText>
+                                                            This website project is about how to create simple login form using NodeJS, MongoDB and Redis.
+                                                            To run this project, clone the repository and run the server with <strong>node app.js</strong>
+                                                            To check the  source code click and the website click on bellow.</CardText>
+                                                        <CardLink href="https://github.com/untari/login-form">Source Code</CardLink>
+                                                    </CardBody>
+                                                </Card>
+                                                
                                                 <button className="active mt-3"  id="nav2" data-dismiss="modal">
                                                     <i className="fa fa-times fa-fw"></i>
                                                     Close 
@@ -143,7 +180,7 @@ class Home extends Component {
                                         <div className="row justify-content-center">
                                             <div className="col-lg-8">
                                         
-                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Certificates</h2>
+                                                <h2 className="portfolio-modal-title text-light text-uppercase mb-0" id="portfolioModal2Label">Certificates</h2>
                                         
                                                 <div className="divider-custom">
                                                     <div className="divider-custom-line"></div>
@@ -160,6 +197,7 @@ class Home extends Component {
                                                     <img src={coursera3} alt="Coursera"  className="img-fluid" />
                                                     <CardBody>
                                                         <CardText><strong>Front-End Web UI Frameworks and Tools: Bootstrap 4</strong></CardText>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/NJNHSQS846AV">Check Certificate</CardLink>
                                                             <CardText>
                                                                     This course give an overview of client-side web UI frameworks, in particular Bootstrap 4.
                                                                     I learnt about grids and responsive design, Bootstrap CSS and JavaScript components. 
@@ -174,10 +212,12 @@ class Home extends Component {
                                                     <CardBody>
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                         <CardSubtitle>Coursera</CardSubtitle>
+                                                        
                                                     </CardBody>
                                                     <img src={coursera} alt="Coursera"  className="img-fluid" />
                                                     <CardBody>
                                                         <CardText><strong>Front-End Web Development with React with Honours</strong></CardText>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/BKU2AYMC57EN">Check Certificate</CardLink>
                                                             <CardText>  This course explores Javascript based front-end application development,<br /> and in particular the React library (Currently Ver. 16.3),
                                                                     JavaScript ES6 for developing React application.
                                                                     Introduction to the use of Reactstrap for Bootstrap 4-based responsive UI design.
@@ -196,6 +236,7 @@ class Home extends Component {
                                                     <img src={coursera4} alt="Coursera"  className="img-fluid" />
                                                     <CardBody>
                                                         <CardText><strong>Server-side Development with NodeJS, Express and MongoDB</strong></CardText>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2">Check Certificate</CardLink>
                                                             <CardText>
                                                                     The entire course around the NodeJS platform. Started with an overview of the Web protocols: HTTP and HTTPS. 
                                                                     I learnt how to examine NodeJS and NodeJS modules (Express for building web servers). 
@@ -265,7 +306,7 @@ class Home extends Component {
                                         <div className="row justify-content-center">
                                             <div className="col-lg-8">
                                     
-                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Resume</h2>
+                                                <h2 className="portfolio-modal-title text-light text-uppercase mb-0" id="portfolioModal3Label">Resume</h2>
                                             
                                                 <div className="divider-custom">
                                                     <div className="divider-custom-line"></div>

@@ -182,7 +182,10 @@ img {
         color: $primary;
         opacity: 1;
     }
-
+    
+.modal-content {
+    background-color: #3bb39d;
+}
 /*icon footer*/
 .fa {
  color: #454241;
