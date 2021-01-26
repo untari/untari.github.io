@@ -82,7 +82,53 @@ class Home extends Component {
                                                 </div>
                                                 
                                                  {/*modal menu contents for project */}
-                                                <Card className="text-dark">
+                                                 
+                                                {/* //server-side honour project   */}
+                                                <Card className="text-dark mt-3">
+                                                    <CardBody>
+                                                        <CardTitle className="h3">Login Form</CardTitle>
+                                                        <CardSubtitle>MongoDB and NodeJS</CardSubtitle>
+                                                        </CardBody>
+                                                            <img  src={coursera6}  alt="login form"  className="img-fluid" />
+                                                        <CardBody>
+                                                        <CardText>
+                                                            This website project is about how to create simple login form using NodeJS, MongoDB and Redis.
+                                                            To run this project, clone the repository and run the server with <strong>node app.js</strong>
+                                                            To check the  source code click and the website click on bellow.</CardText>
+                                                        <CardLink href="https://github.com/untari/login-form">Source Code</CardLink>
+                                                    </CardBody>
+                                                </Card>
+                                                
+                                                    {/* //coursera project  */}
+                                                <Card className="text-dark mt-3">
+                                                        <CardBody>
+                                                            <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
+                                                            <CardSubtitle>GoSeos</CardSubtitle>
+                                                        </CardBody>
+                                                        <img  src={coursera5} alt="Clock" className="img-fluid" />
+                                                        <CardBody>
+                                                            <CardText>This website is about website that sells SEO services using HTML,  CSS and Bootsrap 4. <br />
+                                                            To check the source code and the website click on link bellow. </CardText>
+                                                            <CardLink href="https://github.com/untari/goseos">Source code</CardLink>
+                                                            <CardLink href="https://untari.com/goseos/">Website</CardLink>
+                                                        </CardBody>
+                                                </Card>
+                                                
+                                                <Card className="text-dark mt-3">
+                                                        <CardBody>
+                                                        <CardTitle className="h3">Restaurant Confusion</CardTitle>
+                                                        <CardSubtitle>React</CardSubtitle>
+                                                        </CardBody>
+                                                        <img  src={screen}  alt="restaurant"  className="img-fluid" />
+                                                        <CardBody>
+                                                        <CardText>This website project is about how to create restaurant website using React JS.
+                                                        To check the  source code click and the website click on bellow.</CardText>
+                                                        <CardLink href="https://github.com/untari/confusion">Source Code</CardLink>
+                                                        <CardLink href="https://untari.github.io/confusion/">website</CardLink>
+                                                        </CardBody>
+                                                </Card>
+                                                 
+                                                <Card className="text-dark mt-3">
                                                         <CardBody>
                                                             <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
                                                             <CardSubtitle>Digital Analog Clock</CardSubtitle>
@@ -109,52 +155,7 @@ class Home extends Component {
                                                             <CardLink href="https://untari.github.io/animal_trading_card/">Website</CardLink>
                                                         </CardBody>
                                                 </Card>
-                                                
-                                                  {/* //coursera project  */}
-                                                <Card className="text-dark mt-3n">
-                                                        <CardBody>
-                                                            <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
-                                                            <CardSubtitle>GoSeos</CardSubtitle>
-                                                        </CardBody>
-                                                        <img  src={coursera5} alt="Clock" className="img-fluid" />
-                                                        <CardBody>
-                                                            <CardText>This website is about website that sells SEO services using HTML,  CSS and Bootsrap 4. <br />
-                                                            To check the source code and the website click on link bellow. </CardText>
-                                                            <CardLink href="https://github.com/untari/goseos">Source code</CardLink>
-                                                            <CardLink href="https://untari.com/goseos/">Website</CardLink>
-                                                        </CardBody>
-                                                </Card>
-                                                
-                                                <Card className="text-dark mt-3">
-                                                    <CardBody>
-                                                    <CardTitle className="h3">Restaurant Confusion</CardTitle>
-                                                    <CardSubtitle>React</CardSubtitle>
-                                                    </CardBody>
-                                                    <img  src={screen}  alt="restaurant"  className="img-fluid" />
-                                                    <CardBody>
-                                                    <CardText>This website project is about how to create restaurant website using React JS.
-                                                    To check the  source code click and the website click on bellow.</CardText>
-                                                    <CardLink href="https://github.com/untari/confusion">Source Code</CardLink>
-                                                    <CardLink href="https://untari.github.io/confusion/">website</CardLink>
-                                                    </CardBody>
-                                                </Card>
-                                                
-                                                 {/* //server-side honour project   */}
-                                                <Card className="text-dark mt-3">
-                                                    <CardBody>
-                                                        <CardTitle className="h3">Login Form</CardTitle>
-                                                        <CardSubtitle>MongoDB and NodeJS</CardSubtitle>
-                                                        </CardBody>
-                                                            <img  src={coursera6}  alt="login form"  className="img-fluid" />
-                                                        <CardBody>
-                                                        <CardText>
-                                                            This website project is about how to create simple login form using NodeJS, MongoDB and Redis.
-                                                            To run this project, clone the repository and run the server with <strong>node app.js</strong>
-                                                            To check the  source code click and the website click on bellow.</CardText>
-                                                        <CardLink href="https://github.com/untari/login-form">Source Code</CardLink>
-                                                    </CardBody>
-                                                </Card>
-                                                
+
                                                 <button className="active mt-3"  id="nav2" data-dismiss="modal">
                                                     <i className="fa fa-times fa-fw"></i>
                                                     Close 
@@ -187,6 +188,26 @@ class Home extends Component {
                                                 </div>
                                                 
                                                  {/*modal content for certificate*/}
+                                                 
+                                                  <Card className="text-dark mt-3">
+                                                    <CardBody>
+                                                        <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
+                                                        <CardSubtitle>Coursera</CardSubtitle>
+                                                    </CardBody>
+                                                    <img src={coursera4} alt="Coursera"  className="img-fluid" />
+                                                    <CardBody>
+                                                        <CardText><strong>Server-side Development with NodeJS, Express and MongoDB</strong></CardText>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2">Check Certificate</CardLink>
+                                                            <CardText>
+                                                                    The entire course around the NodeJS platform. Started with an overview of the Web protocols: HTTP and HTTPS. 
+                                                                    I learnt how to examine NodeJS and NodeJS modules (Express for building web servers). 
+                                                                    On the database side,  I learnt basic CRUD operations, NoSQL databases, in particular MongoDB and Mongoose for accessing MongoDB from NodeJS.
+                                                                    I learnt to examine the REST concepts and building a RESTful API, authentication and security. 
+                                                                    Review backend as a service (BaaS) approaches, including mobile BaaS, both open-source and commercial BaaS services.
+                                                            </CardText>
+                                                    </CardBody>
+                                                </Card>
+                                                 
                                                 <Card className="text-dark mt-3">
                                                     <CardBody>
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
@@ -206,11 +227,12 @@ class Home extends Component {
                                                             </CardText>
                                                     </CardBody>
                                                 </Card>
+                                                
+                                                
                                                 <Card className="text-dark mt-3">
                                                     <CardBody>
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                         <CardSubtitle>Coursera</CardSubtitle>
-                                                        
                                                     </CardBody>
                                                     <img src={coursera} alt="Coursera"  className="img-fluid" />
                                                     <CardBody>
@@ -226,24 +248,7 @@ class Home extends Component {
                                                                     Learn to use Fetch for client-server communication and the use of REST API on the server side. </CardText>
                                                     </CardBody>
                                                 </Card>
-                                                <Card className="text-dark mt-3">
-                                                    <CardBody>
-                                                        <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
-                                                        <CardSubtitle>Coursera</CardSubtitle>
-                                                    </CardBody>
-                                                    <img src={coursera4} alt="Coursera"  className="img-fluid" />
-                                                    <CardBody>
-                                                        <CardText><strong>Server-side Development with NodeJS, Express and MongoDB</strong></CardText>
-                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2">Check Certificate</CardLink>
-                                                            <CardText>
-                                                                    The entire course around the NodeJS platform. Started with an overview of the Web protocols: HTTP and HTTPS. 
-                                                                    I learnt how to examine NodeJS and NodeJS modules (Express for building web servers). 
-                                                                    On the database side,  I learnt basic CRUD operations, NoSQL databases, in particular MongoDB and Mongoose for accessing MongoDB from NodeJS.
-                                                                    I learnt to examine the REST concepts and building a RESTful API, authentication and security. 
-                                                                    Review backend as a service (BaaS) approaches, including mobile BaaS, both open-source and commercial BaaS services.
-                                                            </CardText>
-                                                    </CardBody>
-                                                </Card>
+                                               
                                                 <Card className="text-dark mt-3">
                                                     <CardBody>
                                                         <CardTitle>Udacity</CardTitle>
