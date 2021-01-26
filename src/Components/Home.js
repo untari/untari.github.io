@@ -74,7 +74,7 @@ class Home extends Component {
                                     <div className="container">
                                         <div className="row justify-content-center">
                                             <div className="col-lg-8">
-                                                <h2 className="portfolio-modal-title text-light text-uppercase mb-0" id="portfolioModal1Label">Projects</h2>
+                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Projects</h2>
                                                 <div className="divider-custom">
                                                     <div className="divider-custom-line"></div>
                                                     <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
@@ -184,7 +184,7 @@ class Home extends Component {
                                         <div className="row justify-content-center">
                                             <div className="col-lg-8">
                                         
-                                                <h2 className="portfolio-modal-title text-light text-uppercase mb-0" id="portfolioModal2Label">Certificates</h2>
+                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Certificates</h2>
                                         
                                                 <div className="divider-custom">
                                                     <div className="divider-custom-line"></div>
@@ -316,7 +316,7 @@ class Home extends Component {
                                         <div className="row justify-content-center">
                                             <div className="col-lg-8">
                                     
-                                                <h2 className="portfolio-modal-title text-light text-uppercase mb-0" id="portfolioModal3Label">Resume</h2>
+                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Resume</h2>
                                             
                                                 <div className="divider-custom">
                                                     <div className="divider-custom-line"></div>
