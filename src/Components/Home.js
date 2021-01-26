@@ -85,12 +85,12 @@ class Home extends Component {
                                                  
                                                 {/* //server-side honour project   */}
                                                 <Card className="text-dark mt-3">
-                                                <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
                                                     <CardBody>
                                                         <CardTitle className="h3">Login Form</CardTitle>
                                                         <CardSubtitle>MongoDB and NodeJS</CardSubtitle>
                                                         </CardBody>
-                                                            <img  src={coursera6}  alt="login form"  className="img-fluid" />
+                                                          <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
+                                                            <img  src={coursera6}  alt="login form"  className="img-fluid"    />
                                                         <CardBody>
                                                         <CardText>
                                                             This website project is about how to create simple login form using NodeJS, MongoDB and Redis.
@@ -102,11 +102,11 @@ class Home extends Component {
                                                 
                                                     {/* //coursera project  */}
                                                 <Card className="text-dark mt-3">
-                                                            <a href="https://github.com/untari/goseos"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
                                                         <CardBody>
                                                             <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
                                                             <CardSubtitle>GoSeos</CardSubtitle>
                                                         </CardBody>
+                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
                                                         <img  src={coursera5} alt="Clock" className="img-fluid" />
                                                         <CardBody>
                                                             <CardText>This website is about website that sells SEO services using HTML,  CSS and Bootsrap 4. <br />
@@ -117,11 +117,11 @@ class Home extends Component {
                                                 </Card>
                                                 
                                                 <Card className="text-dark mt-3">
-                                                        <a href="https://github.com/untari/confusion"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
                                                         <CardBody>
                                                         <CardTitle className="h3">Restaurant Confusion</CardTitle>
                                                         <CardSubtitle>React</CardSubtitle>
                                                         </CardBody>
+                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
                                                         <img  src={screen}  alt="restaurant"  className="img-fluid" />
                                                         <CardBody>
                                                         <CardText>This website project is about how to create restaurant website using React JS.
@@ -132,11 +132,11 @@ class Home extends Component {
                                                 </Card>
                                                  
                                                 <Card className="text-dark mt-3">
-                                                        <a href="https://github.com/untari/an-analog-clock"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
                                                         <CardBody>
                                                             <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
                                                             <CardSubtitle>Digital Analog Clock</CardSubtitle>
                                                         </CardBody>
+                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
                                                         <img  src={clock} alt="Clock" className="img-fluid" />
                                                         <CardBody>
                                                             <CardText>This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
@@ -148,11 +148,11 @@ class Home extends Component {
                                                 
                                                  {/*  //udacity project// */}
                                                 <Card className="text-dark mt-3">
-                                                        <a href="https://github.com/untari/animal_trading_card"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
                                                         <CardBody>
                                                             <CardTitle className="h3"> HTML&CSS </CardTitle>
                                                             <CardSubtitle>Animal Trading Card</CardSubtitle>
                                                         </CardBody>
+                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
                                                         <img  src={dog} alt="dogCard"  className="img-fluid" />
                                                         <CardBody>
                                                             <CardText> This project website is about Animal Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>

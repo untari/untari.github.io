@@ -204,7 +204,10 @@ img {
 }
 
 /*github ribbon*/
-
+#github-ribbon {
+    position: absolute;
+    right: 0;
+}
 
 /*middle menu*/
 #home {
