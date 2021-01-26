@@ -248,9 +248,10 @@ class Home extends Component {
                                                     <CardBody>
                                                         <CardTitle>Udacity</CardTitle>
                                                     </CardBody>
-                                                    <img  src={udacity} alt="udacity"  className="img-fluid"  />
+                                                    <img  src={udacity} alt="udacity"  className="img-fluid"  /> 
                                                     <CardBody>
                                                         <CardText><strong>Programming Languages Introduction</strong></CardText>
+                                                         <CardLink href="https://graduation.udacity.com/nd000">Check Certificate</CardLink>
                                                         <CardText> Introduction to the fundamentals of programming languages.
                                                                     HTML: Web development in HTML including document structure, tags, syntax, inline and block elements. 
                                                                     CSS: Combine CSS and HTML for visual styling using browser devtools, CSS divs, spans, classes and semantic tags. 
@@ -269,6 +270,7 @@ class Home extends Component {
                                                     <img src={linkedin2} alt="linkedin"  className="img-fluid"  />
                                                     <CardBody>
                                                         <CardText><strong>Front-End Web Developer Learning Path</strong></CardText>
+                                                        <CardLink href="https://www.linkedin.com/learning/me/completed?trk=nav_neptune_learning">Check Certificate</CardLink>
                                                         <CardText>
                                                                 Web Development: Core responsibilities of front-end vs back-end developers.
                                                                 Web Design: UX design principles, structure content, use graphics, integration of Video, audio, and other media
