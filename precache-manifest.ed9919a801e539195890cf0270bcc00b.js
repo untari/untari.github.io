@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a8758e23109627412f7d0f7abff41250",
+    "revision": "100a3f8bb54b3e76cf057378aefa0572",
     "url": "/untari.github.io/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/untari.github.io/static/css/2.7063d720.chunk.css"
   },
   {
-    "revision": "6d590679e046f185af21",
-    "url": "/untari.github.io/static/css/main.3756ad39.chunk.css"
+    "revision": "8349e643da566e44e6de",
+    "url": "/untari.github.io/static/css/main.dedc94a1.chunk.css"
   },
   {
     "revision": "31eb3742f0a6361b22a5",
@@ -24,8 +24,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/untari.github.io/static/js/3.86a8f910.chunk.js"
   },
   {
-    "revision": "6d590679e046f185af21",
-    "url": "/untari.github.io/static/js/main.26eb85f3.chunk.js"
+    "revision": "8349e643da566e44e6de",
+    "url": "/untari.github.io/static/js/main.f83e143f.chunk.js"
   },
   {
     "revision": "14f45da400b2f770e292",
