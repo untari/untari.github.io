@@ -200,6 +200,7 @@ img {
     position: fixed;
     bottom: 0;
     width: 100%;
+      
 }
 
 /*github ribbon*/
@@ -309,6 +310,9 @@ img {
      background-color:  rgba(255, 255, 255, 0.5);    
    }
    
+   .footer {
+         background-color: rgba(255, 255, 255, 0.5); 
+   }
    .masthead-heading {
     font-size: 1rem;
     line-height: .5rem;
