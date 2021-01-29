@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a4881f0d6a39d4acaa234e0867d299e2",
+    "revision": "31c5f7cd046707fe33fad33f47787f68",
     "url": "/untari.github.io/index.html"
   },
   {
-    "revision": "31eb3742f0a6361b22a5",
-    "url": "/untari.github.io/static/css/2.7063d720.chunk.css"
+    "revision": "cb16ba502058c8f740a5",
+    "url": "/untari.github.io/static/css/2.fca0b2a9.chunk.css"
   },
   {
-    "revision": "36c6de988e923400c1b2",
+    "revision": "c50cd7584c97e66d465d",
     "url": "/untari.github.io/static/css/main.9c86508d.chunk.css"
   },
   {
-    "revision": "31eb3742f0a6361b22a5",
-    "url": "/untari.github.io/static/js/2.78787af8.chunk.js"
+    "revision": "cb16ba502058c8f740a5",
+    "url": "/untari.github.io/static/js/2.6c5297b4.chunk.js"
   },
   {
     "revision": "1fb97997b0ecd7d7d88e3d0a6b6bb983",
-    "url": "/untari.github.io/static/js/2.78787af8.chunk.js.LICENSE.txt"
+    "url": "/untari.github.io/static/js/2.6c5297b4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "76e73f92db8a08a84d11",
-    "url": "/untari.github.io/static/js/3.86a8f910.chunk.js"
+    "revision": "20d9d024ebcf201e7de8",
+    "url": "/untari.github.io/static/js/3.f57b15cb.chunk.js"
   },
   {
-    "revision": "36c6de988e923400c1b2",
-    "url": "/untari.github.io/static/js/main.90feb9b6.chunk.js"
+    "revision": "c50cd7584c97e66d465d",
+    "url": "/untari.github.io/static/js/main.defd3699.chunk.js"
   },
   {
-    "revision": "14f45da400b2f770e292",
-    "url": "/untari.github.io/static/js/runtime-main.c84335e1.js"
+    "revision": "3332b7b33b187c51cd1e",
+    "url": "/untari.github.io/static/js/runtime-main.8ec3daec.js"
   },
   {
     "revision": "f7e69e6634f5262d352c43ed76a8fcbc",
@@ -112,8 +112,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/untari.github.io/static/media/screen.f602e120.jpg"
   },
   {
-    "revision": "b6a5d2b035090c529837b3f46abdf45d",
-    "url": "/untari.github.io/static/media/tari.b6a5d2b0.png"
+    "revision": "f8a6869d7631665f9c13af49785a9064",
+    "url": "/untari.github.io/static/media/tari.f8a6869d.png"
   },
   {
     "revision": "cca794c8c6a49961d4fbefcf9aea75fb",
