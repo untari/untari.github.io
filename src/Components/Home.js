@@ -37,22 +37,22 @@ class Home extends Component {
                             </div>
                             
                               {/*middle menu*/}
-                            <div className="row" style={{marginBottom: "2rem"}}>
-                                <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
+                            <div className="row" style={{marginBottom: "2rem"}} id="menu">
+                                <div className="col-xs-4 col-md-4 col-sm-4 col-lg-4 mb-4 ">
                                     <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal1">
                                         <img className="img-fluid" src={projects} alt="projects"  />
                                         <div className="overlay"><div className="text">Projects</div></div>
                                     </div>
                                 </div>
                     
-                                <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
+                                <div className="col-xs-3  col-md-4  col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
                                         <img className="img-fluid"  src={certificate} alt="certs"   />
                                     <div className="overlay"><div className="text">Certificates</div></div>
                                     </div>
                                 </div>
                     
-                                <div className="col-xs-6 col-sm-4 col-lg-4 mb-4">
+                                <div className="col-xs-3 col-md-4 col-sm-4 col-lg-4 mb-4">
                                     <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
                                             <img className="img-fluid" src={Cv} alt="cv's" />
                                         <div className="overlay"><div className="text">Resume</div></div>
@@ -90,7 +90,10 @@ class Home extends Component {
                                                         <CardSubtitle>MongoDB and NodeJS</CardSubtitle>
                                                         </CardBody>
                                                           <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
-                                                            <img  src={coursera6}  alt="login form"  className="img-fluid"    />
+                                                            
+                                                            <a href="https://test-login-form.herokuapp.com/">
+                                                                <img  src={coursera6}  alt="login form"  className="img-fluid"    />
+                                                            </a>
                                                         <CardBody>
                                                         <CardText>
                                                             This website project is about how to create simple login form using NodeJS, MongoDB and Redis.
@@ -106,8 +109,12 @@ class Home extends Component {
                                                             <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
                                                             <CardSubtitle>GoSeos</CardSubtitle>
                                                         </CardBody>
-                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
-                                                        <img  src={coursera5} alt="Clock" className="img-fluid" />
+                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
+                                                        </a>
+                                                        
+                                                        <a href="https://untari.com/goseos/">
+                                                            <img  src={coursera5} alt="Clock" className="img-fluid" />
+                                                        </a>
                                                         <CardBody>
                                                             <CardText>This website is about website that sells SEO services using HTML,  CSS and Bootsrap 4. <br />
                                                             To check the source code and the website click on link bellow. </CardText>
@@ -121,8 +128,12 @@ class Home extends Component {
                                                         <CardTitle className="h3">Restaurant Confusion</CardTitle>
                                                         <CardSubtitle>React</CardSubtitle>
                                                         </CardBody>
-                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
-                                                        <img  src={screen}  alt="restaurant"  className="img-fluid" />
+                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
+                                                        </a>
+                                                        
+                                                        <a href="https://untari.com/home">
+                                                            <img  src={screen}  alt="restaurant"  className="img-fluid" />
+                                                        </a>
                                                         <CardBody>
                                                         <CardText>This website project is about how to create restaurant website using React JS.
                                                         To check the  source code click and the website click on bellow.</CardText>
@@ -136,8 +147,12 @@ class Home extends Component {
                                                             <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
                                                             <CardSubtitle>Digital Analog Clock</CardSubtitle>
                                                         </CardBody>
-                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
-                                                        <img  src={clock} alt="Clock" className="img-fluid" />
+                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
+                                                        </a>
+                                                        
+                                                        <a href="https://untari.com/an-analog-clock/">
+                                                            <img  src={clock} alt="Clock" className="img-fluid" />
+                                                        </a>
                                                         <CardBody>
                                                             <CardText>This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
                                                             To check the source code and the website click on link bellow. </CardText>
@@ -152,8 +167,12 @@ class Home extends Component {
                                                             <CardTitle className="h3"> HTML&CSS </CardTitle>
                                                             <CardSubtitle>Animal Trading Card</CardSubtitle>
                                                         </CardBody>
-                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
-                                                        <img  src={dog} alt="dogCard"  className="img-fluid" />
+                                                        <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
+                                                        </a>
+                                                        
+                                                        <a href="https://untari.com/animal_trading_card/">
+                                                            <img  src={dog} alt="dogCard"  className="img-fluid" />
+                                                        </a>
                                                         <CardBody>
                                                             <CardText> This project website is about Animal Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>
                                                             <CardLink href="https://github.com/untari/animal_trading_card">Source Code</CardLink>
@@ -199,10 +218,11 @@ class Home extends Component {
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                         <CardSubtitle>Coursera</CardSubtitle>
                                                     </CardBody>
-                                                    <img src={coursera4} alt="Coursera"  className="img-fluid" />
+                                                    <a href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2"> <img src={coursera4} alt="Coursera"  className="img-fluid" />
+                                                    </a>
                                                     <CardBody>
                                                         <CardText><strong>Server-side Development with NodeJS, Express and MongoDB</strong></CardText>
-                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2">Check Certificate</CardLink>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2">Validate Certificate</CardLink>
                                                             <CardText>
                                                                     The entire course around the NodeJS platform. Started with an overview of the Web protocols: HTTP and HTTPS. 
                                                                     I learnt how to examine NodeJS and NodeJS modules (Express for building web servers). 
@@ -218,10 +238,11 @@ class Home extends Component {
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                         <CardSubtitle>Coursera</CardSubtitle>
                                                     </CardBody>
-                                                    <img src={coursera3} alt="Coursera"  className="img-fluid" />
+                                                    <a href="https://www.coursera.org/account/accomplishments/verify/NJNHSQS846AV"> <img src={coursera3} alt="Coursera"  className="img-fluid" /> 
+                                                    </a>
                                                     <CardBody>
                                                         <CardText><strong>Front-End Web UI Frameworks and Tools: Bootstrap 4</strong></CardText>
-                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/NJNHSQS846AV">Check Certificate</CardLink>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/NJNHSQS846AV">Validate Certificate</CardLink>
                                                             <CardText>
                                                                     This course give an overview of client-side web UI frameworks, in particular Bootstrap 4.
                                                                     I learnt about grids and responsive design, Bootstrap CSS and JavaScript components. 
@@ -239,10 +260,11 @@ class Home extends Component {
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                         <CardSubtitle>Coursera</CardSubtitle>
                                                     </CardBody>
-                                                    <img src={coursera} alt="Coursera"  className="img-fluid" />
+                                                    <a href="https://www.coursera.org/account/accomplishments/verify/BKU2AYMC57EN"><img src={coursera} alt="Coursera"  className="img-fluid" /> 
+                                                    </a>
                                                     <CardBody>
                                                         <CardText><strong>Front-End Web Development with React with Honours</strong></CardText>
-                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/BKU2AYMC57EN">Check Certificate</CardLink>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/BKU2AYMC57EN">Validate Certificate</CardLink>
                                                             <CardText>  This course explores Javascript based front-end application development,<br /> and in particular the React library (Currently Ver. 16.3),
                                                                     JavaScript ES6 for developing React application.
                                                                     Introduction to the use of Reactstrap for Bootstrap 4-based responsive UI design.
@@ -258,10 +280,11 @@ class Home extends Component {
                                                     <CardBody>
                                                         <CardTitle>Udacity</CardTitle>
                                                     </CardBody>
-                                                    <img  src={udacity} alt="udacity"  className="img-fluid"  /> 
+                                                    <a href="https://confirm.udacity.com/JNT26JSH"> <img  src={udacity} alt="udacity"  className="img-fluid"  /> 
+                                                    </a>
                                                     <CardBody>
                                                         <CardText><strong>Programming Languages Introduction</strong></CardText>
-                                                         <CardLink href="https://graduation.udacity.com/nd000">Check Certificate</CardLink>
+                                                         <CardLink href="https://confirm.udacity.com/JNT26JSH">Validate Certificate</CardLink>
                                                         <CardText> Introduction to the fundamentals of programming languages.
                                                                     HTML: Web development in HTML including document structure, tags, syntax, inline and block elements. 
                                                                     CSS: Combine CSS and HTML for visual styling using browser devtools, CSS divs, spans, classes and semantic tags. 
@@ -280,7 +303,7 @@ class Home extends Component {
                                                     <img src={linkedin2} alt="linkedin"  className="img-fluid"  />
                                                     <CardBody>
                                                         <CardText><strong>Front-End Web Developer Learning Path</strong></CardText>
-                                                        <CardLink href="https://www.linkedin.com/learning/me/completed?trk=nav_neptune_learning">Check Certificate</CardLink>
+                                                        <CardLink href="https://www.linkedin.com/learning/paths/become-a-front-end-web-developer">Validate Certificate</CardLink>
                                                         <CardText>
                                                                 Web Development: Core responsibilities of front-end vs back-end developers.
                                                                 Web Design: UX design principles, structure content, use graphics, integration of Video, audio, and other media
