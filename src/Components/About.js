@@ -14,7 +14,7 @@ class About extends Component {
                                 src={Tari}
                                 alt="avatar"
                                 className="img-fluid"
-                                style={{ borderRadius: "25px", width: "40%"}}
+                                style={{ borderRadius: "25px", width: "30%"}}
                                 />
                                 <CardBody>
                                 <h3>Untari</h3>
