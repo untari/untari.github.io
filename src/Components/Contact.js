@@ -1,46 +1,51 @@
-import React, { Component } from 'react';
+import React from 'react'
 import * as emailjs from 'emailjs-com';
-import { Button,  Form, FormGroup, Label, Input } from 'reactstrap';
+import { Button, FormGroup, Label, Input } from "reactstrap";
+import { Form, Field } from "react-final-form";
 
-class ContactForm extends Component {
-  state = {
-    name: '',
-    email: '',
-    message: '',
-  }
-  handleSubmit(e) {
-    e.preventDefault();
-    alert("Congrats, you submitted your message!");
-    const {  subject, message } = this.state
-    let templateParams = {
-      from_name: this.state.name + " (" + this.state.email + ")",
-      to_name: 'sastraembun0306@gmail.com',
-      subject: subject,
-      message_html: message,
+const onSubmit = values => {
+  console.log(values, sendEmail);
+  alert("Congrats, you submitted your message!");
 
+    
+    function sendEmail(e) {
+        e.preventDefault();
+        
+        emailjs.sendForm('service_oe82hof', 'template_vZoBYmUO', e.target, 'user_vAG2BmDDIX1solSFjQEmf')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
     }
-    emailjs.send(
-      'gmail',
-      'template_vZoBYmUO',
-       templateParams,
-      'user_vAG2BmDDIX1solSFjQEmf'
-    )
-    this.resetForm()
- }
- resetForm() {
-    this.setState({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    })
- }
- handleChange = (param, e) => {
-    this.setState({ [param]: e.target.value })
- }
- render() {
-    return (
-       <div class="container">
+}
+const ContactForm = () => (
+  <Form
+    onSubmit={onSubmit}
+    
+    validate={values => {
+      const errors = {};
+      function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(String(email).toLowerCase());
+      }
+      if (!values.fname) {
+        errors.fname = "Required";
+      }
+
+      if (!values.email) {
+        errors.email = "Required";
+      } else if (!validateEmail(values.email)) {
+        errors.email = "Not an email adress";
+      }
+      if (!values.message) {
+        errors.message = "Required";
+      }
+      return errors;
+      
+    }}
+    render={({ handleSubmit, values, submitting, validating, valid }) => (
+        <div class="container">
             <div class="contact">
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
                     <div class="divider-custom">
@@ -50,43 +55,69 @@ class ContactForm extends Component {
                     </div>
                     <div class="row">
                         <div class="col-lg-6 mx-auto">
-                                <Form onSubmit={this.handleSubmit.bind(this)}>
-                                    <FormGroup>
-                                        <Label for="exampleEmail">Email</Label>
-                                        <Input 
-                                            type="email" 
-                                            name="email" 
-                                            value={this.state.email}
-                                            id="exampleEmail" 
-                                            onChange={this.handleChange.bind(this, 'email')}
-                                            placeholder="Enter Email" />
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <Label for="examplePassword">Name</Label>
-                                        <Input
-                                            type="text" 
-                                            name="name"
-                                            id="exampleName" 
-                                            value={this.state.name}
-                                            onChange={this.handleChange.bind(this, 'name')}
+                            <form onSubmit={handleSubmit}>
+                                <FormGroup>
+                                    <Label for="fname"> Name</Label>
+                                    <Field name="fname">
+                                        {({ input, meta }) => (
+                                        <div>
+                                            <Input
+                                            {...input}
+                                            type="text"
                                             placeholder="Name"
-                                           />
-                                    </FormGroup>
-                                    <FormGroup>
-                                        <Label for="exampleText">Message</Label>
-                                        <Input type="textarea" 
-                                            name="text" 
-                                            id="exampleText" 
-                                            value={this.state.message}
-                                            onChange={this.handleChange.bind(this, 'message')} />
-                                    </FormGroup>
-                                    <Button color="info" type="submit">Send</Button>
-                               </Form>
+                                            
+                                            invalid={meta.error && meta.touched}
+                                            />
+                                            {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        </div>
+                                        )}
+                                    </Field>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label for="email">Email</Label>
+                                    <Field name="email">
+                                        {({ input, meta }) => (
+                                        <div>
+                                            <Input
+                                            {...input}
+                                            type="text"
+                                            placeholder="Enter Email"
+                                    
+                                            invalid={meta.error && meta.touched}
+                                            />
+                                            {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        </div>
+                                        )}
+                                    </Field>
+                                </FormGroup>
+                                <FormGroup>
+                                    <Label for="message">Message</Label>
+                                    <Field name="message">
+                                        {({ input, meta }) => (
+                                        <div>
+                                            <Input
+                                            {...input}
+                                            type="textarea"
+                                            placeholder="Enter Message"
+                                            
+                                            invalid={meta.error && meta.touched}
+                                            />
+                                            {meta.error && meta.touched && <span>{meta.error}</span>}
+                                        </div>
+                                        )}
+                                    </Field>
+                                </FormGroup>
+
+                                <Button type="submit" color="info" >
+                                    Send
+                                </Button>
+                            </form>
                         </div>
                     </div>
-             </div>
-        </div>
-    );
-  }
-}
+                 </div>
+            </div>
+        )}
+    />
+);
+
 export default ContactForm;
