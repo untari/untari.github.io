@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b86c8b00ca07587488824f41757a9092",
+    "revision": "8decee67be1f93f6fb54a00ac861b9a1",
     "url": "/untari.github.io/index.html"
   },
   {
-    "revision": "cb16ba502058c8f740a5",
+    "revision": "0ab9f45a46d24e0e28af",
     "url": "/untari.github.io/static/css/2.fca0b2a9.chunk.css"
   },
   {
-    "revision": "514c40780f16404f3a9c",
-    "url": "/untari.github.io/static/css/main.9c86508d.chunk.css"
+    "revision": "fc1e5a99f2c024184635",
+    "url": "/untari.github.io/static/css/main.c23cdab0.chunk.css"
   },
   {
-    "revision": "cb16ba502058c8f740a5",
-    "url": "/untari.github.io/static/js/2.6c5297b4.chunk.js"
+    "revision": "0ab9f45a46d24e0e28af",
+    "url": "/untari.github.io/static/js/2.34640351.chunk.js"
   },
   {
     "revision": "1fb97997b0ecd7d7d88e3d0a6b6bb983",
-    "url": "/untari.github.io/static/js/2.6c5297b4.chunk.js.LICENSE.txt"
+    "url": "/untari.github.io/static/js/2.34640351.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "20d9d024ebcf201e7de8",
-    "url": "/untari.github.io/static/js/3.f57b15cb.chunk.js"
+    "revision": "f88bb210f3cfc04823db",
+    "url": "/untari.github.io/static/js/3.3e1f7f23.chunk.js"
   },
   {
-    "revision": "514c40780f16404f3a9c",
-    "url": "/untari.github.io/static/js/main.8e71cf47.chunk.js"
+    "revision": "fc1e5a99f2c024184635",
+    "url": "/untari.github.io/static/js/main.ba4b5d5b.chunk.js"
   },
   {
-    "revision": "3332b7b33b187c51cd1e",
-    "url": "/untari.github.io/static/js/runtime-main.8ec3daec.js"
+    "revision": "3c7a26e374cbc23f25f9",
+    "url": "/untari.github.io/static/js/runtime-main.2e6be050.js"
   },
   {
     "revision": "3c2f7170112d4d1221b305988ef11210",
@@ -62,6 +62,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "824459d46ab8236947c1526c1f09a7b2",
     "url": "/untari.github.io/static/media/coursera6.824459d4.png"
+  },
+  {
+    "revision": "7251b6468802570e8eb23138208aa43f",
+    "url": "/untari.github.io/static/media/coursera7.7251b646.png"
+  },
+  {
+    "revision": "a1b9d5a16e21a0bcc849aef268d7c813",
+    "url": "/untari.github.io/static/media/coursera8.a1b9d5a1.png"
   },
   {
     "revision": "36468e55a1ad86f56484edc336bd18b4",

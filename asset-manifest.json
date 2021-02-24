@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/untari.github.io/static/css/main.9c86508d.chunk.css",
-    "main.js": "/untari.github.io/static/js/main.8e71cf47.chunk.js",
-    "main.js.map": "/untari.github.io/static/js/main.8e71cf47.chunk.js.map",
-    "runtime-main.js": "/untari.github.io/static/js/runtime-main.8ec3daec.js",
-    "runtime-main.js.map": "/untari.github.io/static/js/runtime-main.8ec3daec.js.map",
+    "main.css": "/untari.github.io/static/css/main.c23cdab0.chunk.css",
+    "main.js": "/untari.github.io/static/js/main.ba4b5d5b.chunk.js",
+    "main.js.map": "/untari.github.io/static/js/main.ba4b5d5b.chunk.js.map",
+    "runtime-main.js": "/untari.github.io/static/js/runtime-main.2e6be050.js",
+    "runtime-main.js.map": "/untari.github.io/static/js/runtime-main.2e6be050.js.map",
     "static/css/2.fca0b2a9.chunk.css": "/untari.github.io/static/css/2.fca0b2a9.chunk.css",
-    "static/js/2.6c5297b4.chunk.js": "/untari.github.io/static/js/2.6c5297b4.chunk.js",
-    "static/js/2.6c5297b4.chunk.js.map": "/untari.github.io/static/js/2.6c5297b4.chunk.js.map",
-    "static/js/3.f57b15cb.chunk.js": "/untari.github.io/static/js/3.f57b15cb.chunk.js",
-    "static/js/3.f57b15cb.chunk.js.map": "/untari.github.io/static/js/3.f57b15cb.chunk.js.map",
+    "static/js/2.34640351.chunk.js": "/untari.github.io/static/js/2.34640351.chunk.js",
+    "static/js/2.34640351.chunk.js.map": "/untari.github.io/static/js/2.34640351.chunk.js.map",
+    "static/js/3.3e1f7f23.chunk.js": "/untari.github.io/static/js/3.3e1f7f23.chunk.js",
+    "static/js/3.3e1f7f23.chunk.js.map": "/untari.github.io/static/js/3.3e1f7f23.chunk.js.map",
     "index.html": "/untari.github.io/index.html",
-    "precache-manifest.4594081871e34257dbb62395c04e0813.js": "/untari.github.io/precache-manifest.4594081871e34257dbb62395c04e0813.js",
+    "precache-manifest.37894e07b15e4c1a1af634ae25409a19.js": "/untari.github.io/precache-manifest.37894e07b15e4c1a1af634ae25409a19.js",
     "service-worker.js": "/untari.github.io/service-worker.js",
     "static/css/2.fca0b2a9.chunk.css.map": "/untari.github.io/static/css/2.fca0b2a9.chunk.css.map",
-    "static/css/main.9c86508d.chunk.css.map": "/untari.github.io/static/css/main.9c86508d.chunk.css.map",
-    "static/js/2.6c5297b4.chunk.js.LICENSE.txt": "/untari.github.io/static/js/2.6c5297b4.chunk.js.LICENSE.txt",
+    "static/css/main.c23cdab0.chunk.css.map": "/untari.github.io/static/css/main.c23cdab0.chunk.css.map",
+    "static/js/2.34640351.chunk.js.LICENSE.txt": "/untari.github.io/static/js/2.34640351.chunk.js.LICENSE.txt",
     "static/media/Resume.pdf": "/untari.github.io/static/media/Resume.3c2f7170.pdf",
     "static/media/certs.png": "/untari.github.io/static/media/certs.d8724fbd.png",
     "static/media/clock.png": "/untari.github.io/static/media/clock.ce159f3a.png",
@@ -24,6 +24,8 @@
     "static/media/coursera4.png": "/untari.github.io/static/media/coursera4.6f15e602.png",
     "static/media/coursera5.png": "/untari.github.io/static/media/coursera5.2bd89b9c.png",
     "static/media/coursera6.png": "/untari.github.io/static/media/coursera6.824459d4.png",
+    "static/media/coursera7.png": "/untari.github.io/static/media/coursera7.7251b646.png",
+    "static/media/coursera8.png": "/untari.github.io/static/media/coursera8.a1b9d5a1.png",
     "static/media/cv.png": "/untari.github.io/static/media/cv.36468e55.png",
     "static/media/dog.jpg": "/untari.github.io/static/media/dog.cb93bc91.jpg",
     "static/media/font-awesome.min.css": "/untari.github.io/static/media/fontawesome-webfont.fee66e71.woff",
@@ -36,10 +38,10 @@
     "static/media/udacity.jpg": "/untari.github.io/static/media/udacity.cca794c8.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8ec3daec.js",
+    "static/js/runtime-main.2e6be050.js",
     "static/css/2.fca0b2a9.chunk.css",
-    "static/js/2.6c5297b4.chunk.js",
-    "static/css/main.9c86508d.chunk.css",
-    "static/js/main.8e71cf47.chunk.js"
+    "static/js/2.34640351.chunk.js",
+    "static/css/main.c23cdab0.chunk.css",
+    "static/js/main.ba4b5d5b.chunk.js"
   ]
 }
