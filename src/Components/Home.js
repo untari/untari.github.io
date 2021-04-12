@@ -7,6 +7,8 @@ import  coursera3 from '../Images/coursera3.png';
 import  coursera4 from '../Images/coursera4.png';
 import  coursera5 from '../Images/coursera5.png';
 import  coursera6 from '../Images/coursera6.png';
+import  coursera7 from '../Images/coursera7.png';
+import  coursera8 from '../Images/coursera8.png';
 import certificate from '../Images/certs.png';
 import projects from '../Images/projects.png';
 import resume from './Resume.pdf';
@@ -17,55 +19,51 @@ import udacity from '../Images/udacity.jpg';
 import linkedin2 from '../Images/linkedin2.jpg';
 
 
-
 class Home extends Component {
-
- render() {
+    render() {
        return(
            <>
-
-                {/*header pic*/}
-                <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
-                        <div className="container col-xs-6 col-md-8 col-lg-8" >
-                                <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
-                                <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
-                                <div className="divider-custom divider-light">
-                                    <div className="divider-custom-line"></div>
-                                    <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
-                                    <div className="divider-custom-line"></div>
-                                </div>
-                            </div>
+           {/*header pic*/}
+            <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
+                <div className="container col-xs-6 col-md-8 col-lg-8" >
+                        <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
+                        <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
+                        <div className="divider-custom divider-light">
+                            <div className="divider-custom-line"></div>
+                            <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
+                            <div className="divider-custom-line"></div>
+                        </div>
+                    </div>
                             
                               {/*middle menu*/}
-                            <div className="row" style={{marginBottom: "2rem"}} id="menu">
-                                <div className="col-xs-4 col-md-4 col-sm-4 col-lg-4 mb-4 ">
-                                    <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal1">
-                                        <img className="img-fluid" src={projects} alt="projects"  />
-                                        <div className="overlay"><div className="text">Projects</div></div>
-                                    </div>
-                                </div>
+                    <div className="row" style={{marginBottom: "2rem"}} id="menu">
+                        <div className="col-xs-4 col-md-4 col-sm-4 col-lg-4 mb-4 ">
+                            <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal1">
+                                <img className="img-fluid" src={projects} alt="projects"  />
+                                <div className="overlay"><div className="text">Projects</div></div>
+                            </div>
+                        </div>
                     
-                                <div className="col-xs-3  col-md-4  col-sm-4 col-lg-4 mb-4">
-                                    <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                                        <img className="img-fluid"  src={certificate} alt="certs"   />
-                                    <div className="overlay"><div className="text">Certificates</div></div>
-                                    </div>
-                                </div>
+                        <div className="col-xs-3  col-md-4  col-sm-4 col-lg-4 mb-4">
+                            <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                                <img className="img-fluid"  src={certificate} alt="certs"   />
+                            <div className="overlay"><div className="text">Certificates</div></div>
+                            </div>
+                        </div>
                     
-                                <div className="col-xs-3 col-md-4 col-sm-4 col-lg-4 mb-4">
-                                    <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                                            <img className="img-fluid" src={Cv} alt="cv's" />
-                                        <div className="overlay"><div className="text">Resume</div></div>
-                                    </div>
+                        <div className="col-xs-3 col-md-4 col-sm-4 col-lg-4 mb-4">
+                            <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                                    <img className="img-fluid" src={Cv} alt="cv's" />
+                                <div className="overlay"><div className="text">Resume</div></div>
                                 </div>
                             </div>
-                </div>
+                        </div>
+                    </div>
                 
                   {/*modal menu for  project */}
-               <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+                    <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
                             <div className="modal-content">
-                           
                                 <button className="close" type="button" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true"><i className="fa fa-times"></i></span>
                                 </button>
@@ -89,11 +87,11 @@ class Home extends Component {
                                                         <CardTitle className="h3">Login Form</CardTitle>
                                                         <CardSubtitle>MongoDB and NodeJS</CardSubtitle>
                                                         </CardBody>
-                                                          <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/></a>
-                                                            
-                                                            <a href="https://test-login-form.herokuapp.com/">
-                                                                <img  src={coursera6}  alt="login form"  className="img-fluid"    />
-                                                            </a>
+                                                          <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
+                                                          </a>
+                                                          <a href="https://test-login-form.herokuapp.com/">
+                                                            <img  src={coursera6}  alt="login form"  className="img-fluid"    />
+                                                          </a>
                                                         <CardBody>
                                                         <CardText>
                                                             This website project is about how to create simple login form using NodeJS, MongoDB and Redis.
@@ -111,7 +109,6 @@ class Home extends Component {
                                                         </CardBody>
                                                         <a href="https://github.com/untari/login-form"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
                                                         </a>
-                                                        
                                                         <a href="https://untari.com/goseos/">
                                                             <img  src={coursera5} alt="Clock" className="img-fluid" />
                                                         </a>
@@ -191,6 +188,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
+                    
                      {/*modal menu for certificate */}
                     <div className="portfolio-modal modal fade" id="portfolioModal2" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
                         <div className="modal-dialog modal-xl" role="document">
@@ -202,9 +200,7 @@ class Home extends Component {
                                     <div className="container">
                                         <div className="row justify-content-center">
                                             <div className="col-lg-8">
-                                        
                                                 <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Certificates</h2>
-                                        
                                                 <div className="divider-custom">
                                                     <div className="divider-custom-line"></div>
                                                     <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
@@ -213,6 +209,39 @@ class Home extends Component {
                                                 
                                                  {/*modal content for certificate*/}
                                                  
+                                                 <Card className="text-dark mt-3">
+                                                    <CardBody>
+                                                        <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
+                                                        <CardSubtitle>Coursera</CardSubtitle>
+                                                    </CardBody>
+                                                    <a href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2"> <img src={coursera8} alt="Coursera"  className="img-fluid" />
+                                                    </a>
+                                                    <CardBody>
+                                                        <CardText><strong>Full-Stack Web Development with React</strong></CardText>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2">Validate Certificate</CardLink>
+                                                            <CardText>
+                                                                     Coursera certifies successful completion of The Hong Kong University of Science and Technology Full-Stack Web Development with React Specialization.
+                                                            </CardText>
+                                                     </CardBody>
+                                                 </Card>
+
+                                                 
+                                                 <Card className="text-dark mt-3">
+                                                    <CardBody>
+                                                        <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
+                                                        <CardSubtitle>Coursera</CardSubtitle>
+                                                    </CardBody>
+                                                    <a href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2"> <img src={coursera7} alt="Coursera"  className="img-fluid" />
+                                                    </a>
+                                                    <CardBody>
+                                                        <CardText><strong>Multiplatform Mobile App Development with React Native</strong></CardText>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/VMZFGHLFZP6M">Validate Certificate</CardLink>
+                                                            <CardText>
+                                                                    This course focuses on developing cross-platform, native iOS and Android apps using React Native and the Expo SDK. React Native uses modern JavaScrip and learnt about UI development with React Native UI and layout support and access the native mobile platform's capabilities from Javascript using the Expo SDK.
+                                                            </CardText>
+                                                     </CardBody>
+                                                 </Card>
+
                                                   <Card className="text-dark mt-3">
                                                     <CardBody>
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
@@ -337,10 +366,8 @@ class Home extends Component {
                                 <div className="modal-body text-center">
                                     <div className="container">
                                         <div className="row justify-content-center">
-                                            <div className="col-lg-8">
-                                    
-                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Resume</h2>
-                                            
+                                            <div className="col-lg-8">                        
+                                                <h2 className="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Resume</h2>                             
                                                 <div className="divider-custom">
                                                     <div className="divider-custom-line"></div>
                                                     <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
@@ -364,7 +391,7 @@ class Home extends Component {
                                 </div>
                             </div>
                         </div>
-                </div>
+             </div>
            </>
        );
    }

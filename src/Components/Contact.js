@@ -53,7 +53,6 @@ const Contact = () => {
                             ref={register({ required: "Enter your message" })}
                             />
                             {errors.textarea && <p className="error">{errors.textarea.message}</p>}
-
                             <button type="submit" color="info">Submit</button>
                         </form>
                 </div>

@@ -17,31 +17,25 @@ class Header extends Component {
         return(
             <div>
                     <div>
-                        <a href="https://github.com/untari?tab=repositories"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
+                        <a href="https://github.com/untari/untari.github.io"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full float-right" alt="Fork me on GitHub" data-recalc-dims="1"/></a>
                     </div>
                      <nav className="navbar navbar-expand-lg navbar-dark fixed-top ">
-                        <NavbarBrand className="img-responsive"> <Link to="/home"><img src={logo} id="logo" alt="logo" /></Link></NavbarBrand>
-                        
+                        <NavbarBrand className="img-responsive"> <Link to="/home"><img src={logo} id="logo" alt="logo" /> 
+                        </Link></NavbarBrand>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                             aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon" style={{backgroundColor: "#47a892"}}></span>
                         </button>
-
-
                         <div className="collapse navbar-collapse" id="navbarCollapse">
-                            <div className="navbar-nav  ml-auto">
-                        
+                            <div className="navbar-nav  ml-auto">             
                                       <NavLink to="/home"  style={style} activeClassName="active" id="nav2">HOME</NavLink>
                                       <NavLink to="/about"   style={style} activeClassName="active "  id="nav2">ABOUT ME</NavLink>
                                       <NavLink to="/blog"   style={style} activeClassName="active "  id="nav2" >BLOG</NavLink>
-                                     <NavLink  to="/contact"   style={style} activeClassName="active "  id="nav2" >CONTACT</NavLink >
-                                     
-                            </div>
-                              
+                                     <NavLink  to="/contact"   style={style} activeClassName="active "  id="nav2" >CONTACT</NavLink >          
+                            </div>  
                         </div>
                     </nav>
-            </div>
-   
+            </div>   
         );
     }
 }
