@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a7e483c3adccf5e370cf1cf448627e57",
+    "revision": "80ee67a12dd86ad0ba097cc4bbd9cb93",
     "url": "/untari.github.io/index.html"
   },
   {
-    "revision": "0ab9f45a46d24e0e28af",
-    "url": "/untari.github.io/static/css/2.fca0b2a9.chunk.css"
+    "revision": "bf18004979805a7c7233",
+    "url": "/untari.github.io/static/css/2.7063d720.chunk.css"
   },
   {
-    "revision": "c4d0d2444f30a480ba64",
-    "url": "/untari.github.io/static/css/main.c23cdab0.chunk.css"
+    "revision": "973ab022870f33f3d999",
+    "url": "/untari.github.io/static/css/main.2503b428.chunk.css"
   },
   {
-    "revision": "0ab9f45a46d24e0e28af",
-    "url": "/untari.github.io/static/js/2.34640351.chunk.js"
+    "revision": "bf18004979805a7c7233",
+    "url": "/untari.github.io/static/js/2.8c0c7d1b.chunk.js"
   },
   {
-    "revision": "1fb97997b0ecd7d7d88e3d0a6b6bb983",
-    "url": "/untari.github.io/static/js/2.34640351.chunk.js.LICENSE.txt"
+    "revision": "5f653a0198d447a5b71d2ebc144aaba1",
+    "url": "/untari.github.io/static/js/2.8c0c7d1b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f88bb210f3cfc04823db",
-    "url": "/untari.github.io/static/js/3.3e1f7f23.chunk.js"
+    "revision": "7a881d9e30de46ae1087",
+    "url": "/untari.github.io/static/js/3.cec5b14d.chunk.js"
   },
   {
-    "revision": "c4d0d2444f30a480ba64",
-    "url": "/untari.github.io/static/js/main.b08aad1f.chunk.js"
+    "revision": "973ab022870f33f3d999",
+    "url": "/untari.github.io/static/js/main.6928e3f0.chunk.js"
   },
   {
-    "revision": "3c7a26e374cbc23f25f9",
-    "url": "/untari.github.io/static/js/runtime-main.2e6be050.js"
+    "revision": "620a55e4699ecc6e9eef",
+    "url": "/untari.github.io/static/js/runtime-main.5c62ea0b.js"
   },
   {
-    "revision": "3c2f7170112d4d1221b305988ef11210",
-    "url": "/untari.github.io/static/media/Resume.3c2f7170.pdf"
+    "revision": "4315917a4529b12da14f0f83a182f206",
+    "url": "/untari.github.io/static/media/Resume.4315917a.pdf"
   },
   {
     "revision": "d8724fbd2fdd127fc3f09958b576ff64",
