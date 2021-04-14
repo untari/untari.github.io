@@ -4,9 +4,22 @@ import { useForm } from "react-hook-form";
 
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
+  const sendFeedback = (serviceID, templateId, variables) => {
+        window.emailjs.send(
+            serviceID, templateId,
+            variables
+        ).then(res => {
+            console.log('Email successfully sent!')
+        })
+            .catch(err => console.error('There has been an error.  Here some thoughts on the error that occured:', err))
+    }
 
-  function onSubmit(data) {
-    console.log("Data submitted: ", data);
+  const  onSubmit = (data, r) => {
+      alert(`Thank you for your message from ${data.email}`);
+      const templateId = 'template_u8dmjew';
+      const serviceID = 'service_mc1uy5m';
+      sendFeedback(serviceID, templateId, { from_name: data.name, message_html: data.comment, reply_to: data.email })
+        r.target.reset();
   }
 
   return (
