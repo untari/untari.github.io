@@ -215,11 +215,11 @@ class Home extends Component {
                                                         <CardTitle className="h3">The Hong Kong University of Science and Technology</CardTitle>
                                                         <CardSubtitle>Coursera</CardSubtitle>
                                                     </CardBody>
-                                                    <a href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2"> <img src={coursera8} alt="Coursera"  className="img-fluid" />
+                                                    <a href="https://www.coursera.org/account/accomplishments/specialization/MHKB2TGZNRUR"> <img src={coursera8} alt="Coursera"  className="img-fluid" />
                                                     </a>
                                                     <CardBody>
                                                         <CardText><strong>Full-Stack Web Development with React</strong></CardText>
-                                                        <CardLink href="https://www.coursera.org/account/accomplishments/verify/EKSYUEPWV7M2">Validate Certificate</CardLink>
+                                                        <CardLink href="https://www.coursera.org/account/accomplishments/specialization/MHKB2TGZNRUR">Validate Certificate</CardLink>
                                                             <CardText>
                                                                      Coursera certifies successful completion of The Hong Kong University of Science and Technology Full-Stack Web Development with React Specialization.
                                                             </CardText>
