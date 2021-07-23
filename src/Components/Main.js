@@ -34,7 +34,7 @@ class Main extends Component {
         const {loading} = this.state;
         return(
             loading ? (<Loading/>)
-           :(<div className="content">
+           : (<div className="content">
                 <Header />
                             <Route exact path="/home" component={Home}  />
                             <Redirect to="/home" component={Home} />

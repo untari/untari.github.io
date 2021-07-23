@@ -28,7 +28,7 @@ const Contact = () => {
             <h1 className="page-section-heading text-center text-uppercase text-secondary mb-0">Get in Touch</h1>
             <div className="divider-custom">
                 <div className="divider-custom-line"></div>
-                <div className="divider-custom-icon"><i class="fa fa-star"></i></div>
+                <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
                 <div className="divider-custom-line"></div>
             </div>
             <div className="row">
@@ -59,7 +59,7 @@ const Contact = () => {
                             {errors.name && <p className="error">{errors.name.message}</p>}
                             
                             <label htmlFor="inputTextarea"> Message </label>
-                            <input
+                            <textarea
                             type="textarea"
                             id="inputTextarea"
                             name="textarea"
