@@ -11,7 +11,7 @@ const Article1 = () => (
       <div>
          <Grid >
             <Cell col={6}>
-                <h3>Hey! I'm Tari.</h3>
+                <h3> Hey! Im Tari </h3>
                 <p>
                     I am a frontend-developer a compendium of the things I have learned and created, and anything else I want to write about.
                 </p>
@@ -21,7 +21,7 @@ const Article1 = () => (
 
 )
 const Wrap=styled.div`
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 1em;
   background-color: #c7ebea;
