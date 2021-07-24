@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Tari from '../Images/tari.png';
 import {  Card, CardText, CardBody, CardImg } from 'reactstrap';
+import Typical from 'react-typical';
 
 
 
@@ -18,8 +19,13 @@ class About extends Component {
                                 />
                                 <CardBody>
                                 <h3>Untari</h3>
-                                <CardText>I am a frontend software developer looking for challenging projects  <br />
-                                    that make an impact and allow me to keep learning and improving my skills.</CardText>
+                                <CardText>
+                                    <Typical 
+                                    steps={["I am a frontend software developer looking for challenging projects that make an impact and allow me to keep learning and improving my skills"]}
+                                    loop={Infinity}
+                                    wrapper="p"
+                                    />
+                                    </CardText>
                                 </CardBody>
                             </Card>
                     </div>
