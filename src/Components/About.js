@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import Tari from '../Images/tari.png';
 import {  Card, CardText, CardBody, CardImg } from 'reactstrap';
-import Typical from 'react-typical';
-
 
 
 class About extends Component {
   render() {
     return (
-             <div  className="container">                 
+             <div  className="container"> 
                  <div className="about">
                             <Card style={{border: "none", backgroundColor:"#c7ebea"}}>
                                 <CardImg
@@ -20,11 +18,8 @@ class About extends Component {
                                 <CardBody>
                                 <h3>Untari</h3>
                                 <CardText>
-                                    <Typical 
-                                    steps={["I am a frontend software developer looking for challenging projects that make an impact and allow me to keep learning and improving my skills"]}
-                                    loop={Infinity}
-                                    wrapper="p"
-                                    />
+                                    <p> I am a frontend software developer looking for challenging projects that<br /> make an impact and allow me to keep learning and improving my skills.
+                                      <p/>
                                     </CardText>
                                 </CardBody>
                             </Card>
