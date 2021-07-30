@@ -19,6 +19,7 @@ import udacity from '../Images/udacity.jpg';
 import linkedin2 from '../Images/linkedin2.jpg';
 
 
+
 class Home extends Component {
     render() {
        return(
@@ -85,20 +86,20 @@ class Home extends Component {
                                                 <Card className="text-dark mt-3">
                                                     <CardBody>
                                                         <CardTitle className="h3">Login Form</CardTitle>
-                                                        <CardSubtitle>MongoDB and NodeJS</CardSubtitle>
+                                                        <CardSubtitle>Express and NodeJS</CardSubtitle>
                                                         </CardBody>
-                                                          <a href="https://github.com/untari/login-form"> 
+                                                          <a href="https://login-form-system.herokuapp.com/"> 
                                                             <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
                                                           </a>
-                                                          <a href="https://test-login-form.herokuapp.com/">
+                                                          <a href="https://login-form-system.herokuapp.com/">
                                                             <img  src={coursera6}  alt="login form"  className="img-fluid"    />
                                                           </a>
                                                         <CardBody>
                                                         <CardText>
-                                                            This website project is about how to create simple login form using NodeJS, MongoDB and Redis.
-                                                            To run this project, clone the repository and run the server with <strong>node app.js</strong>
+                                                            This website project is about how to create simple login form using Express and NodeJS.
+                                                            To run this project, clone the repository and run the server with <strong>npm start</strong>
                                                             To check the  source code click and the website click on bellow.</CardText>
-                                                        <CardLink href="https://github.com/untari/login-form">Source Code</CardLink>
+                                                        <CardLink href="https://github.com/untari/login-system">Source Code</CardLink>
                                                     </CardBody>
                                                 </Card>
                                                 
