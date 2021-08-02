@@ -25,38 +25,7 @@ class Home extends Component {
        return(
            <>
            {/*header pic*/}
-           <div class="snowflakes" aria-hidden="true">
-                <div class="snowflake">
-                ❅
-                </div>
-                <div class="snowflake">
-                ❅
-                </div>
-                <div class="snowflake">
-                ❆
-                </div>
-                <div class="snowflake">
-                ❄
-                </div>
-                <div class="snowflake">
-                ❅
-                </div>
-                <div class="snowflake">
-                ❆
-                </div>
-                <div class="snowflake">
-                ❄
-                </div>
-                <div class="snowflake">
-                ❅
-                </div>
-                <div class="snowflake">
-                ❆
-                </div>
-                <div class="snowflake">
-                ❄
-                </div>
-            </div>
+           
             <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
                 <div className="container col-xs-6 col-md-8 col-lg-8" >
                         <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
