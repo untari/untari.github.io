@@ -25,6 +25,38 @@ class Home extends Component {
        return(
            <>
            {/*header pic*/}
+           <div class="snowflakes" aria-hidden="true">
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+                <div class="snowflake">
+                ❅
+                </div>
+                <div class="snowflake">
+                ❆
+                </div>
+                <div class="snowflake">
+                ❄
+                </div>
+            </div>
             <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
                 <div className="container col-xs-6 col-md-8 col-lg-8" >
                         <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
@@ -88,18 +120,19 @@ class Home extends Component {
                                                         <CardTitle className="h3">Login Form</CardTitle>
                                                         <CardSubtitle>Express and NodeJS</CardSubtitle>
                                                         </CardBody>
-                                                          <a href="https://login-form-system.herokuapp.com/"> 
+                                                          <a href="https://login-form-register.herokuapp.com/"> 
                                                             <img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
                                                           </a>
-                                                          <a href="https://login-form-system.herokuapp.com/">
+                                                          <a href="https://login-form-register.herokuapp.com/">
                                                             <img  src={coursera6}  alt="login form"  className="img-fluid"    />
                                                           </a>
                                                         <CardBody>
                                                         <CardText>
-                                                            This website project is about how to create simple login form using Express and NodeJS.
-                                                            To run this project, clone the repository and run the server with <strong>npm start</strong>
-                                                            To check the  source code click and the website click on bellow.</CardText>
+                                                            This website project is about how to create simple existing login form using Express and NodeJS.
+                                                            This project deployed in Herokuapp. To run this project, clone the repository and run the server with <strong>npm start</strong>
+                                                            To check the source code and the website click on bellow.</CardText>
                                                         <CardLink href="https://github.com/untari/login-system">Source Code</CardLink>
+                                                        <CardLink href="https://login-form-register.herokuapp.com/">Website</CardLink>
                                                     </CardBody>
                                                 </Card>
                                                 
