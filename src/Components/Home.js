@@ -108,8 +108,8 @@ class Home extends Component {
                                                     {/* //coursera project  */}
                                                 <Card className="text-dark mt-3">
                                                         <CardBody>
-                                                            <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
-                                                            <CardSubtitle>GoSeos</CardSubtitle>
+                                                            <CardTitle className="h3">GoSeos</CardTitle>
+                                                            <CardSubtitle>HTML, CSS & JavaScript</CardSubtitle>
                                                         </CardBody>
                                                         <a href="https://github.com/untari/goseos"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
                                                         </a>
@@ -127,7 +127,7 @@ class Home extends Component {
                                                 <Card className="text-dark mt-3">
                                                         <CardBody>
                                                         <CardTitle className="h3">Restaurant Confusion</CardTitle>
-                                                        <CardSubtitle>React</CardSubtitle>
+                                                        <CardSubtitle>Reactjs</CardSubtitle>
                                                         </CardBody>
                                                         <a href="https://github.com/untari/confusion"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
                                                         </a>
@@ -145,8 +145,8 @@ class Home extends Component {
                                                  
                                                 <Card className="text-dark mt-3">
                                                         <CardBody>
-                                                            <CardTitle className="h3">HTML, CSS & JavaScript </CardTitle>
-                                                            <CardSubtitle>Digital Analog Clock</CardSubtitle>
+                                                            <CardTitle className="h3"> Digital Analog Clock </CardTitle>
+                                                            <CardSubtitle>HTML, CSS & JavaScript</CardSubtitle>
                                                         </CardBody>
                                                         <a href="https://github.com/untari/an-analog-clock"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
                                                         </a>
@@ -165,8 +165,8 @@ class Home extends Component {
                                                  {/*  //udacity project// */}
                                                 <Card className="text-dark mt-3">
                                                         <CardBody>
-                                                            <CardTitle className="h3"> HTML&CSS </CardTitle>
-                                                            <CardSubtitle>Animal Trading Card</CardSubtitle>
+                                                            <CardTitle className="h3"> Animal Trading Card </CardTitle>
+                                                            <CardSubtitle>HTML&CSS</CardSubtitle>
                                                         </CardBody>
                                                         <a href="https://github.com/untari/animal_trading_card"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
                                                         </a>
