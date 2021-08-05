@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/untari.github.io/static/css/main.186b1e70.chunk.css",
-    "main.js": "/untari.github.io/static/js/main.a717f731.chunk.js",
-    "main.js.map": "/untari.github.io/static/js/main.a717f731.chunk.js.map",
+    "main.js": "/untari.github.io/static/js/main.613589f7.chunk.js",
+    "main.js.map": "/untari.github.io/static/js/main.613589f7.chunk.js.map",
     "runtime-main.js": "/untari.github.io/static/js/runtime-main.5c62ea0b.js",
     "runtime-main.js.map": "/untari.github.io/static/js/runtime-main.5c62ea0b.js.map",
     "static/css/2.7063d720.chunk.css": "/untari.github.io/static/css/2.7063d720.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.cec5b14d.chunk.js": "/untari.github.io/static/js/3.cec5b14d.chunk.js",
     "static/js/3.cec5b14d.chunk.js.map": "/untari.github.io/static/js/3.cec5b14d.chunk.js.map",
     "index.html": "/untari.github.io/index.html",
-    "precache-manifest.8a202375bdab7ab771ce947c613c238f.js": "/untari.github.io/precache-manifest.8a202375bdab7ab771ce947c613c238f.js",
+    "precache-manifest.666e487060c96ca86906562920f19a04.js": "/untari.github.io/precache-manifest.666e487060c96ca86906562920f19a04.js",
     "service-worker.js": "/untari.github.io/service-worker.js",
     "static/css/2.7063d720.chunk.css.map": "/untari.github.io/static/css/2.7063d720.chunk.css.map",
     "static/css/main.186b1e70.chunk.css.map": "/untari.github.io/static/css/main.186b1e70.chunk.css.map",
@@ -23,7 +23,7 @@
     "static/media/coursera3.png": "/untari.github.io/static/media/coursera3.eba3efeb.png",
     "static/media/coursera4.png": "/untari.github.io/static/media/coursera4.6f15e602.png",
     "static/media/coursera5.png": "/untari.github.io/static/media/coursera5.ec241e42.png",
-    "static/media/coursera6.png": "/untari.github.io/static/media/coursera6.d7959f74.png",
+    "static/media/coursera6.png": "/untari.github.io/static/media/coursera6.de2fc31c.png",
     "static/media/coursera7.png": "/untari.github.io/static/media/coursera7.7251b646.png",
     "static/media/coursera8.png": "/untari.github.io/static/media/coursera8.a1b9d5a1.png",
     "static/media/cv.png": "/untari.github.io/static/media/cv.36468e55.png",
@@ -42,6 +42,6 @@
     "static/css/2.7063d720.chunk.css",
     "static/js/2.8c0c7d1b.chunk.js",
     "static/css/main.186b1e70.chunk.css",
-    "static/js/main.a717f731.chunk.js"
+    "static/js/main.613589f7.chunk.js"
   ]
 }
