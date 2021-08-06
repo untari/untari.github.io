@@ -11,7 +11,7 @@ Clone the repository and in the project directory, you can run:
 ### `npm start`
 
 ## Technologies
-*ReactJS
-*Bootstraps
-*HTML5
-*CSS
+* ReactJS
+* Bootstraps
+* HTML5
+* CSS
