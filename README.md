@@ -6,11 +6,11 @@ Created using `ReactJS` , `create-react-app` and deployed in github pages. The g
 
 ## Available Scripts
 
-Clone the repository and In the project directory, you can run:
+Clone the repository and in the project directory, you can run:
 
 ### `npm start`
 
-##Technologies
+## Technologies
 *ReactJS
 *Bootstraps
 *HTML5
