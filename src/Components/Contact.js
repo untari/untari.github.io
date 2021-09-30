@@ -4,10 +4,9 @@ import { Form, Input, TextArea, Button } from "semantic-ui-react";
 import Swal from "sweetalert2";
 import "semantic-ui-css/semantic.min.css";
 
-//email js configuration 
-const SERVICE_ID = "";
-const TEMPLATE_ID = "";
-const USER_ID = "";
+const SERVICE_ID = "service_oe82hof";
+const TEMPLATE_ID = "template_vZoBYmUO";
+const USER_ID = "user_vAG2BmDDIX1solSFjQEmf";
 
 
 const Contact = () => {
