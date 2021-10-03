@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/untari.github.io/static/css/main.64909a53.chunk.css",
-    "main.js": "/untari.github.io/static/js/main.e88616ff.chunk.js",
-    "main.js.map": "/untari.github.io/static/js/main.e88616ff.chunk.js.map",
+    "main.css": "/untari.github.io/static/css/main.3a9e18d1.chunk.css",
+    "main.js": "/untari.github.io/static/js/main.0c12d742.chunk.js",
+    "main.js.map": "/untari.github.io/static/js/main.0c12d742.chunk.js.map",
     "runtime-main.js": "/untari.github.io/static/js/runtime-main.9b32da7d.js",
     "runtime-main.js.map": "/untari.github.io/static/js/runtime-main.9b32da7d.js.map",
     "static/css/2.7a6b2170.chunk.css": "/untari.github.io/static/css/2.7a6b2170.chunk.css",
@@ -11,10 +11,10 @@
     "static/js/3.8b8f0f42.chunk.js": "/untari.github.io/static/js/3.8b8f0f42.chunk.js",
     "static/js/3.8b8f0f42.chunk.js.map": "/untari.github.io/static/js/3.8b8f0f42.chunk.js.map",
     "index.html": "/untari.github.io/index.html",
-    "precache-manifest.03920f46e1fc2a38d440883f4b902d9f.js": "/untari.github.io/precache-manifest.03920f46e1fc2a38d440883f4b902d9f.js",
+    "precache-manifest.8b97321fc3518e0659beb794929f1270.js": "/untari.github.io/precache-manifest.8b97321fc3518e0659beb794929f1270.js",
     "service-worker.js": "/untari.github.io/service-worker.js",
     "static/css/2.7a6b2170.chunk.css.map": "/untari.github.io/static/css/2.7a6b2170.chunk.css.map",
-    "static/css/main.64909a53.chunk.css.map": "/untari.github.io/static/css/main.64909a53.chunk.css.map",
+    "static/css/main.3a9e18d1.chunk.css.map": "/untari.github.io/static/css/main.3a9e18d1.chunk.css.map",
     "static/js/2.5df902f0.chunk.js.LICENSE.txt": "/untari.github.io/static/js/2.5df902f0.chunk.js.LICENSE.txt",
     "static/media/Resume.pdf": "/untari.github.io/static/media/Resume.9d4bbc05.pdf",
     "static/media/semantic.min.css": "/untari.github.io/static/media/outline-icons.ef60a4f6.woff",
@@ -43,7 +43,7 @@
     "static/js/runtime-main.9b32da7d.js",
     "static/css/2.7a6b2170.chunk.css",
     "static/js/2.5df902f0.chunk.js",
-    "static/css/main.64909a53.chunk.css",
-    "static/js/main.e88616ff.chunk.js"
+    "static/css/main.3a9e18d1.chunk.css",
+    "static/js/main.0c12d742.chunk.js"
   ]
 }
