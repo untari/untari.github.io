@@ -118,10 +118,10 @@ img {
   text-align: center;
 }
 .portfolio-item {
-        cursor: pointer;
-        overflow: hidden;
-        border-radius: 12px;
-        position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 12px;
+    position: relative;
 }
 
 /*divider white line in home menu*/
@@ -217,7 +217,6 @@ img {
   width: 45%;
   height: 50%;
   padding: 20px;  
-  text-align: center;
 	
 }
 .Contact {
@@ -240,9 +239,13 @@ Form {
 
 /*Navbar content*/
 
+Card{
+  top: 10;
+  left: -0.1%;
+}
 .card{
   top: 50%;
-  left: 8%;
+  left: -0.1%;
 }
 .about {
   color: black;
@@ -365,6 +368,11 @@ Form {
     .masthead-heading1 {
          font-size: 20px;
     }
+    .card{
+        top: 8%;
+        left: 7%;
+        width: 80%;
+    }
 
 }
 @media (min-width: 481px) and (max-width: 767px){
@@ -387,6 +395,7 @@ Form {
   #home {
      width: 90%;
   }  
+  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
