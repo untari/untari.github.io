@@ -30,11 +30,13 @@ const Contact = () => {
     e.target.reset()};
     return (
      <div className="Contact">
-        <h1 className="page-section-heading text-center text-uppercase text-secondary mb-0">Get in Touch</h1>
-        <div className="divider-custom">
-            <div className="divider-custom-line"></div>
-            <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
-            <div className="divider-custom-line"></div>
+        <div className="container col-xs-6 col-md-8 col-lg-8" >
+            <h1 className="masthead-heading1 mb-0">Get In Touch</h1>
+            <div className="divider-custom divider-light">
+                <div className="divider-custom-line"></div>
+                <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
+                <div className="divider-custom-line"></div>
+            </div>
         </div>
         <div>
             <Form onSubmit={handleOnSubmit}>
