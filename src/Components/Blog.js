@@ -1,69 +1,89 @@
-import React from 'react';
-import { Grid, Cell } from 'react-mdl';
-import styled from 'styled-components';
+import React from "react";
+import { Link, Route } from "react-router-dom";
+import "../App.css";
 
 
-const Spacer=styled.div`
-  padding-left: 2vw;
-`
-const Article1 = () => (
-
-      <div>
-         <Grid >
-            <Cell col={6}>
-                <h3> Hey! Im Tari </h3>
-                <p>
-                    I am a frontend-developer a compendium of the things I have learned and created, and anything else I want to write about.
-                </p>
-            </Cell>
-         </Grid>
-     </div>
-
-)
-const Wrap=styled.div`
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 1em;
-  background-color: #c7ebea;
-`
-
-const Primary=styled.div`
-  max-width: 670px;
-  margin: 0 auto;
-  font-family: 'Sen', sans-serif;
-   background-color: #c7ebea;
-`
-const Block = styled.div`
-  cursor: pointer;
-  background: transparent;
-  font-size: 16px;
-  border-radius: 3px;
-  border: 2px solid darkgray;
-  margin: 0 1em;
-  padding: 0.25em 1em;
-  margin-bottom: 3vh;
-  margin-top: 1vh;
-  transition: 0.5s all ease-out;
-&:hover {
-  background-color: #2b2b29;
-  color: white;
+class Blog extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: [],
+      pageNum: 1,
+      totalPages: 0
+    };
   }
-`;
+  componentDidMount() {
+    this.changePage(this.state.pageNum);
+  }
+  changePage(pageNum) {
+    const url = `https://public-api.wordpress.com/rest/v1/sites/thelazyeyeofsports.wordpress.com/posts?page=${pageNum}`;
+    fetch(url)
+      .then(response => response.json())
+      .then(json => this.setState({ posts: json.posts, pageNum: pageNum }));
+  }
+  state = {
+    posts: [
+      {
+        id: 1,
+        title: "Hello Blog World!",
+        content:
+          "Lorem Khaled Ipsum is a major key to success. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up. Special cloth alert. The key is to drink coconut, fresh coconut, trust me. Fan luv. To succeed you must believe. When you believe, you will succeed. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up."
+      },
+      {
+        id: 2,
+        title: "My second post",
+        content:
+          "I’m up to something. I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. They never said winning was easy. Some people can’t handle success, I can. Look at the sunset, life is amazing, life is beautiful, life is what you make it. Hammock talk come soon. Let’s see what Chef Dee got that they don’t want us to eat. They will try to close the door on you, just open it. Wraith talk. The ladies always say Khaled you smell good, I use no cologne. Cocoa butter is the key. Celebrate success right, the only way, apple."
+      },
+      {
+        id: 3,
+        title: "What is React Router?",
+        content:
+          "Major key, don’t fall for the trap, stay focused. It’s the ones closest to you that want to see you fail. The key to more success is to get a massage once a week, very important, major key, cloth talk. Every chance I get, I water the plants, Lion! I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. They don’t want us to eat. Surround yourself with angels. They don’t want us to eat. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion! Learning is cool, but knowing is better, and I know the key to success."
+      }
+    ]
+  };
 
-function Blog(){
-  return (
-     <div className="container">
-         <div className= "blog">
-                    <Wrap>
-                        <Primary>
-                            <Spacer>
-                            <Block><Article1/></Block>
-                            </Spacer>
-                        </Primary>
-                    </Wrap>
-           </div>
-     </div>
-  );
+  render() {
+    const { posts } = this.state;
+    return (
+
+      <div className="container">
+        <div className="posts">
+          {posts.map(post => (
+            <div className="card border-primary mb-3" key={post.id}>
+              <div className="card-header bg-primary text-white">
+                {post.title}
+              </div>
+              <div className="card-body">
+                <p className="card-text">{post.excerpt}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <button
+            type="button"
+            disabled={this.state.pageNum === 1 ? true : false}
+            className="btn btn-secondary"
+            onClick={() => this.changePage(this.state.pageNum - 1)}
+          >
+            Prev
+          </button>
+          <button type="button" className="btn btn-secondary">
+            {this.state.pageNum}
+          </button>
+          <button
+            type="button"
+            className="btn btn-secondary"
+            onClick={() => this.changePage(this.state.pageNum + 1)}
+          >
+            Next
+          </button>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Blog;
