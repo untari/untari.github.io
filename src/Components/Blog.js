@@ -49,9 +49,6 @@ class Blog extends React.Component {
     return (
 
       <div className="container">
-        <div>
-            <h5>My Blog!<h5>
-        </div>
         <div className="posts">
           {posts.map(post => (
             <div className="card border-primary mb-3" key={post.id}>
