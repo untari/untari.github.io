@@ -50,7 +50,7 @@ class Blog extends React.Component {
 
       <div className="container">
         <div>
-            <h5>My Blog<h5>
+            <h5>My Blog!<h5>
         </div>
         <div className="posts">
           {posts.map(post => (
