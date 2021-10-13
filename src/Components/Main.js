@@ -33,16 +33,15 @@ class Main extends Component {
 
     render() {
         const {loading} = this.state;
-        
         return(
             loading ? (<Loading/>)
            : (<div className="content">
                 <Header />
-                            <Route exact path="/home" component={Home}  />
-                            <Redirect to="/home" component={Home} />
-                            <Route  path="/about" component={About} />
-                            <Route  path="/contact" component={Contact} />
-                            <Route  path="/blog" component={Blog} />
+                    <Route exact path="/home" component={Home}  />
+                    <Redirect to="/home" component={Home} />
+                    <Route  path="/about" component={About} />
+                    <Route  path="/contact" component={Contact} />
+                    <Route  path="/blog" component={Blog} />
                 <Footer />
             </div>)
         );
