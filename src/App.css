@@ -180,24 +180,24 @@ img {
         opacity: 1;
     }
     
+
 .modal-content {
     background-color: #c7ebea;
 }
 /*icon footer*/
 .fa {
- color: #454241;
+    color: #454241;
 }
 .fa-github{
    color: #383535;
 }
 .fa-linkedin {
- color: #383535;
+    color: #383535;
 }
 .footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-      
 }
 
 /*github ribbon*/
@@ -208,22 +208,25 @@ img {
 
 /*middle menu*/
 #home {
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%, -50%);
- -ms-transform: translateX(-50%) translateY(-50%);
- -webkit-transform: translate(-50%,-50%);
-  width: 45%;
-  height: 50%;
-  padding: 20px;  
-	
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    width: 45%;
+    height: 50%;
+    padding: 20px;  
 }
+
 .Contact {
   text-align: left;
   max-width: 50%;
   margin: 0px auto;
   padding-top: 40px;
+  top: 50%;
+  left: 50%;
+
 }
 Form {
   padding: 20px;
@@ -258,7 +261,7 @@ Card{
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
 }
-.blog {
+/*.blog {
   padding: 2px;
   position: absolute;
   top: 50%;
@@ -266,9 +269,7 @@ Card{
   -ms-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
-}
-
-
+}*/
 
 /*loading content*/
 .content{
@@ -320,6 +321,58 @@ Card{
   }
 }
 
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background:  #c7ebea;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
 
 /*media-queries*/
 @media (min-width: 320px) and (max-width: 480px) {
@@ -364,6 +417,7 @@ Card{
         max-width: 70%;
         margin: 10px 0px 10px 0px auto;
         padding-top: 40px;
+
     }
     .masthead-heading1 {
          font-size: 20px;
