@@ -8,6 +8,7 @@ import Contact from './Contact';
 import Blog from './Blog';
 
 
+
 const Loading =()=>
   <div className="loading">
     <div></div>
@@ -32,6 +33,7 @@ class Main extends Component {
 
     render() {
         const {loading} = this.state;
+        
         return(
             loading ? (<Loading/>)
            : (<div className="content">
