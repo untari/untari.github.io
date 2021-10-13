@@ -6,8 +6,9 @@ Created using `ReactJS` , `create-react-app` and deployed in github pages. The g
 
 ## Available Scripts
 
-Clone the repository and in the project directory, you can run:
-
+Clone the repository and in the local directory, you can run:
+### `git clone https://github.com/untari/untari.github.io.git`
+### `npm install`
 ### `npm start`
 
 ## Technologies
