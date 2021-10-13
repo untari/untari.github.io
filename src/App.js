@@ -9,11 +9,11 @@ class App extends Component {
      render() {
          return (
            <BrowserRouter  >
-                        <Route basename={process.env.PUBLIC_URL} >
-                                <div>
-                                    <Main />
-                                </div>
-                        </Route>
+                <Route basename={process.env.PUBLIC_URL} >
+                    <div>
+                        <Main />
+                    </div>
+                </Route>
             </BrowserRouter>
         );
      }
