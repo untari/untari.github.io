@@ -237,11 +237,10 @@ Form {
     align-items: center;
 }
 
-/*Navbar content*/
-
+/*about.js*/
 Card{
-    top: 10;
-    left: -0.1%;
+  top: 10;
+  left: -0.1%;
 }
 .card{
     top: 50%;
@@ -258,6 +257,7 @@ Card{
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
+
 /*.blog {
   padding: 2px;
   position: absolute;
@@ -347,21 +347,12 @@ Card{
     padding: 20px;
 }
 
-/* Add a card effect for articles */
-.card {
-    background-color: white;
-    padding: 20px;
-    margin-top: 20px;
-}
-
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
 
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {

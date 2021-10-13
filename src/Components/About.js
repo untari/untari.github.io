@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Card } from 'reactstrap';
 import Tari from '../Images/tari.png';
 
 
