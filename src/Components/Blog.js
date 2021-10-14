@@ -7,23 +7,23 @@ class Blog extends React.Component {
         return(
             <div className="container">
                 <div className="header">
-                    <h2>Blog Name</h2>
+                    <h2>Cats Who Code</h2>
                 </div>
                 <div className="row">
                     <div className="leftcolumn">
                         <div className="card">
-                            <h2>TITLE HEADING</h2>
-                            <h5>Title description, Dec 7, 2017</h5>
+                            <h2>Introduction</h2>
+                            <h5>It's all about my personal and web development journey, Oct 14, 2021</h5>
                             <div className="fakeimg" /*style="height:200px;"*/>Image</div>
                             <p>Some text..</p>
                             <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
                         </div>
                         <div className="card">
-                            <h2>TITLE HEADING</h2>
-                            <h5>Title description, Sep 2, 2017</h5>
+                            <h2>First Week as UoL Student</h2>
+                            <h5>Daily routine as student in UoL, Oct 14 2, 2021</h5>
                             <div className="fakeimg" /*style="height:200px;"*/>Image</div>
                             <p>Some text..</p>
-                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur.</p>
                         </div>
                     </div>
                     <div className="rightcolumn">
