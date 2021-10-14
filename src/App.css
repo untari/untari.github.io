@@ -321,6 +321,11 @@ Card{
 }
 
 /* Header/Blog Title */
+#blog{
+    background: #ebffff;
+    margin-bottom: 10px;    
+}
+
 .header {
     padding: 30px;
     font-size: 40px;
@@ -338,7 +343,7 @@ Card{
 
 /* Right column */
 .rightcolumn {
-    
+    background: #d0f2e1;
     float: left;
     width: 25%;
     padding-left: 20px;
@@ -347,8 +352,9 @@ Card{
 /* image */
 .fakeimg {
     background-color: #aaa;
-    width: 100%;
+    width: 90%;
     padding: 20px;
+    margin-bottom: 10px;
 }
 
 /* Clear floats after the columns */
