@@ -28,15 +28,12 @@ class Blog extends React.Component {
                     </div>
                     <div className="rightcolumn">
                         <div className="card" id="blog">
-                            <h2>About Me</h2>
-                        <div className="fakeimg" /*style="height:100px;"*/>Image</div>
-                            <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-                        </div>
-                        <div className="card" id="blog">
-                            <h3>Popular Post</h3>
-                            <div className="fakeimg">Image</div><br />
-                            <div className="fakeimg">Image</div><br />
-                            <div className="fakeimg">Image</div>
+                            <div className="card" id="blog">
+                                <h3>Popular Post</h3>
+                                <div className="fakeimg">Image</div><br />
+                                <div className="fakeimg">Image</div><br />
+                                <div className="fakeimg">Image</div>
+                            </div>
                         </div>
                     </div>
                 </div>
