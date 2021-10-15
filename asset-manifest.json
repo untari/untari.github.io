@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/untari.github.io/static/css/main.35cad826.chunk.css",
-    "main.js": "/untari.github.io/static/js/main.4c0bebaf.chunk.js",
-    "main.js.map": "/untari.github.io/static/js/main.4c0bebaf.chunk.js.map",
+    "main.js": "/untari.github.io/static/js/main.bd6031a5.chunk.js",
+    "main.js.map": "/untari.github.io/static/js/main.bd6031a5.chunk.js.map",
     "runtime-main.js": "/untari.github.io/static/js/runtime-main.8da0cf17.js",
     "runtime-main.js.map": "/untari.github.io/static/js/runtime-main.8da0cf17.js.map",
     "static/css/2.50d7d304.chunk.css": "/untari.github.io/static/css/2.50d7d304.chunk.css",
@@ -11,7 +11,7 @@
     "static/js/3.924ad3b2.chunk.js": "/untari.github.io/static/js/3.924ad3b2.chunk.js",
     "static/js/3.924ad3b2.chunk.js.map": "/untari.github.io/static/js/3.924ad3b2.chunk.js.map",
     "index.html": "/untari.github.io/index.html",
-    "precache-manifest.f2d49992a32290b5765317cd8d2d36a3.js": "/untari.github.io/precache-manifest.f2d49992a32290b5765317cd8d2d36a3.js",
+    "precache-manifest.0a9b13be8b8b0ecdc6a23da85270963c.js": "/untari.github.io/precache-manifest.0a9b13be8b8b0ecdc6a23da85270963c.js",
     "service-worker.js": "/untari.github.io/service-worker.js",
     "static/css/2.50d7d304.chunk.css.map": "/untari.github.io/static/css/2.50d7d304.chunk.css.map",
     "static/css/main.35cad826.chunk.css.map": "/untari.github.io/static/css/main.35cad826.chunk.css.map",
@@ -44,6 +44,6 @@
     "static/css/2.50d7d304.chunk.css",
     "static/js/2.511abef2.chunk.js",
     "static/css/main.35cad826.chunk.css",
-    "static/js/main.4c0bebaf.chunk.js"
+    "static/js/main.bd6031a5.chunk.js"
   ]
 }
