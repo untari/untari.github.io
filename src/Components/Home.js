@@ -14,10 +14,10 @@ import freecodecamp from '../Images/freecodecamp.png';
 import projects from '../Images/projects.png';
 import resume from './Resume.pdf';
 import screen from '../Images/screen.jpg';
-import dog from '../Images/dog.jpg';
 import clock from '../Images/clock.png';
 import udacity from '../Images/udacity.jpg';
 import linkedin2 from '../Images/linkedin2.jpg';
+import loginPage from '../Images/loginPage.png';
 
 
 
@@ -82,8 +82,28 @@ class Home extends Component {
                                     </div>
                                                 
                                     {/*modal menu contents for project */}
-                                    {/* //server-side honour project   */}
-                                    <Card className="text-dark mt-3">
+                               
+                                            {/*  // personal project// */}
+                                        <Card className="text-dark mt-3">
+                                            <CardBody>
+                                                <CardTitle className="h3">Sign Up Auth Firebase</CardTitle>
+                                                <CardSubtitle>Reactjs & FIrebase</CardSubtitle>
+                                            </CardBody>
+                                            <a href="https://github.com/untari/signup-auth-firebse"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
+                                            </a>
+                                            
+                                            <a href="https://untari.com/animal_trading_card/">
+                                                <img src={loginPage} alt="login-page" className="img-fluid"/>
+                                            </a>
+                                            <CardBody>
+                                                <CardText> This project website is about sign up form using ReactJS for the front-end and using firebase to save user sign up. To check the source code and the website click on the link bellow.</CardText>
+                                                <CardLink href="https://github.com/untari/signup-auth-firebse">Source Code</CardLink>
+                                                <CardLink href="https://untari.com/signup-auth-firebse/">Website</CardLink>
+                                            </CardBody>
+                                        </Card>
+                                        
+                                        {/* //server-side honour project   */}
+                                        <Card className="text-dark mt-3">
                                         <CardBody>
                                             <CardTitle className="h3">Login Form</CardTitle>
                                             <CardSubtitle>Express and NodeJS</CardSubtitle>
@@ -159,26 +179,6 @@ class Home extends Component {
                                             <CardLink href="https://untari.github.io/an-analog-clock/">Website</CardLink>
                                         </CardBody>
                                     </Card>
-                                                
-                                        {/*  //udacity project// */}
-                                    <Card className="text-dark mt-3">
-                                        <CardBody>
-                                            <CardTitle className="h3"> Animal Trading Card </CardTitle>
-                                            <CardSubtitle>HTML&CSS</CardSubtitle>
-                                        </CardBody>
-                                        <a href="https://github.com/untari/animal_trading_card"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
-                                        </a>
-                                        
-                                        <a href="https://untari.com/animal_trading_card/">
-                                            <img  src={dog} alt="dogCard"  className="img-fluid" />
-                                        </a>
-                                        <CardBody>
-                                            <CardText> This project website is about Animal Trading Card using HTML and CSS.  To check the source code and the website click on the link bellow.</CardText>
-                                            <CardLink href="https://github.com/untari/animal_trading_card">Source Code</CardLink>
-                                            <CardLink href="https://untari.github.io/animal_trading_card/">Website</CardLink>
-                                        </CardBody>
-                                    </Card>
-
                                     <button className="active mt-3"  id="nav2" data-dismiss="modal">
                                         <i className="fa fa-times fa-fw"></i>
                                         Close 
