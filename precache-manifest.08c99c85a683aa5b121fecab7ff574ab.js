@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d41e0a6f925eb3905a2f658856628ca",
+    "revision": "6a0f5929c96a0763250b2c57c26a4284",
     "url": "/untari.github.io/index.html"
   },
   {
-    "revision": "db0ed3a2d61019552ef0",
+    "revision": "a62180149645c96a80f9",
     "url": "/untari.github.io/static/css/2.50d7d304.chunk.css"
   },
   {
-    "revision": "c5a8df27e69ac2461456",
+    "revision": "aa9202c434767fda0b68",
     "url": "/untari.github.io/static/css/main.35cad826.chunk.css"
   },
   {
-    "revision": "db0ed3a2d61019552ef0",
-    "url": "/untari.github.io/static/js/2.511abef2.chunk.js"
+    "revision": "a62180149645c96a80f9",
+    "url": "/untari.github.io/static/js/2.1d0ca544.chunk.js"
   },
   {
     "revision": "603252b388fb7948396ad41410f946e0",
-    "url": "/untari.github.io/static/js/2.511abef2.chunk.js.LICENSE.txt"
+    "url": "/untari.github.io/static/js/2.1d0ca544.chunk.js.LICENSE.txt"
   },
   {
     "revision": "33b9073c54a02698bdf0",
     "url": "/untari.github.io/static/js/3.924ad3b2.chunk.js"
   },
   {
-    "revision": "c5a8df27e69ac2461456",
-    "url": "/untari.github.io/static/js/main.bd6031a5.chunk.js"
+    "revision": "aa9202c434767fda0b68",
+    "url": "/untari.github.io/static/js/main.928eed02.chunk.js"
   },
   {
     "revision": "70c70a4fd2742f8b0913",
@@ -96,10 +96,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/untari.github.io/static/media/cv.36468e55.png"
   },
   {
-    "revision": "cb93bc91f7fd7b5c3ef8a4b10baebe57",
-    "url": "/untari.github.io/static/media/dog.cb93bc91.jpg"
-  },
-  {
     "revision": "9c74e172f87984c48ddf5c8108cabe67",
     "url": "/untari.github.io/static/media/flags.9c74e172.png"
   },
@@ -154,6 +150,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "9ff1388413c868d8a791f3e38ba32a7a",
     "url": "/untari.github.io/static/media/linkedin2.9ff13884.jpg"
+  },
+  {
+    "revision": "e72db6f01fe25735f3b4e4b86c247fb8",
+    "url": "/untari.github.io/static/media/loginPage.e72db6f0.png"
   },
   {
     "revision": "73c333cf497eb9627754f85521595fbd",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/untari.github.io/precache-manifest.0a9b13be8b8b0ecdc6a23da85270963c.js"
+  "/untari.github.io/precache-manifest.08c99c85a683aa5b121fecab7ff574ab.js"
 );
 
 self.addEventListener('message', (event) => {
