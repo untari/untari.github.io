@@ -24,7 +24,7 @@ import loginPage from '../Images/loginPage.png';
 class Home extends Component {
     render() {
        return(
-           <>
+           <div className="container">
            {/*header pic*/}
             <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
                 <div className="container col-xs-6 col-md-8 col-lg-8" >
@@ -410,7 +410,7 @@ class Home extends Component {
                     </div>
                 </div>
              </div>
-           </>
+           </div>
        );
    }
 }

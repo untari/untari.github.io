@@ -5,7 +5,7 @@ import "../App.css";
 class Blog extends React.Component {
     render(){
         return(
-            <div className="container">
+            <div className="container blog">
                 <div className="header">
                     <h2>Cats Who Code</h2>
                 </div>

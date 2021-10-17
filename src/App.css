@@ -204,26 +204,28 @@ img {
 }
 
 /*middle menu*/
+
 #home {
+    margin-top: 10%;
+    width: 80%;
+    text-align: left;
     position: absolute;
+    top: 50%;
     left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
     -ms-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translate(-50%,-50%);
-    width: 45%;
-    height: 50%;
-    padding: 20px;  
+    transform: translate(-50%,-50%);  
 }
 
 .Contact {
+    width: 70%;
     text-align: left;
-    max-width: 50%;
-    margin: 0px auto;
-    padding-top: 40px;
+    position: absolute;
     top: 50%;
     left: 50%;
-
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 }
 Form {
     padding: 20px;
@@ -321,7 +323,15 @@ Card{
 }
 
 /* Header/Blog Title */
-#blog{
+.blog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+#blog {
     background: #ebffff;
     margin-bottom: 10px;    
 }
@@ -457,7 +467,6 @@ Card{
   }
   #home {
      width: 90%;
-    
   }  
 }
 @media (min-width: 1025px) and (max-width: 1280px){
@@ -483,6 +492,6 @@ Card{
         width: 45%;
         height: 55%;
         text-align: center;
-  }  
+    }  
 
 }
