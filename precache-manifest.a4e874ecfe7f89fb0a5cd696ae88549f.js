@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a0f5929c96a0763250b2c57c26a4284",
+    "revision": "559ad9614b186bea9c8900266bdf0770",
     "url": "/untari.github.io/index.html"
   },
   {
-    "revision": "a62180149645c96a80f9",
-    "url": "/untari.github.io/static/css/2.50d7d304.chunk.css"
+    "revision": "58d15791024ebdc748d6",
+    "url": "/untari.github.io/static/css/2.473c6c6d.chunk.css"
   },
   {
-    "revision": "aa9202c434767fda0b68",
-    "url": "/untari.github.io/static/css/main.35cad826.chunk.css"
+    "revision": "91cc5722003d318e5646",
+    "url": "/untari.github.io/static/css/main.0f433c90.chunk.css"
   },
   {
-    "revision": "a62180149645c96a80f9",
-    "url": "/untari.github.io/static/js/2.1d0ca544.chunk.js"
+    "revision": "58d15791024ebdc748d6",
+    "url": "/untari.github.io/static/js/2.9e2ceb6c.chunk.js"
   },
   {
     "revision": "603252b388fb7948396ad41410f946e0",
-    "url": "/untari.github.io/static/js/2.1d0ca544.chunk.js.LICENSE.txt"
+    "url": "/untari.github.io/static/js/2.9e2ceb6c.chunk.js.LICENSE.txt"
   },
   {
     "revision": "33b9073c54a02698bdf0",
     "url": "/untari.github.io/static/js/3.924ad3b2.chunk.js"
   },
   {
-    "revision": "aa9202c434767fda0b68",
-    "url": "/untari.github.io/static/js/main.928eed02.chunk.js"
+    "revision": "91cc5722003d318e5646",
+    "url": "/untari.github.io/static/js/main.429d2a13.chunk.js"
   },
   {
     "revision": "70c70a4fd2742f8b0913",
@@ -156,8 +156,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/untari.github.io/static/media/loginPage.e72db6f0.png"
   },
   {
-    "revision": "73c333cf497eb9627754f85521595fbd",
-    "url": "/untari.github.io/static/media/logo.73c333cf.svg"
+    "revision": "6b82798b6297c97d60d367cd0c7cdfed",
+    "url": "/untari.github.io/static/media/logo.6b82798b.svg"
   },
   {
     "revision": "701ae6abd4719e9c2ada3535a497b341",
