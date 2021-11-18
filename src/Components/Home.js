@@ -98,7 +98,7 @@ class Home extends Component {
                                             <CardBody>
                                                 <CardText> This project website is about sign up form using ReactJS for the front-end and using firebase to save user sign up. To check the source code and the website click on the link bellow.</CardText>
                                                 <CardLink href="https://github.com/untari/signup-auth-firebse">Source Code</CardLink>
-                                                <CardLink href="https://untari.com/signup-auth-firebse/">Website</CardLink>
+                                                <CardLink href="https://untari.com/signup-auth-firebase/">Website</CardLink>
                                             </CardBody>
                                         </Card>
                                         
