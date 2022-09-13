@@ -18,6 +18,7 @@ import clock from '../Images/clock.png';
 import udacity from '../Images/udacity.jpg';
 import linkedin2 from '../Images/linkedin2.jpg';
 import loginPage from '../Images/loginPage.png';
+import gameProject from '../Images/game-project.png';
 
 
 
@@ -86,8 +87,25 @@ class Home extends Component {
                                             {/*  // personal project// */}
                                         <Card className="text-dark mt-3">
                                             <CardBody>
+                                                <CardTitle className="h3">Game Project</CardTitle>
+                                                <CardSubtitle>P5.js</CardSubtitle>
+                                            </CardBody>
+                                            <a href="https://github.com/untari/Little-guy-jumping-game"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
+                                            </a>
+                                            
+                                            <a href="https://untari.com/Little-guy-jumping-game/">
+                                                <img src={gameProject} alt="login-page" className="img-fluid"/>
+                                            </a>
+                                            <CardBody>
+                                                <CardText> This game character project is from my final exams in Introduction to Programming I in University of London. To ceheck the source code and the website click on the link bellow.</CardText>
+                                                <CardLink href="https://github.com/untari/Little-guy-jumping-game">Source Code</CardLink>
+                                                <CardLink href="https://untari.com/Little-guy-jumping-game/">Website</CardLink>
+                                            </CardBody>
+                                        </Card>
+                                        <Card className="text-dark mt-3">
+                                            <CardBody>
                                                 <CardTitle className="h3">Sign Up Auth Firebase</CardTitle>
-                                                <CardSubtitle>Reactjs & FIrebase</CardSubtitle>
+                                                <CardSubtitle>Reactjs & Firebase</CardSubtitle>
                                             </CardBody>
                                             <a href="https://github.com/untari/signup-auth-firebse"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
                                             </a>
