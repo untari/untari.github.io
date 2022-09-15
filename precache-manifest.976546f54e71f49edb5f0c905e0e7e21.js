@@ -1,35 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0137a45a14506868d151facd0b740c8a",
+    "revision": "8a23f95fffd9e3065e8e693e9545fe67",
     "url": "/untari.github.io/index.html"
   },
   {
-    "revision": "58d15791024ebdc748d6",
+    "revision": "7564dd50eae4b2c57a48",
     "url": "/untari.github.io/static/css/2.473c6c6d.chunk.css"
   },
   {
-    "revision": "887e77c8478d11aee253",
+    "revision": "5bdcdc8e9c27767d31dc",
     "url": "/untari.github.io/static/css/main.0f433c90.chunk.css"
   },
   {
-    "revision": "58d15791024ebdc748d6",
-    "url": "/untari.github.io/static/js/2.9e2ceb6c.chunk.js"
+    "revision": "7564dd50eae4b2c57a48",
+    "url": "/untari.github.io/static/js/2.fe0409ad.chunk.js"
   },
   {
     "revision": "603252b388fb7948396ad41410f946e0",
-    "url": "/untari.github.io/static/js/2.9e2ceb6c.chunk.js.LICENSE.txt"
+    "url": "/untari.github.io/static/js/2.fe0409ad.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "33b9073c54a02698bdf0",
-    "url": "/untari.github.io/static/js/3.924ad3b2.chunk.js"
+    "revision": "24398e10602b9a04e7e7",
+    "url": "/untari.github.io/static/js/3.00bccff1.chunk.js"
   },
   {
-    "revision": "887e77c8478d11aee253",
-    "url": "/untari.github.io/static/js/main.6cc04e09.chunk.js"
+    "revision": "5bdcdc8e9c27767d31dc",
+    "url": "/untari.github.io/static/js/main.c8337fbb.chunk.js"
   },
   {
-    "revision": "70c70a4fd2742f8b0913",
-    "url": "/untari.github.io/static/js/runtime-main.8da0cf17.js"
+    "revision": "ebfcbef79db3466ae57b",
+    "url": "/untari.github.io/static/js/runtime-main.b3b9dc85.js"
   },
   {
     "revision": "aeefe5b085b749431cd14f3a83925aa8",
@@ -122,6 +122,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "47e303f4c2d7198097492dc2db1e39b4",
     "url": "/untari.github.io/static/media/freecodecamp.47e303f4.png"
+  },
+  {
+    "revision": "8038fb3b5dce145269ca4598cddfa3ad",
+    "url": "/untari.github.io/static/media/game-project.8038fb3b.png"
   },
   {
     "revision": "bbf465fd09814208ff6587edeb620ef7",
