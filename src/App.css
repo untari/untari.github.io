@@ -134,20 +134,20 @@ img {
     width: 100%;
     max-width: 6rem;
     height: 0.25rem;
-    background-color: $secondary;
+    background-color: secondary;
     border-radius: 1rem;
-    border-color: $secondary !important;
+    border-color: secondary !important;
     margin-right: 1rem;
     margin-left: 1rem;
 }
 
 .divider-custom-icon {
-    color: $secondary !important;
+    color: secondary !important;
     font-size: 2rem;
     margin-top: .5rem;
 }
 .divider-light {
-    background-color: $white;
+    /*background-color: ;*/
 }
 .divider-custom-line {
     background-color: white;
@@ -173,7 +173,7 @@ img {
         top: 1rem;
         font-size: 3rem;
         line-height: 3rem;
-        color: $primary;
+        color: primary;
         opacity: 1;
     }
     
@@ -324,13 +324,7 @@ Card{
 #blog {
     background: #ebffff;
     margin-bottom: 10px;    
-}
-
-.header {
-    padding: 30px;
-    font-size: 40px;
-    text-align: center;
-    background:  #c7ebea;
+    overflow: scroll;
 }
 
 /* Create two unequal columns that floats next to each other */
