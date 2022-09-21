@@ -97,7 +97,7 @@ class Home extends Component {
                                                 <img src={gameProject} alt="login-page" className="img-fluid"/>
                                             </a>
                                             <CardBody>
-                                                <CardText> This game character project is from my final exams in Introduction to Programming I in University of London. To ceheck the source code and the website click on the link bellow.</CardText>
+                                                <CardText> This game character project is from my final exams in Introduction to Programming I in University of London. To check the source code and the website click on the links bellow.</CardText>
                                                 <CardLink href="https://github.com/untari/Little-guy-jumping-game">Source Code</CardLink>
                                                 <CardLink href="https://untari.com/Little-guy-jumping-game/">Website</CardLink>
                                             </CardBody>
@@ -114,7 +114,7 @@ class Home extends Component {
                                                 <img src={loginPage} alt="login-page" className="img-fluid"/>
                                             </a>
                                             <CardBody>
-                                                <CardText> This project website is about sign up form using ReactJS for the front-end and using firebase to save user sign up. To check the source code and the website click on the link bellow.</CardText>
+                                                <CardText> This project website is about sign up form using ReactJS for the front-end and using firebase to save user sign up. To check the source code and the website click on the links bellow.</CardText>
                                                 <CardLink href="https://github.com/untari/signup-auth-firebse">Source Code</CardLink>
                                                 <CardLink href="https://untari.com/signup-auth-firebase/">Website</CardLink>
                                             </CardBody>
@@ -136,7 +136,7 @@ class Home extends Component {
                                             <CardText>
                                                 This website project is about how to create simple existing login form using Express and NodeJS.
                                                 This project deployed in Herokuapp. To run this project, clone the repository and run the server with <strong>npm start</strong>
-                                                To check the source code and the website click on bellow.</CardText>
+                                                To check the source code and the website click on links bellow.</CardText>
                                             <CardLink href="https://github.com/untari/login-system">Source Code</CardLink>
                                             <CardLink href="https://login-form-nodejs.herokuapp.com/">Website</CardLink>
                                         </CardBody>
@@ -154,8 +154,8 @@ class Home extends Component {
                                             <img  src={coursera5} alt="Clock" className="img-fluid" />
                                         </a>
                                         <CardBody>
-                                            <CardText>This website is about website that sells SEO services using HTML,  CSS and Bootsrap 4. <br />
-                                            To check the source code and the website click on link bellow. </CardText>
+                                            <CardText>This website is about website that sells SEO services using HTML, CSS and Bootsrap 4. <br />
+                                            To check the source code and the website click on links bellow. </CardText>
                                             <CardLink href="https://github.com/untari/goseos">Source code</CardLink>
                                             <CardLink href="https://untari.com/goseos/">Website</CardLink>
                                         </CardBody>
@@ -173,7 +173,7 @@ class Home extends Component {
                                         </a>
                                         <CardBody>
                                             <CardText>This website project is about how to create restaurant website using React JS.
-                                            To check the  source code click and the website click on bellow.</CardText>
+                                            To check the  source code click and the website click on the links bellow.</CardText>
                                             <CardLink href="https://github.com/untari/confusion">Source Code</CardLink>
                                             <CardLink href="https://untari.github.io/confusion/">website</CardLink>
                                         </CardBody>
@@ -191,8 +191,8 @@ class Home extends Component {
                                             <img  src={clock} alt="Clock" className="img-fluid" />
                                         </a>
                                         <CardBody>
-                                            <CardText>This website project is about how to create Digital analog clock using HTML,  CSS and JavaScript. 
-                                            To check the source code and the website click on link bellow. </CardText>
+                                            <CardText>This website project is about how to create Digital analog clock using HTML, CSS and JavaScript. 
+                                            To check the source code and the website click on links bellow. </CardText>
                                             <CardLink href="https://github.com/untari/an-analog-clock">Source code</CardLink>
                                             <CardLink href="https://untari.github.io/an-analog-clock/">Website</CardLink>
                                         </CardBody>
