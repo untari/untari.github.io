@@ -1,39 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9ec64f1f9f02bf234d2bbbd1b160809c",
+    "revision": "f247b2d96a24acafe00be1f669834949",
     "url": "/untari.github.io/index.html"
   },
   {
-    "revision": "7564dd50eae4b2c57a48",
-    "url": "/untari.github.io/static/css/2.473c6c6d.chunk.css"
+    "revision": "75fc89f1d1d36716ee8f",
+    "url": "/untari.github.io/static/css/2.9b5c4b66.chunk.css"
   },
   {
-    "revision": "6b9f6f41a36e386433dc",
-    "url": "/untari.github.io/static/css/main.0f433c90.chunk.css"
+    "revision": "6483e1ee24dff374af2b",
+    "url": "/untari.github.io/static/css/main.813feecb.chunk.css"
   },
   {
-    "revision": "7564dd50eae4b2c57a48",
-    "url": "/untari.github.io/static/js/2.fe0409ad.chunk.js"
+    "revision": "75fc89f1d1d36716ee8f",
+    "url": "/untari.github.io/static/js/2.78bcfb91.chunk.js"
   },
   {
-    "revision": "603252b388fb7948396ad41410f946e0",
-    "url": "/untari.github.io/static/js/2.fe0409ad.chunk.js.LICENSE.txt"
+    "revision": "b2deced30b275706d79bde7df885a2bd",
+    "url": "/untari.github.io/static/js/2.78bcfb91.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "24398e10602b9a04e7e7",
-    "url": "/untari.github.io/static/js/3.00bccff1.chunk.js"
+    "revision": "011e2199abeaa859b7d9",
+    "url": "/untari.github.io/static/js/3.e91c7d28.chunk.js"
   },
   {
-    "revision": "6b9f6f41a36e386433dc",
-    "url": "/untari.github.io/static/js/main.c14840af.chunk.js"
+    "revision": "6483e1ee24dff374af2b",
+    "url": "/untari.github.io/static/js/main.740d3ab1.chunk.js"
   },
   {
-    "revision": "ebfcbef79db3466ae57b",
-    "url": "/untari.github.io/static/js/runtime-main.b3b9dc85.js"
+    "revision": "dfd804629ccdaaf62202",
+    "url": "/untari.github.io/static/js/runtime-main.094654f8.js"
   },
   {
     "revision": "aeefe5b085b749431cd14f3a83925aa8",
     "url": "/untari.github.io/static/media/Resume.aeefe5b0.pdf"
+  },
+  {
+    "revision": "de0806e7fd1d4a489f12f1cd8e8134cf",
+    "url": "/untari.github.io/static/media/blog1.de0806e7.jpeg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
