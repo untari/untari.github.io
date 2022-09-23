@@ -321,6 +321,29 @@ Card{
     -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
 }
+.post-card {
+    text-align: left;
+    font-family: "Raleway";
+    border: 1px solid lightblue;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.postlist {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
+.post {
+    width: 40%;
+    margin: auto;
+}
+
+.page-content {
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
 #blog {
     background: #ebffff;
     margin-bottom: 10px;    

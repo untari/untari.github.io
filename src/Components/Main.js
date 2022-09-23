@@ -5,9 +5,8 @@ import Footer from './Footer';
 import Home from './Home';
 import About from './About';
 import Contact from './Contact';
+import Page from './pages';
 import Blog from './Blog';
-
-
 
 const Loading =()=>
   <div className="loading">
@@ -41,7 +40,8 @@ class Main extends Component {
                     <Redirect to="/home" component={Home} />
                     <Route  path="/about" component={About} />
                     <Route  path="/contact" component={Contact} />
-                    <Route  path="/blog" component={Blog} />
+                    <Route  path="/blog" component={Page} />
+                    <Route exact path="/post/:id" render={props => <Blog {...props} />} />
                 <Footer />
             </div>)
         );
