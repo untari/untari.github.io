@@ -1,43 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f247b2d96a24acafe00be1f669834949",
+    "revision": "b466d55385384e92033524f02a9bd611",
     "url": "/untari.github.io/index.html"
   },
   {
-    "revision": "75fc89f1d1d36716ee8f",
+    "revision": "b0148981d3609cf0ab36",
     "url": "/untari.github.io/static/css/2.9b5c4b66.chunk.css"
   },
   {
-    "revision": "6483e1ee24dff374af2b",
-    "url": "/untari.github.io/static/css/main.813feecb.chunk.css"
+    "revision": "6d05f92c71f0dfb1ddce",
+    "url": "/untari.github.io/static/css/main.9775a92b.chunk.css"
   },
   {
-    "revision": "75fc89f1d1d36716ee8f",
-    "url": "/untari.github.io/static/js/2.78bcfb91.chunk.js"
+    "revision": "b0148981d3609cf0ab36",
+    "url": "/untari.github.io/static/js/2.6c6ac06c.chunk.js"
   },
   {
-    "revision": "b2deced30b275706d79bde7df885a2bd",
-    "url": "/untari.github.io/static/js/2.78bcfb91.chunk.js.LICENSE.txt"
+    "revision": "86917311e8466fab5f09733b2ff4c651",
+    "url": "/untari.github.io/static/js/2.6c6ac06c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "011e2199abeaa859b7d9",
-    "url": "/untari.github.io/static/js/3.e91c7d28.chunk.js"
+    "revision": "fc63dc345ad2105a8828",
+    "url": "/untari.github.io/static/js/3.1b9491c6.chunk.js"
   },
   {
-    "revision": "6483e1ee24dff374af2b",
-    "url": "/untari.github.io/static/js/main.740d3ab1.chunk.js"
+    "revision": "6d05f92c71f0dfb1ddce",
+    "url": "/untari.github.io/static/js/main.3d134b9e.chunk.js"
   },
   {
-    "revision": "dfd804629ccdaaf62202",
-    "url": "/untari.github.io/static/js/runtime-main.094654f8.js"
+    "revision": "e5fd083d0d51fbb9dee6",
+    "url": "/untari.github.io/static/js/runtime-main.12255d28.js"
   },
   {
     "revision": "aeefe5b085b749431cd14f3a83925aa8",
     "url": "/untari.github.io/static/media/Resume.aeefe5b0.pdf"
-  },
-  {
-    "revision": "de0806e7fd1d4a489f12f1cd8e8134cf",
-    "url": "/untari.github.io/static/media/blog1.de0806e7.jpeg"
   },
   {
     "revision": "13db00b7a34fee4d819ab7f9838cc428",
