@@ -8,6 +8,10 @@ Created using `ReactJS` , `create-react-app` and deployed in github pages. The g
 
 Clone the repository and in the local directory, you can run:
 ### `git clone https://github.com/untari/untari.github.io.git`
+### if you dont have `npm` and `react` installed please install it first: 
+### `sudo apt install npm`
+### `npm install react`
+then: 
 ### `npm install`
 ### `npm start`
 
