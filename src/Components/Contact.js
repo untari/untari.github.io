@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "emailjs-com";
-import { Form, Input, TextArea, Button } from "semantic-ui-react";
+import { Form, Input, Button } from "semantic-ui-react";
 import Swal from "sweetalert2";
 import "semantic-ui-css/semantic.min.css";
 const SERVICE_ID = "service_oe82hof";
@@ -59,14 +59,16 @@ const Contact = () => {
                 icon="user circle"
                 iconPosition="left"
                 />
-                <Form.Field
-                id="form-textarea-control-opinion"
-                control={TextArea}
-                label="Message"
-                name="user_message"
-                placeholder="Message…"
-                required
-                />
+                <Form.Field>
+                    <label>Message</label>
+                    <textarea
+                        id="form-textarea-control-opinion"
+                        name="user_message"
+                        placeholder="Message…"
+                        required
+                        rows={4}
+                    />
+                </Form.Field>
                 <Button type="submit" color="green">Send</Button>
             </Form>
         </div>
