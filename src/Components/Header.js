@@ -23,10 +23,8 @@ class Header extends Component {
                     </a>
                 </div>
                 <nav className="navbar navbar-expand-lg navbar-dark fixed-top ">
-                    <NavbarBrand className="img-responsive">
-                        <Link to="/home">
-                            <img src={logo} id="logo" alt="logo" /> 
-                        </Link>
+                    <NavbarBrand tag={Link} to="/home" className="img-responsive">
+                        <img src={logo} id="logo" alt="logo" />
                     </NavbarBrand>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
