@@ -41,21 +41,21 @@ class Home extends Component {
                             {/*middle menu*/}
                 <div className="row" style={{marginBottom: "2rem"}} id="menu">
                     <div className="col-xs-4 col-md-4 col-sm-4 col-lg-4 mb-4 ">
-                        <div className="portfolio-item mx-auto"  data-toggle="modal" data-target="#portfolioModal1">
+                        <div className="portfolio-item mx-auto"  data-bs-toggle="modal" data-bs-target="#portfolioModal1">
                             <img className="img-fluid" src={projects} alt="projects"  />
                             <div className="overlay"><div className="text">Projects</div></div>
                         </div>
                     </div>
                         
                     <div className="col-xs-3  col-md-4  col-sm-4 col-lg-4 mb-4">
-                        <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                        <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
                             <img className="img-fluid"  src={certificate} alt="certs"   />
                             <div className="overlay"><div className="text">Certificates</div></div>
                         </div>
                     </div>
                         
                     <div className="col-xs-3 col-md-4 col-sm-4 col-lg-4 mb-4">
-                        <div className="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                        <div className="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
                             <img className="img-fluid" src={Cv} alt="cv's" />
                             <div className="overlay"><div className="text">Resume</div></div>
                         </div>
@@ -67,9 +67,7 @@ class Home extends Component {
                 <div className="portfolio-modal modal fade" id="portfolioModal1" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
                     <div className="modal-dialog modal-xl" role="document">
                         <div className="modal-content">
-                            <button className="close" type="button" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true"><i className="fa fa-times"></i></span>
-                            </button>
+                            <button className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                             
                     <div className="modal-body text-center">
                         <div className="container">
@@ -197,9 +195,9 @@ class Home extends Component {
                                             <CardLink href="https://untari.github.io/an-analog-clock/">Website</CardLink>
                                         </CardBody>
                                     </Card>
-                                    <button className="active mt-3"  id="nav2" data-dismiss="modal">
+                                    <button className="active mt-3"  id="nav2" data-bs-dismiss="modal">
                                         <i className="fa fa-times fa-fw"></i>
-                                        Close 
+                                        Close
                                     </button>
                                     </div>
                                 </div>
@@ -213,7 +211,7 @@ class Home extends Component {
             <div className="portfolio-modal modal fade" id="portfolioModal2" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
                 <div className="modal-dialog modal-xl" role="document">
                     <div className="modal-content">
-                        <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <button className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"><i className="fa fa-times"></i></span>
                         </button>
                         <div className="modal-body text-center">
@@ -380,9 +378,9 @@ class Home extends Component {
                                                 </CardText>
                                             </CardBody>
                                         </Card>
-                                        <button className="active mt-3"  id="nav2" data-dismiss="modal">
+                                        <button className="active mt-3"  id="nav2" data-bs-dismiss="modal">
                                             <i className="fa fa-times fa-fw"></i>
-                                            Close 
+                                            Close
                                         </button>
                                     </div>
                                 </div>
@@ -396,7 +394,7 @@ class Home extends Component {
             <div className="portfolio-modal modal fade" id="portfolioModal3" tabIndex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
                 <div className="modal-dialog modal-xl" role="document">
                     <div className="modal-content">
-                        <button className="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <button className="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"><i className="fa fa-times"></i></span>
                         </button>
                         <div className="modal-body text-center">
@@ -417,9 +415,9 @@ class Home extends Component {
                                             <Button color="info" ><a href={require("./Resume.pdf")} download={resume} className="text-light">Download</a></Button>
                                             </CardBody>
                                         </Card>
-                                        <button className="active mt-3" id="nav2" data-dismiss="modal">
+                                        <button className="active mt-3" id="nav2" data-bs-dismiss="modal">
                                             <i className="fa fa-times fa-fw"></i>
-                                            Close 
+                                            Close
                                         </button>
                                     </div>
                                 </div>
