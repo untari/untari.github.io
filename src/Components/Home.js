@@ -11,6 +11,7 @@ import  coursera7 from '../Images/coursera7.png';
 import  coursera8 from '../Images/coursera8.png';
 import certificate from '../Images/certs.png';
 import freecodecamp from '../Images/freecodecamp.png';
+import gsoc from '../Images/gsoc.png';
 import projects from '../Images/projects.png';
 import resume from './Resume.pdf';
 import screen from '../Images/screen.jpg';
@@ -227,6 +228,19 @@ class Home extends Component {
                                                 
                                         {/*modal content for certificate*/}
                                         <Card className="text-dark mt-3">
+                                            <CardBody>
+                                                <CardTitle className="h3">Google Summer of Code</CardTitle>
+                                                <CardSubtitle>Eventyay-FOSSASIA</CardSubtitle>
+                                            </CardBody>
+                                            <img src={gsoc} alt="Google Summer of Code"  className="img-fluid" />
+                                            <CardBody>
+                                                <CardText><strong>Google Summer of Code Certificate</strong></CardText>
+                                                <CardText>
+                                                    This certificate is awarded for participation in Google Summer of Code with Eventyay-FOSSASIA.
+                                                </CardText>
+                                            </CardBody>
+                                        </Card>
+                                        <Card className="text-dark mt-3">
                                         <CardBody>
                                             <CardTitle className="h3">FreeCodeCamp</CardTitle>
                                             <CardSubtitle>Freecodecamp</CardSubtitle>
@@ -237,7 +251,7 @@ class Home extends Component {
                                             <CardText><strong>Front End Development Libraries</strong></CardText>
                                             <CardLink href="https://freecodecamp.org/certification/tari/front-end-development-libraries">Validate Certificate</CardLink>
                                                 <CardText>
-                                                    FreeCodeCamp completion certificates in Front-end Development Libraries. As part of this certification, I built 5 projects and got all automated test suites to pass.  
+                                                    FreeCodeCamp completion certificates in Front-end Development Libraries. As part of this certification, I built 5 projects and got all automated test suites to pass.
                                                 </CardText>
                                             </CardBody>
                                         </Card>
