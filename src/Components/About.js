@@ -1,29 +1,47 @@
 import React, { Component } from 'react';
 import Tari from '../Images/tari.png';
 
-
 class About extends Component {
   render() {
     return (
-        <div className="card" >
-            <div className="row no-gutters about">
-                <div className="col-md-4">
-                    <img src={Tari} className="card-img" alt="card-img" />
-                </div>
-                <div className="col-md-8">
-                    <div className="card-body">
-                        <h5 className="card-title">Tari, it's my name!</h5>
-                        <p className="card-text" >I am a student in Computer Science at University of London. I am also a front-end developer that likes to
-                        create fun, innovative, accessible and fast websites. I try to leave every bit of code I touch more adable, modular, efficient and accessible than I found it. <br />I am also an open source enthusiast, since I believe it has multiple benefits for society, including
-                        myself, since I can learn and evolve with it. I like taking part in open source communities as it
-                        helps me learn from others, improve my coding skills and make me a better communicator. So
-                        far I have attended several open source talks and events and collaborated with the FOSSASIA
-                        and AnitaB organizations.
-                        </p>
-                    </div>
-                </div>
+      <div className="about-card">
+        <div className="row no-gutters about">
+          <div className="col-md-4">
+            <img src={Tari} className="card-img" alt="Tari" />
+          </div>
+          <div className="col-md-8">
+            <div className="card-body">
+              <h2 className="card-title">Tari</h2>
+              <h4 className="card-subtitle">Front-End Developer & Open Source Enthusiast</h4>
+              
+              <div className="about-section">
+                <h5>About Me</h5>
+                <p>
+                  I am a Computer Science student at University of London. As a front-end developer, I'm passionate 
+                  about creating fun, innovative, accessible, and fast websites. I strive to leave every bit of code 
+                  I touch more readable, modular, efficient, and accessible than I found it.
+                </p>
+              </div>
+
+              <div className="about-section">
+                <h5>Open Source & Community</h5>
+                <p>
+                  I'm an open source enthusiast who believes in its power for societal benefit and personal growth. 
+                  Through community engagement with organizations like <strong>FOSSASIA</strong> and <strong>AnitaB</strong>, 
+                  I've improved my coding skills, learned from experienced developers, and become a better communicator.
+                </p>
+              </div>
+
+              <div className="about-section">
+                <h5>Skills</h5>
+                <p>
+                  React, JavaScript, HTML/CSS, Front-End Development, Accessibility, Open Source Contribution
+                </p>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     );
   }
 }
