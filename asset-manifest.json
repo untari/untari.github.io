@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/untari.github.io/static/css/main.4c7d59ee.css",
+    "main.css": "/untari.github.io/static/css/main.2e0354f2.css",
     "main.js": "/untari.github.io/static/js/main.8cadd133.js",
     "static/js/453.2f2478c1.chunk.js": "/untari.github.io/static/js/453.2f2478c1.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/untari.github.io/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -31,12 +31,12 @@
     "static/media/loginPage.png": "/untari.github.io/static/media/loginPage.b9c7985e3a74b59d8462.png",
     "static/media/logo.svg": "/untari.github.io/static/media/logo.5647853a49a9aaa7aa1276b43c733026.svg",
     "index.html": "/untari.github.io/index.html",
-    "main.4c7d59ee.css.map": "/untari.github.io/static/css/main.4c7d59ee.css.map",
+    "main.2e0354f2.css.map": "/untari.github.io/static/css/main.2e0354f2.css.map",
     "main.8cadd133.js.map": "/untari.github.io/static/js/main.8cadd133.js.map",
     "453.2f2478c1.chunk.js.map": "/untari.github.io/static/js/453.2f2478c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c7d59ee.css",
+    "static/css/main.2e0354f2.css",
     "static/js/main.8cadd133.js"
   ]
 }
