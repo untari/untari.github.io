@@ -31,7 +31,7 @@ class Home extends Component {
             <div className="container text-center" style={{verticalAlign: "middle", marginBottom: "50px"}} id="home">
                 <div className="container col-xs-6 col-md-8 col-lg-8" >
                     <img className="masthead-avatar mb-2 img-fluid" src={girl} alt="header"  />
-                    <h1 className="masthead-heading text-uppercase mb-0">Front-End Web Developer</h1>
+                    <h1 className="masthead-heading text-uppercase mb-0"> AI & Software Engineer </h1>
                     <div className="divider-custom divider-light">
                         <div className="divider-custom-line"></div>
                         <div className="divider-custom-icon"><i className="fa fa-star"></i></div>
