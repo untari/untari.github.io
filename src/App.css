@@ -12,19 +12,31 @@ body {
     margin-right: 10%;
 }
 
+.navbar-nav a {
+    text-decoration: none !important;
+}
+
+.navbar-nav a:hover {
+    text-decoration: none !important;
+}
+
 .active {
     color: #e6eaf2 !important;
-    text-decoration: none;
+    text-decoration: none !important;
     background-color: #0b9c8f;
     font-weight: bold;
     line-height: 1.5em;
 }
 
 
+#nav2 {
+    text-decoration: none !important;
+}
+
 #nav2:hover {
     background-color: #36b0b3;
     color: #f7f0f0 !important;
-    text-decoration: none;
+    text-decoration: none !important;
     line-height: 1.5em;
 }
 /*btn*/
