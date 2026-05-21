@@ -196,6 +196,18 @@ class Home extends Component {
                                             <CardLink href="https://untari.github.io/an-analog-clock/">Website</CardLink>
                                         </CardBody>
                                     </Card>
+                                    <Card className="text-dark mt-3">
+                                        <CardBody>
+                                            <CardTitle className="h3">AI GP Doctor</CardTitle>
+                                            <CardSubtitle>Python & AI</CardSubtitle>
+                                        </CardBody>
+                                        <a href="https://github.com/untari/aigp-doctor"><img loading="lazy" width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_darkblue_121621.png?resize=149%2C149" className="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1" id="github-ribbon"/>
+                                        </a>
+                                        <CardBody>
+                                            <CardText>A free, open-source medical diagnosis system developed as a university thesis project. This modular application provides AI-powered medical diagnosis assistance using multiple open-source models including BioBERT, Clinical BERT, and specialized image analysis models. Features multi-modal analysis (text, medical images, and voice input/output) with a privacy-first design - all models run locally without external API calls. To check the source code click the link below.</CardText>
+                                            <CardLink href="https://github.com/untari/aigp-doctor">Source Code</CardLink>
+                                        </CardBody>
+                                    </Card>
                                     <button className="active mt-3"  id="nav2" data-bs-dismiss="modal">
                                         <i className="fa fa-times fa-fw"></i>
                                         Close
