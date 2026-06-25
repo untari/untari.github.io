@@ -26,8 +26,8 @@ class Header extends Component {
                     <NavbarBrand tag={Link} to="/home" className="img-responsive">
                         <img src={logo} id="logo" alt="logo" />
                     </NavbarBrand>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon" style={{backgroundColor: "#47a892"}}></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarCollapse">
