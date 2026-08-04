@@ -76,7 +76,7 @@ svg {
 /*heading in Home menu*/
 .masthead-heading {
     font-size: 1rem;
-    line-height: .5rem;
+    line-height: 1.2;
     margin-top: 1rem;
 }
 .masthead-avatar {
@@ -1191,7 +1191,7 @@ img {
    }
    .masthead-heading {
     font-size: 1rem;
-    line-height: .5rem;
+    line-height: 1.2;
   }
   .masthead-avatar {
       width: 80%;
@@ -1237,7 +1237,7 @@ img {
 @media (min-width: 481px) and (max-width: 767px){
   .masthead-heading {
     font-size: 1rem;
-    line-height: .5rem;
+    line-height: 1.2;
   }
 
   #home {
@@ -1249,7 +1249,7 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) {
   .masthead-heading {
     font-size: 1.5rem;
-    line-height: .5rem;
+    line-height: 1.2;
   }
   #home {
      width: 90%;
@@ -1260,7 +1260,7 @@ img {
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .masthead-heading {
     font-size: 1.5rem;
-    line-height: .5rem;
+    line-height: 1.2;
   }
   #home {
      width: 90%;
@@ -1269,7 +1269,7 @@ img {
 @media (min-width: 1025px) and (max-width: 1280px){
   .masthead-heading {
     font-size: 2rem;
-    line-height: .5rem;
+    line-height: 1.2;
   }
   #home {
       width: 80%;
@@ -1278,7 +1278,7 @@ img {
 @media (min-width: 1281px) {
   .masthead-heading {
     font-size: 1.5rem;
-    line-height: .5rem;
+    line-height: 1.2;
     display: inline;
   }
   #home {
