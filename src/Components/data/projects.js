@@ -1,0 +1,112 @@
+import streetArt from '../../Images/street-art.jpg';
+import aigpDoctor from '../../Images/ai-gp.jpg';
+import gameProject from '../../Images/game-project.png';
+import loginPage from '../../Images/loginPage.png';
+import coursera6 from '../../Images/coursera6.png';
+import coursera5 from '../../Images/coursera5.png';
+import screen from '../../Images/screen.jpg';
+import clock from '../../Images/clock.png';
+
+const projects = [
+    {
+        title: 'Street Art Quest',
+        subtitle: 'JavaScript, Leaflet & Supabase',
+        githubUrl: 'https://github.com/untari/street-art-quest',
+        image: streetArt,
+        imageAlt: 'Street Art Quest',
+        liveUrl: 'https://streetartquest.com/',
+        description: 'A no-install, no-account map-based scavenger hunt for hunting down street art and murals hidden across Sheung Wan, Hong Kong. Built with vanilla JavaScript and Leaflet maps, it offers an Explore mode showing all artworks and a Quest mode that reveals pieces sequentially with GPS-verified check-ins, plus community submissions for new discoveries. To check the source code and the website click on the links below.',
+        sourceUrl: 'https://github.com/untari/street-art-quest',
+        sourceLabel: 'Source Code',
+        liveLabel: 'Website',
+    },
+    {
+        title: 'AI GP Doctor',
+        subtitle: 'Python & AI',
+        githubUrl: 'https://github.com/untari/aigp-doctor',
+        image: aigpDoctor,
+        imageAlt: 'AI GP Doctor',
+        liveUrl: 'https://huggingface.co/spaces/tariuntari/aigp-doctor',
+        description: 'A free, open-source medical diagnosis system developed as a university thesis project. This modular application provides AI-powered medical diagnosis assistance using multiple open-source models including BioBERT, Clinical BERT, and specialized image analysis models. Features multi-modal analysis (text, medical images, and voice input/output) with a privacy-first design - all models run locally without external API calls. To check the source code and the website click on the links below.',
+        sourceUrl: 'https://github.com/untari/aigp-doctor',
+        sourceLabel: 'Source Code',
+        liveLabel: 'Website',
+    },
+    {
+        title: 'Game Project',
+        subtitle: 'P5.js',
+        githubUrl: 'https://github.com/untari/Little-guy-jumping-game',
+        image: gameProject,
+        imageAlt: 'Game Project',
+        liveUrl: 'https://untari.com/Little-guy-jumping-game/',
+        description: 'This game character project is from my final exams in Introduction to Programming I in University of London. To check the source code and the website click on the links bellow.',
+        sourceUrl: 'https://github.com/untari/Little-guy-jumping-game',
+        sourceLabel: 'Source Code',
+        liveLabel: 'Website',
+    },
+    {
+        title: 'Sign Up Auth Firebase',
+        subtitle: 'Reactjs & Firebase',
+        githubUrl: 'https://github.com/untari/signup-auth-firebse',
+        image: loginPage,
+        imageAlt: 'Sign Up Auth Firebase',
+        liveUrl: 'https://untari.com/animal_trading_card/',
+        description: 'This project website is about sign up form using ReactJS for the front-end and using firebase to save user sign up. To check the source code and the website click on the links bellow.',
+        sourceUrl: 'https://github.com/untari/signup-auth-firebse',
+        sourceLabel: 'Source Code',
+        websiteUrl: 'https://untari.com/signup-auth-firebase/',
+        liveLabel: 'Website',
+    },
+    {
+        title: 'Login Form',
+        subtitle: 'Express and NodeJS',
+        githubUrl: 'https://github.com/untari/login-system',
+        image: coursera6,
+        imageAlt: 'Login form',
+        liveUrl: 'https://login-form-nodejs.herokuapp.com/',
+        description: <>This website project is about how to create simple existing login form using Express and NodeJS. This project deployed in Herokuapp. To run this project, clone the repository and run the server with <strong>npm start</strong> To check the source code and the website click on links bellow.</>,
+        sourceUrl: 'https://github.com/untari/login-system',
+        sourceLabel: 'Source Code',
+        liveLabel: 'Website',
+    },
+    {
+        title: 'GoSeos',
+        subtitle: 'HTML, CSS & JavaScript',
+        githubUrl: 'https://github.com/untari/goseos',
+        image: coursera5,
+        imageAlt: 'Clock',
+        liveUrl: 'https://untari.com/goseos/',
+        description: 'This website is about website that sells SEO services using HTML, CSS and Bootsrap 4. To check the source code and the website click on links bellow.',
+        sourceUrl: 'https://github.com/untari/goseos',
+        sourceLabel: 'Source code',
+        liveLabel: 'Website',
+    },
+    {
+        title: 'Restaurant Confusion',
+        subtitle: 'Reactjs',
+        githubUrl: 'https://github.com/untari/confusion',
+        image: screen,
+        imageAlt: 'restaurant',
+        liveUrl: 'https://untari.com/home',
+        description: 'This website project is about how to create restaurant website using React JS. To check the  source code click and the website click on the links bellow.',
+        sourceUrl: 'https://github.com/untari/confusion',
+        sourceLabel: 'Source Code',
+        websiteUrl: 'https://untari.github.io/confusion/',
+        liveLabel: 'website',
+    },
+    {
+        title: 'Digital Analog Clock',
+        subtitle: 'HTML, CSS & JavaScript',
+        githubUrl: 'https://github.com/untari/an-analog-clock',
+        image: clock,
+        imageAlt: 'Clock',
+        liveUrl: 'https://untari.com/an-analog-clock/',
+        description: 'This website project is about how to create Digital analog clock using HTML, CSS and JavaScript. To check the source code and the website click on links bellow.',
+        sourceUrl: 'https://github.com/untari/an-analog-clock',
+        sourceLabel: 'Source code',
+        websiteUrl: 'https://untari.github.io/an-analog-clock/',
+        liveLabel: 'Website',
+    },
+];
+
+export default projects;
