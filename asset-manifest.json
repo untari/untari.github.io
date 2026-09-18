@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/untari.github.io/static/css/main.2e0354f2.css",
-    "main.js": "/untari.github.io/static/js/main.431d37e1.js",
+    "main.css": "/untari.github.io/static/css/main.3fa13f16.css",
+    "main.js": "/untari.github.io/static/js/main.90c18de4.js",
     "static/js/453.2f2478c1.chunk.js": "/untari.github.io/static/js/453.2f2478c1.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/untari.github.io/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/Resume.pdf": "/untari.github.io/static/media/Resume.9d185c41cfb2f7b93a06.pdf",
     "static/media/coursera4.png": "/untari.github.io/static/media/coursera4.b877f3a0f0b0ad301509.png",
     "static/media/coursera.jpg": "/untari.github.io/static/media/coursera.2a9ced96ba96c19aae21.jpg",
     "static/media/coursera8.png": "/untari.github.io/static/media/coursera8.cd434edcaa0e23c790ef.png",
@@ -12,7 +13,7 @@
     "static/media/fontawesome-webfont.eot": "/untari.github.io/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/untari.github.io/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/untari.github.io/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
-    "static/media/Resume.pdf": "/untari.github.io/static/media/Resume.1bc0848c76c4c15cecbe.pdf",
+    "static/media/street-art.jpg": "/untari.github.io/static/media/street-art.d46e486367d3de3e1111.jpg",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/untari.github.io/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/tari.png": "/untari.github.io/static/media/tari.a20d94a60f617e7ed3ea.png",
     "static/media/screen.jpg": "/untari.github.io/static/media/screen.02d08f1a0fdafa43bbc7.jpg",
@@ -20,6 +21,7 @@
     "static/media/coursera6.png": "/untari.github.io/static/media/coursera6.8999c49eca9afdaa1ad3.png",
     "static/media/projects.png": "/untari.github.io/static/media/projects.8847c7fecfdb1659eb8d.png",
     "static/media/coursera5.png": "/untari.github.io/static/media/coursera5.ce10fa105af3217070bb.png",
+    "static/media/ai-gp.jpg": "/untari.github.io/static/media/ai-gp.a989d0d2c5e33f948b41.jpg",
     "static/media/certs.png": "/untari.github.io/static/media/certs.f7ca7f0be518003ac536.png",
     "static/media/game-project.png": "/untari.github.io/static/media/game-project.7cb0657783972e72e33e.png",
     "static/media/linkedin2.jpg": "/untari.github.io/static/media/linkedin2.ba2ca5b2dd86f1bd950a.jpg",
@@ -31,12 +33,12 @@
     "static/media/loginPage.png": "/untari.github.io/static/media/loginPage.b9c7985e3a74b59d8462.png",
     "static/media/logo.svg": "/untari.github.io/static/media/logo.5647853a49a9aaa7aa1276b43c733026.svg",
     "index.html": "/untari.github.io/index.html",
-    "main.2e0354f2.css.map": "/untari.github.io/static/css/main.2e0354f2.css.map",
-    "main.431d37e1.js.map": "/untari.github.io/static/js/main.431d37e1.js.map",
+    "main.3fa13f16.css.map": "/untari.github.io/static/css/main.3fa13f16.css.map",
+    "main.90c18de4.js.map": "/untari.github.io/static/js/main.90c18de4.js.map",
     "453.2f2478c1.chunk.js.map": "/untari.github.io/static/js/453.2f2478c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2e0354f2.css",
-    "static/js/main.431d37e1.js"
+    "static/css/main.3fa13f16.css",
+    "static/js/main.90c18de4.js"
   ]
 }
